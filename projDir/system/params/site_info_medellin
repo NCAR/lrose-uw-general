@@ -1,0 +1,16 @@
+#############################################
+# site-specific parameter file for CMED
+#
+# Stacy Brodzik Sep 2014
+#############################################
+
+# site details
+
+setenv PROJECT_NAME               "medellin"
+setenv SITE_NAME                  "cmed"
+setenv RADAR_LAT                  6.1928
+setenv RADAR_LON                  -75.5274
+setenv RADAR_ALT_KM               2.784
+setenv RADAR_ALT_M                2784
+
+#############################################

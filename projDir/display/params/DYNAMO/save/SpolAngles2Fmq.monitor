@@ -1,0 +1,148 @@
+/**********************************************************************
+ * TDRP params for SpolAngles2Fmq
+ **********************************************************************/
+
+//======================================================================
+//
+// SpolAngles2Fmq reads SPOL angle data from the S2D ARM processor,via 
+//   UDP. It saves the data out to a file message queue (FMQ), which can 
+//   be read by multiple clients.
+//
+//======================================================================
+ 
+//======================================================================
+//
+// DEBUGGING AND PROCESS CONTROL.
+//
+//======================================================================
+ 
+///////////// debug ///////////////////////////////////
+//
+// Debug option.
+// If set, debug messages will be printed appropriately.
+//
+// Type: enum
+// Options:
+//     DEBUG_OFF
+//     DEBUG_NORM
+//     DEBUG_VERBOSE
+//     DEBUG_EXTRA
+//
+
+debug = DEBUG_OFF;
+
+///////////// instance ////////////////////////////////
+//
+// Process instance.
+// Used for registration with procmap.
+// Type: string
+//
+
+instance = "monitor";
+
+//======================================================================
+//
+// OPERATIONAL MODE.
+//
+//======================================================================
+ 
+///////////// ops_mode ////////////////////////////////
+//
+// Operational mode.
+// In FMQ_MODE, data is written to the FMQ. In MONITOR_MODE, angles are 
+//   printed to stdout, for monitoring purposes.
+//
+// Type: enum
+// Options:
+//     FMQ_MODE
+//     MONITOR_MODE
+//
+
+ops_mode = MONITOR_MODE;
+
+//======================================================================
+//
+// UDP DETAILS.
+//
+//======================================================================
+ 
+///////////// udp_port ////////////////////////////////
+//
+// UDP port from which to read the angle data.
+// Type: int
+//
+
+udp_port = 12080;
+
+//======================================================================
+//
+// FMQ DETAILS.
+//
+//======================================================================
+ 
+///////////// output_fmq_path /////////////////////////
+//
+// Path to output FMQ.
+// The FMQ consists of 2 files, ??.buf and ??.stat.
+// Type: string
+//
+
+output_fmq_path = "$(DATA_DIR)/fmq/angles/shmem_30000";
+
+///////////// output_fmq_size /////////////////////////
+//
+// Size of output FMQ, in bytes.
+// This is the total size of the output FMQ buffer.
+// Type: int
+//
+
+output_fmq_size = 10000000;
+
+///////////// output_fmq_nslots ///////////////////////
+//
+// Number of slots in the output FMQ.
+// The number of slots corresponds to the maximum number of messages 
+//   which may be written to the buffer before overwrites occur. However, 
+//   overwrites may occur sooner if the size is not set large enough.
+// Type: int
+//
+
+output_fmq_nslots = 500;
+
+///////////// n_angles_per_message ////////////////////
+//
+// Number of angles to be bundled into a single message for writing.
+// The data rate is about 2500 angles per second. For efficiency, we 
+//   bindle a number of these into a DsMessage, and write the message to 
+//   the FMQ.
+// Type: int
+//
+
+n_angles_per_message = 100;
+
+///////////// data_mapper_report_interval /////////////
+//
+// Number of seconds between reports to DataMapper.
+// If > 0, the program will register with the DataMapper when the output 
+//   FMQ is written to. If <= 0, registration will not be performed.
+// Type: int
+//
+
+data_mapper_report_interval = 5;
+
+//======================================================================
+//
+// MONITOR DETAILS.
+//
+//======================================================================
+ 
+///////////// monitor_update_interval /////////////////
+//
+// Update interval for monitor display (secs).
+// Update rate for monitoring mode. New angles will be printed at this 
+//   interval.
+// Type: double
+//
+
+monitor_update_interval = 1.0;
+

@@ -1,0 +1,14 @@
+#!/bin/tcsh
+
+source /home/disk/blitz/cidd/system/params/site_info_olympex
+/home/disk/blitz/cidd/display/scripts/set_font_path
+
+#/home/disk/mjo/dynamo/cidd/checkServerStatus.pl
+
+#setenv DATA_DIR /home/disk/bob/olympex
+setenv DATA_DIR /home/disk/mjo/data.server/olympex
+setenv DATA_HOST bob.atmos.washington.edu
+
+setenv PROJ_DIR /home/disk/blitz/cidd
+
+/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/blitz/cidd/display/params/CIDD.olympex.uw

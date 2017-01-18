@@ -1,0 +1,6 @@
+#! /bin/csh -f
+
+xterm -title TsRecording -bg black -fg orange -g 120x20-0+0 -e "PrintDataMap -all -relt -lreg -c 5 -host mgen"
+
+
+

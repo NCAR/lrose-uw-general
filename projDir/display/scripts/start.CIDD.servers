@@ -1,0 +1,4 @@
+#!/bin/csh
+
+/bin/rm /tmp/DsServerMgr.log
+DsServerMgr >& /tmp/DsServerMgr.log &

@@ -1,0 +1,13 @@
+#!/bin/csh
+
+setenv DATA_DIR /home/disk/mjo/dynamo/data.server
+
+#echo $status
+
+#if ($status == 1) then
+#    echo starting DsServerMgr
+#    echo Log will be in /tmp/DsServerMgr.log
+#    DsServerMgr >& /tmp/DsServerMgr.log &
+    /home/disk/blitz/bin/DsServerMgr -debug -qmax -1 >& /tmp/DsServerMgr.log &
+#endif
+

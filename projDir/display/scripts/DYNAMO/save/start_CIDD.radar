@@ -1,0 +1,10 @@
+#! /bin/csh
+
+$PROJ_DIR/system/scripts/set_font_path >& /dev/null 
+
+cd $PROJ_DIR/display/params
+
+setenv DATA_HOST pgen
+
+CIDD -p CIDD.radar -i radar -font fixed >& /dev/null &
+

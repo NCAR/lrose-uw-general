@@ -1,0 +1,4 @@
+#! /bin/csh
+
+start_CIDD.ops
+start_RadMon.ops

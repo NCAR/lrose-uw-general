@@ -1,0 +1,11 @@
+#! /bin/csh 
+
+
+cd $PROJ_DIR/system/params
+
+running "DsFileDist -params DsFileDist.uw"
+if ($status == 1) then
+  DsFileDist -params DsFileDist.uw |& \
+	LogFilter -d $ERRORS_LOG_DIR -p DsFileDist -i uw >& /dev/null &
+endif
+

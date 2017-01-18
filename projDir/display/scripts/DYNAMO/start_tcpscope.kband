@@ -1,0 +1,3 @@
+#!/bin/sh
+export KADIR=/opt/ka
+/usr/local/bin/tcpscope --host mgen --port 12000 &

@@ -1,0 +1,15 @@
+#! /bin/csh
+
+#setenv DISPLAY :0.0
+#xset fp= "/usr/lib/X11/fonts/75dpi,/usr/lib/X11/fonts/misc"
+#source $PROJ_DIR/system/params/site_params
+
+cd $PROJ_DIR/display/params
+
+#running "CIDD -p CIDD.viraq -i viraq -font 7x13bold"
+#if ($status == 1) then
+#  kill_CIDD.viraq
+  CIDD -p CIDD.viraq -i viraq  |& \
+    LogFilter -d $ERRORS_LOG_DIR -p CIDD -i viraq &
+#endif
+

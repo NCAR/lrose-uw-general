@@ -1,0 +1,7 @@
+#! /bin/csh -f
+
+xterm -title SpolAngles -bg black -fg yellow -g 70x3-0+150 -fn fixed -e ssh mgen SpolAngles2Fmq -params projDir/display/params/SpolAngles2Fmq.monitor &
+
+
+
+

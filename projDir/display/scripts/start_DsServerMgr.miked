@@ -1,0 +1,6 @@
+#!/bin/csh
+
+setenv DATA_DIR /home/disk/mjo/dynamo/data.server
+
+DsServerMgr -debug -qmax -1 >& /tmp/DsServerMgr.log &
+

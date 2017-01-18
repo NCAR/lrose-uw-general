@@ -1,0 +1,6 @@
+#! /bin/csh -f
+
+xterm -title RadMon-SMARTR -bg black -fg cyan -g 76x3-0+120 -fn fixed -e ssh pgen RadMon -params projDir/display/params/RadMon.smartr -summary &
+
+
+

@@ -1,0 +1,10 @@
+#! /bin/csh
+
+setenv DATA_HOST pgen
+
+$PROJ_DIR/system/scripts/set_font_path
+
+cd $PROJ_DIR/display/params
+
+CIDD -p CIDD.sunscan -i sunscan -font fixed >& /dev/null &
+

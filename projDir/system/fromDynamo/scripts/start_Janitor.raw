@@ -1,0 +1,8 @@
+#! /bin/csh
+
+running "Janitor -instance raw"
+if ($status == 1) then
+    Janitor -instance raw -top $DATA_DIR/raw -delay 60 -debug |& \
+	LogFilter -d $ERRORS_LOG_DIR -p Janitor -i raw >& /dev/null &
+endif
+

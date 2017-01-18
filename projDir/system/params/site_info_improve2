@@ -1,0 +1,18 @@
+#############################################
+# site-specific parameter file for SPOL
+#
+# Stacy Brodzik Sep 2015
+#############################################
+
+# site details
+
+# IMPROVE2 - SPOL
+
+setenv PROJECT_NAME               "improve2"
+setenv SITE_NAME                  "spol"
+setenv RADAR_LAT                  44.386471
+setenv RADAR_LON                  -122.854752
+setenv RADAR_ALT_KM               0.475
+setenv RADAR_ALT_M                475
+
+#############################################

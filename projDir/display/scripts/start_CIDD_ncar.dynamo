@@ -1,0 +1,18 @@
+#! /bin/csh
+
+setenv PROJ_DIR ~/projDir
+if (-e /opt/local/front/projDir) then
+  setenv PROJ_DIR  /opt/local/front/projDir
+  xrdb -override $PROJ_DIR/display/params/XResources4CIDD
+else
+  xrdb -override $HOME/XResources4CIDD
+endif
+
+if (-e ~/.Xdefaults) then
+  xrdb -override ~/.Xdefaults
+endif
+
+set_font_path
+
+CIDD -font fixed -p http://front.eol.ucar.edu/content/projects/hawk/front/projDir/display/params/CIDD.dynamo -v >& /tmp/CIDD.dynamo.log &
+

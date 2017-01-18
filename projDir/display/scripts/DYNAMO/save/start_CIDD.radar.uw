@@ -1,0 +1,10 @@
+#! /bin/csh
+
+/home/disk/mjo/display/scripts/set_font_path >& /dev/null 
+
+cd /home/disk/mjo/display/params
+
+setenv DATA_HOST pgen
+
+CIDD -p CIDD.radar.uw -i radar -font fixed >& /dev/null &
+

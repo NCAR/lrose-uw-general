@@ -1,0 +1,8 @@
+#! /bin/csh
+
+#setenv DISPLAY :0.0
+
+cd $PROJ_DIR/display/scripts
+
+gtk_display &
+

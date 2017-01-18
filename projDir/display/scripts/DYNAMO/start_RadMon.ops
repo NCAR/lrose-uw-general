@@ -1,0 +1,6 @@
+#! /bin/csh -f
+
+xterm -title RadMon -bg black -fg cyan -g 76x3-0+0 -fn fixed -e ssh mgen RadMon -params projDir/display/params/RadMon.ops -summary &
+
+
+

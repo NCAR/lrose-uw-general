@@ -1,0 +1,115 @@
+#! /bin/csh
+
+# set echo on if -debug
+
+if ($# > 0) then
+  if ($1 == "debug") then
+    set echo
+  endif
+endif
+
+#--------------------------------------------------------------------
+#
+# script to configure an SPOL host for the HAWK data system
+#
+# Mike Dixon, EOL, NCAR, Boulder, CO, USA
+# Sept 2007
+#
+#--------------------------------------------------------------------
+#
+# Makes links to the proc_list and crontab files
+#
+#--------------------------------------------------------------------
+
+# set directory paths
+
+set cvs_dir=$HOME/cvs
+set cvs_hawk_dir=$cvs_dir/projects/spol/hawk
+set cvs_proj_dir=$cvs_hawk_dir/projDir
+set system_dir=$cvs_proj_dir/system
+
+# source the .cshrc file to create the environment
+
+source $system_dir/dotfiles/cshrc
+
+# get the host type
+
+set host_type = `get_host_type`
+set date_str = `date -u +%Y%m%d_%H%M%S`
+
+echo
+echo "*********************************************************************"
+echo
+echo "  configure_host for SPOL HAWK"
+echo
+echo "  `date`"
+echo
+echo "  host type: $host_type"
+echo
+echo "*********************************************************************"
+echo
+
+# create directory for backup links
+
+set backup_links_dir = $HOME/.backup_links
+mkdir -p $backup_links_dir
+
+# make links to dotfiles in cvs
+
+cd $HOME
+foreach dotfile (cshrc bashrc emacs cvsignore Xdefaults sigmet_env)
+  /bin/mv -f .$dotfile $backup_links_dir
+  ln -s $system_dir/dotfiles/$dotfile .$dotfile
+end
+
+# make link to projDir
+
+cd $HOME
+/bin/mv -f projDir $backup_links_dir
+ln -s $cvs_proj_dir
+
+############################################
+# data dir - specific to the host type
+# copy data dir into /data/operator,
+#   which must be writable by operator
+# make link to data dir
+
+set cvs_data_dir = $cvs_hawk_dir/data.${host_type}
+set inst_data_dir = /data/operator/data.${host_type}
+
+cd $HOME/projDir
+/bin/cp -r $cvs_data_dir /data/operator
+/bin/mv -f data $backup_links_dir
+ln -s $inst_data_dir data
+
+# log dir
+
+/bin/mv -f logs $backup_links_dir
+ln -s data/logs
+
+# set current to raid dir
+
+cd $HOME/projDir/data
+/bin/rm -f _current
+ln -s /net/data/PGEN/current _current
+
+# display config directory
+
+cd $HOME
+/bin/rm -f .display
+ln -s projDir/gtkdisplay/params .display
+
+#####################
+# set up control dir
+
+cd $HOME/projDir/control
+
+# make backups as required
+
+/bin/mv -f crontab $backup_links_dir
+/bin/mv -f proc_list $backup_links_dir
+
+# set links based on host type
+
+ln -s proc_list.$host_type.sim proc_list
+ln -s crontab.$host_type crontab

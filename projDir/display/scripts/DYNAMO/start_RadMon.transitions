@@ -1,0 +1,5 @@
+#! /bin/csh -f
+
+ssh mgen RadMon -params projDir/display/params/RadMon.ops -summary -update -1
+
+

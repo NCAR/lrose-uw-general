@@ -1,0 +1,8 @@
+#! /bin/csh
+
+running "Janitor -instance dorade"
+if ($status == 1) then
+    Janitor -instance dorade -top $DATA_DIR/dorade -delay 60 -debug |& \
+	LogFilter -d $ERRORS_LOG_DIR -p Janitor -i dorade >& /dev/null &
+endif
+

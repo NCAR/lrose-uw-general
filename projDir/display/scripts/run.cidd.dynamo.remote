@@ -1,0 +1,8 @@
+#!/bin/csh
+
+source /home/disk/radar/dynamo/cidd/site_info
+
+/home/disk/radar/dynamo/cidd/set_font_path
+
+/home/disk/blitz/src/hawk/hawk-LATEST/bin/CIDD -p /home/disk/radar/dynamo/cidd/CIDD.spol_gan
+

@@ -1,0 +1,19 @@
+#!/bin/tcsh
+
+#source /home/disk/mjo/dynamo/cidd/site_info
+source /home/disk/blitz/cidd/system/params/site_info_dynamo
+
+#/home/disk/mjo/dynamo/cidd/set_font_path
+/home/disk/blitz/cidd/display/scripts/set_font_path
+
+#setenv DATA_DIR /home/disk/mjo/dynamo/data.server
+setenv DATA_DIR /home/disk/bob/data.server
+
+#setenv DATA_HOST mjo.atmos.washington.edu
+setenv DATA_HOST bob.atmos.washington.edu
+
+#setenv PROJ_DIR /home/disk/mjo/dynamo/cidd
+setenv PROJ_DIR /home/disk/blitz/cidd
+
+#/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/mjo/dynamo/cidd/CIDD.spol_gan -t 201110161200
+/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/blitz/cidd/display/params/CIDD.dynamo.smartr -t 201110161200

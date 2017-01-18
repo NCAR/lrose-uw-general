@@ -1,0 +1,21 @@
+#!/bin/tcsh
+
+source /home/disk/blitz/cidd/system/params/site_info_medellin
+
+#/home/disk/mjo/medellin/cidd/set_font_path
+/home/disk/blitz/cidd/display/scripts/set_font_path
+
+#/home/disk/mjo/dynamo/cidd/checkServerStatus.pl
+
+#setenv DATA_DIR /home/disk/mjo/dynamo/data.server
+setenv DATA_DIR /home/disk/bob/data.server
+    
+#setenv BUILD_DIR /home/disk/blitz/src/cidd-20121107
+setenv DATA_HOST bob.atmos.washington.edu
+
+#setenv PROJ_DIR /home/disk/bob/medellin/cidd
+#setenv PROJ_DIR /home/disk/mjo/dynamo/cidd
+setenv PROJ_DIR /home/disk/blitz/cidd
+
+#/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/bob/medellin/cidd/CIDD.medellin -t 201402021200
+/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/blitz/bin/CIDD.medellin -t 201402021200

@@ -1,0 +1,11 @@
+#!/bin/tcsh
+
+source /home/disk/blitz/cidd/display/site_info_improve2
+/home/disk/blitz/cidd/display/scripts/set_font_path
+
+setenv DATA_DIR /home/disk/mjo/data.server
+setenv DATA_HOST mjo.atmos.washington.edu
+
+setenv PROJ_DIR /home/disk/blitz/cidd
+
+/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/blitz/cidd/display/params/CIDD.improve2.spol -t 200111281615

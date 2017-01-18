@@ -1,0 +1,17 @@
+#!/bin/tcsh -x
+
+source /home/disk/mjo/ifloods/cidd/site_info
+/home/disk/mjo/ifloods/cidd/set_font_path
+
+#/home/disk/mjo/dynamo/cidd/checkServerStatus.pl
+
+#setenv DATA_DIR /home/disk/mjo/dynamo/data.server
+setenv DATA_DIR /home/disk/mjo/data.server
+setenv BUILD_DIR /home/disk/blitz/src/cidd-20121107
+setenv DATA_HOST mjo.atmos.washington.edu
+
+setenv PROJ_DIR /home/disk/mjo/ifloods/cidd
+#setenv PROJ_DIR /home/disk/mjo/dynamo/cidd
+
+/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/mjo/ifloods/cidd/CIDD.kdmx
+#/home/disk/blitz/bin/CIDD -v 2 -p /home/disk/blitz/bin/CIDD.npol

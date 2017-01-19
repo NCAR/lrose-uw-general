@@ -29,7 +29,7 @@ source /home/disk/blitz/cidd/system/params/site_info_dynamo
 setenv DATA_DIR /home/disk/bob/data.server
 setenv DATA_HOST bob.atmos.washington.edu
 
-setenv PROJ_DIR /home/disk/meso-home/meso/git/lrose-uw-general/projDir
+setenv PROJ_DIR /home/disk/meso-home/meso/projDir
 
-CIDD -p $PROJ_DIR/display/params/CIDD.spol_gan.CONVSF -t 201110161200 >& /dev/null &
+CIDD -p $PROJ_DIR/display/params/CIDD.dynamo >& /dev/null &
     

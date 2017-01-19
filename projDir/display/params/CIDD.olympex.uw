@@ -96,11 +96,6 @@ field_list = {
 
 # NEXRAD
 
-#NEXR_==== ========  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
-#NEXR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#NEXR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#NEXR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
 NEXR_KLGX_DBZ    KLGX_DBZ     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
 NEXR_KLGX_VEL30  KLGX_VEL30   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&VEL       vel_30.colors   m/s -5 80 5 radial 1 0
 NEXR_KLGX_VEL45  KLGX_VEL45   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&VEL       vel_45.colors   m/s -5 80 5 radial 1 0
@@ -155,7 +150,8 @@ NPOL_VEL45     NPOL_VEL45     mdvp:://bob.atmos.washington.edu:0:olympex/cfradia
 NPOL_VELNEX    NPOL_VELNEX    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&VEL        vel_nexrad.colors     m/s    -5 80 5 radial 1 0
 NPOL_ZDR       NPOL_ZDR       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
 NPOL_RHOHV     NPOL_RHOHV     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-NPOL_WIDTH     NPOL_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s      -5 80 5 radial 1 0
+#NPOL_WIDTH     NPOL_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s      -5 80 5 radial 1 0
+NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 #NPOL_DBZ_TOT   NPOL_DBZ_TOT   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&DBZ_TOT    dbz.colors        dBZ    -5 80 5 radial 1 0
@@ -233,6 +229,9 @@ XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer
 
 XBAND_DBZ    XBAND_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
 XBAND_VEL    XBAND_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband/sur&VEL        vel_k.colors      m/s    -5 80 5 radial 1 0
+XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
        
 # DOW
 
@@ -743,7 +742,7 @@ cidd.debug2_flag:           0
 # temporal rounding. 
 
 #srb comment out for real-time use
-#cidd.demo_time:  17:20 11/10/15
+cidd.demo_time:  21:00 11/12/15
 
 # Set times to the nearest value divisible by the number of seconds
 cidd.temporal_rounding:    1
@@ -754,7 +753,7 @@ cidd.movie_frame_dir: /tmp
 
 #  This determines how many movie frames are in the loop to start with
 #  Setting this high will cause the X server to hog memory.
-cidd.starting_movie_frames:  12
+cidd.starting_movie_frames:  24
 
 # minutes per movie frame on startup
 # The display will atomatically update every this interval, throwing away its
@@ -817,16 +816,16 @@ cidd.update_interval:      30
 
 #  Number of seconds to wait for data to come in before giving up
 #  On very slow networks this may need to go as high as 180 seconds!
-cidd.data_timeout_secs: 40
+cidd.data_timeout_secs: 15
 
 # Length of time to wait before killing simple external commands
 # Used When running single image convert scripts and driving
 # Browsers to web pages.
-cidd.simple_command_timeout_secs: 30
+cidd.simple_command_timeout_secs: 15
 
 # Length of time to wait before killing complex external commands
 # Used when spawining animation building script
-cidd.complex_command_timeout_secs: 180
+cidd.complex_command_timeout_secs: 30
 
 # Set to 1 to start up cidd in movie-on mode, 0 = off
 cidd.movie_on: 0
@@ -937,7 +936,6 @@ cidd.always_get_full_domain:  0
 # If set <= 0.0, CIDD will compute the aspect ratio based on the extent of the
 # first domain.
 cidd.aspect_ratio:   1.0
-#cidd.aspect_ratio:   1.3
 
 # Switch to enable the status window. 0 = off
 cidd.enable_status_window: 0
@@ -973,7 +971,7 @@ cidd.xsect_start_page:      1
 #
 # The Outer most domain:
 cidd.num_zoom_levels:       6
-cidd.start_zoom_level:      3
+cidd.start_zoom_level:      4
 cidd.min_zoom_threshold:    0
 cidd.zoom_limits_in_latlon: 1
 
@@ -1072,16 +1070,9 @@ cidd.max_adeg:               360.0
 
 # get these from local disk, then NCAR
 
-cidd.color_file_subdir: $(PROJ_DIR)/display/color_scales,http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales
+cidd.color_file_subdir: $(PROJ_DIR)/display/color_scales,http://front.eol.ucar.edu/git/lrose-displays/color_scales
 
-cidd.map_file_subdir: $(PROJ_DIR)/display/maps,http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/maps
-
-# get these from local disk, then UW
-
-#cidd.map_file_subdir: $(HOME)/projDir/display/maps,http://www.atmos.washington.edu/~brodzik/public/CIDD/maps
-
-#cidd.color_file_subdir: $(HOME)/projDir/display/color_scales,http://www.atmos.washington.edu/~brodzik/public/CIDD/color_scales
-
+cidd.map_file_subdir: $(PROJ_DIR)/display/maps,http://front.eol.ucar.edu/git/lrose-displays/maps
 
 #
 # Station locator features
@@ -1825,6 +1816,7 @@ prod_info = {
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
     minutes_allow_before = 20,
+      
     minutes_allow_after = 10,
     text_off_threshold = 0.4,
     request_data_on_zoom = FALSE,
@@ -1836,7 +1828,7 @@ prod_info = {
    //    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/dow_qc_lo",
    //    data_type = 0,
    //    render_type = RENDER_ALL_VALID,
-   //    on_by_default = TRUE,
+   //    on_by_default = FALSE,
    //    minutes_allow_before = 20,
    //    minutes_allow_after = 10,
    //    text_off_threshold = 0.4,
@@ -2057,7 +2049,7 @@ prod_info = {
    //    url = "spdbp:Metar2Symprod:simple//bob.atmos.washington.edu::olympex/spdb/metar",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
-   //    on_by_default = TRUE,
+   //    on_by_default = FALSE,
    //    minutes_allow_before = 90.0,
    //    minutes_allow_after = 0.0,
    //    text_off_threshold = 0.0,
@@ -2083,7 +2075,7 @@ prod_info = {
    //    url = "spdbp:Metar2Symprod:simple//bob.atmos.washington.edu::olympex/spdb/ship_obs",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
-   //    on_by_default = TRUE,
+   //    on_by_default = FALSE,
    //    minutes_allow_before = 120.0,
    //    minutes_allow_after = 30.0,
    //    text_off_threshold = 0.0001,

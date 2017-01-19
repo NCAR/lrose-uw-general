@@ -75,77 +75,77 @@
 
 # CMED MOMENTS
 
-DBZH      DBZH     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&DBZH     dbz.colors        dBZ    -5 80 5 radial 1 0
-DBZV      DBZV     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&DBZV     dbz.colors        dBZ    -5 80 5 radial 1 0
-VELH      VELH     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&VELH     vel_spol.colors   m/s    -5 80 5 radial 1 0
-VELV      VELV     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&VELV     vel_spol.colors   m/s    -5 80 5 radial 1 0
-WIDTHH    WIDTHH   mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&WIDTHH   width.colors      m/s    -5 80 5 radial 1 0
-WIDTHV    WIDTHV   mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&WIDTHV   width.colors      m/s    -5 80 5 radial 1 0
-ZDR       ZDR      mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&ZDR      zdr.colors        dB     -5 80 5 radial 1 0
-RHOHV     RHOHV    mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&RHOHV    ldr.colors        _      -5 80 5 radial 1 0
-NCPH      NCPH     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&NCPH
-NCPV      NCPV     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&NCPV
-PHIDP     PHIDP    mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&PHIDP    phidp.colors      deg    -5 80 5 radial 1 0
+DBZH      DBZH     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&DBZH     dbz.colors        dBZ    -5 80 5 radial 1 0
+DBZV      DBZV     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&DBZV     dbz.colors        dBZ    -5 80 5 radial 1 0
+VELH      VELH     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&VELH     vel_spol.colors   m/s    -5 80 5 radial 1 0
+VELV      VELV     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&VELV     vel_spol.colors   m/s    -5 80 5 radial 1 0
+WIDTHH    WIDTHH   mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&WIDTHH   width.colors      m/s    -5 80 5 radial 1 0
+WIDTHV    WIDTHV   mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&WIDTHV   width.colors      m/s    -5 80 5 radial 1 0
+ZDR       ZDR      mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&ZDR      zdr.colors        dB     -5 80 5 radial 1 0
+RHOHV     RHOHV    mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&RHOHV    ldr.colors        _      -5 80 5 radial 1 0
+NCPH      NCPH     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&NCPH
+NCPV      NCPV     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&NCPV
+PHIDP     PHIDP    mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&PHIDP    phidp.colors      deg    -5 80 5 radial 1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # CMED SNR and SQ
 
-SNRH      SNRH     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&SNRH     snr.colors        dB     -5 80 5 radial 1 0
-SNRV      SNRV     mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&SNRV     snr.colors        dB     -5 80 5 radial 1 0
+SNRH      SNRH     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&SNRH     snr.colors        dB     -5 80 5 radial 1 0
+SNRV      SNRV     mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&SNRV     snr.colors        dB     -5 80 5 radial 1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # RAIN RATE
 
-#RR        RR       mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/cfradial/moments/cmed/sur&RR       precip_color      none   -5 80 5 radial 1 0
+#RR        RR       mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/cfradial/moments/cmed/sur&RR       precip_color      none   -5 80 5 radial 1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # CART MOMENTS
 
-#CZ_CART   CZ_CART   mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/sur&CZ       dbz.colors       dBZ    -5 80 5 radial 1 0
-#VR_CART   VR_CART   mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/sur&VR       vel_spol.colors  m/s    -5 80 5 radial 1 0
-#CZ_CART_RHI  CZ_CART_RHI   mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/rhi&CZ      dbz.colors       dBZ    -5 80 5 radial 1 0
-#VR_CART_RHI  VR_CART_RHI   mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/rhi&VR      vel_spol.colors  m/s    -5 80 5 radial 1 0
+#CZ_CART   CZ_CART   mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/sur&CZ       dbz.colors       dBZ    -5 80 5 radial 1 0
+#VR_CART   VR_CART   mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/sur&VR       vel_spol.colors  m/s    -5 80 5 radial 1 0
+#CZ_CART_RHI  CZ_CART_RHI   mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/rhi&CZ      dbz.colors       dBZ    -5 80 5 radial 1 0
+#VR_CART_RHI  VR_CART_RHI   mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/rhi&VR      vel_spol.colors  m/s    -5 80 5 radial 1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # RAIN RATE CART
 
-#RR_CART   RR_CART mdvp:://$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/sur&RR     precip_color none -5 80 5 radial 1 0
+#RR_CART   RR_CART mdvp:://$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/sur&RR     precip_color none -5 80 5 radial 1 0
 
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # Sat data
 
-#VIS      VIS      mdvp:://$(DATA_HOST)::/home/disk/mjo/medellin/data.server/mdv/sat/vis&VIS sat_albedo.colors     albedo% -5   80  5  cart   1 0
-#IR       IR       mdvp:://$(DATA_HOST)::/home/disk/mjo/medellin/data.server/mdv/sat/ir&IR   sat_tempK_toga.colors K       -5   80  5  cart   1 0
-#WV       WV       mdvp:://$(DATA_HOST)::/home/disk/mjo/medellin/data.server/mdv/sat/wv&WV   wv_uw.colors          K       -5   80  5  cart   1 0
+#VIS      VIS      mdvp:://$(DATA_HOST)::$(DATA_DIR)/medellin/mdv/sat/vis&VIS sat_albedo.colors     albedo% -5   80  5  cart   1 0
+#IR       IR       mdvp:://$(DATA_HOST)::$(DATA_DIR)/medellin/mdv/sat/ir&IR   sat_tempK_toga.colors K       -5   80  5  cart   1 0
+#WV       WV       mdvp:://$(DATA_HOST)::$(DATA_DIR)/medellin/mdv/sat/wv&WV   wv_uw.colors          K       -5   80  5  cart   1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
 
-#IR-color IR-color  mdvp:://$(DATA_HOST)::/home/disk/mjo/medellin/data.server/mdv/sat/ir&IR                sat_tempK_2.colors K -5   80  5  cart   1 0
-#WV-color WV-color  mdvp:://$(DATA_HOST)::/home/disk/mjo/medellin/data.server/mdv/sat/wv&WV                sat_tempK_2.colors K -5   80  5  cart   1 0
+#IR-color IR-color  mdvp:://$(DATA_HOST)::$(DATA_DIR)/medellin/mdv/sat/ir&IR                sat_tempK_2.colors K -5   80  5  cart   1 0
+#WV-color WV-color  mdvp:://$(DATA_HOST)::$(DATA_DIR)/medellin/mdv/sat/wv&WV                sat_tempK_2.colors K -5   80  5  cart   1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:/home/disk/mjo/medellin/data.server/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
+======== ========  mdvp::static//$(DATA_HOST):0:$(DATA_DIR)/medellin/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
 
 </GRIDS>
 
@@ -1271,7 +1271,7 @@ short_requests = TRUE;
 prod_info = {
    {
     menu_label = "RHI-ticks",
-    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/rhi/cmed",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/rhi/cmed",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = TRUE,
@@ -1284,7 +1284,7 @@ prod_info = {
   , 
   {
     menu_label = "RHI-label",
-    url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/rhi/cmed",
+    url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/rhi/cmed",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
@@ -1294,175 +1294,175 @@ prod_info = {
     request_data_on_zoom = FALSE,
     request_data_on_vert_change = FALSE
   }
-  ,
-  {
-    menu_label = "METARS-simple",
-    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/metar",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = TRUE,
-    minutes_allow_before = 90.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "METARS-full",
-    url = "spdbp:Metar2Symprod:labels//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/metar",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = FALSE,
-    minutes_allow_before = 90.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "SHIP-OBS",
-    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ship_obs",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = TRUE,
-    minutes_allow_before = 120.0,
-    minutes_allow_after = 30.0,
-    text_off_threshold = 0.0001,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "SYN-OBS",
-    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/synop_obs",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = TRUE,
-    minutes_allow_before = 240.0,
-    minutes_allow_after = 6.0,
-    text_off_threshold = 0.0,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "WWLLN-1hour" ,
-    url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/wwlln",
-    data_type = 0,
-    render_type = RENDER_ALL_BEFORE_DATA_TIME,
-    on_by_default = TRUE,
-    minutes_allow_before = 60.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    FALSE,
-    FALSE
-  }
-  ,
-  {
-    menu_label = "WWLLN-3hour" ,
-    url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/wwlln",
-    data_type = 0,
-    render_type = RENDER_ALL_BEFORE_DATA_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 180.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    FALSE,
-    FALSE
-  }
-  ,
-  {
-    menu_label = "WWLLN-6hour" ,
-    url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/wwlln",
-    data_type = 0,
-    render_type = RENDER_ALL_BEFORE_DATA_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 360.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Falcon Track 05-min",
-    url = "spdbp:AcTrack2Symprod:05_min//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ac_posn/falcon",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Falcon Track 10-min",
-    url = "spdbp:AcTrack2Symprod:10_min//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ac_posn/falcon",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Falcon Track 20-min",
-    url = "spdbp:AcTrack2Symprod:20_min//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ac_posn/falcon",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "P3 Track 20-min",
-    url = "spdbp:AcTrack2Symprod:20_min//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ac_posn/p3",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "P3 Track 40-min",
-    url = "spdbp:AcTrack2Symprod:40_min//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ac_posn/p3",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "P3 Track 60-min",
-    url = "spdbp:AcTrack2Symprod:60_min//$(DATA_HOST)::/home/disk/mjo/medellin/data.server/spdb/ac_posn/p3",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
+  // ,
+  // {
+  //   menu_label = "METARS-simple",
+  //   url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/metar",
+  //   data_type = 0,
+  //   render_type = RENDER_LATEST_IN_FRAME,
+  //   on_by_default = TRUE,
+  //   minutes_allow_before = 90.0,
+  //   minutes_allow_after = 0.0,
+  //   text_off_threshold = 0.0,
+  //   request_data_on_zoom = FALSE,
+  //   request_data_on_vert_change = FALSE
+  // }
+  // ,
+  // {
+  //   menu_label = "METARS-full",
+  //   url = "spdbp:Metar2Symprod:labels//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/metar",
+  //   data_type = 0,
+  //   render_type = RENDER_LATEST_IN_FRAME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 90.0,
+  //   minutes_allow_after = 0.0,
+  //   text_off_threshold = 0.0,
+  //   request_data_on_zoom = FALSE,
+  //   request_data_on_vert_change = FALSE
+  // }
+  // ,
+  // {
+  //   menu_label = "SHIP-OBS",
+  //   url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ship_obs",
+  //   data_type = 0,
+  //   render_type = RENDER_LATEST_IN_FRAME,
+  //   on_by_default = TRUE,
+  //   minutes_allow_before = 120.0,
+  //   minutes_allow_after = 30.0,
+  //   text_off_threshold = 0.0001,
+  //   request_data_on_zoom = FALSE,
+  //   request_data_on_vert_change = FALSE
+  // }
+  // ,
+  // {
+  //   menu_label = "SYN-OBS",
+  //   url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/synop_obs",
+  //   data_type = 0,
+  //   render_type = RENDER_LATEST_IN_FRAME,
+  //   on_by_default = TRUE,
+  //   minutes_allow_before = 240.0,
+  //   minutes_allow_after = 6.0,
+  //   text_off_threshold = 0.0,
+  //   request_data_on_zoom = FALSE,
+  //   request_data_on_vert_change = FALSE
+  // }
+  // ,
+  // {
+  //   menu_label = "WWLLN-1hour" ,
+  //   url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/wwlln",
+  //   data_type = 0,
+  //   render_type = RENDER_ALL_BEFORE_DATA_TIME,
+  //   on_by_default = TRUE,
+  //   minutes_allow_before = 60.0,
+  //   minutes_allow_after = 0.0,
+  //   text_off_threshold = 0.0,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,
+  // {
+  //   menu_label = "WWLLN-3hour" ,
+  //   url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/wwlln",
+  //   data_type = 0,
+  //   render_type = RENDER_ALL_BEFORE_DATA_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 180.0,
+  //   minutes_allow_after = 0.0,
+  //   text_off_threshold = 0.0,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,
+  // {
+  //   menu_label = "WWLLN-6hour" ,
+  //   url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/wwlln",
+  //   data_type = 0,
+  //   render_type = RENDER_ALL_BEFORE_DATA_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 360.0,
+  //   minutes_allow_after = 0.0,
+  //   text_off_threshold = 0.0,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,                        
+  // {
+  //   menu_label = "Falcon Track 05-min",
+  //   url = "spdbp:AcTrack2Symprod:05_min//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ac_posn/falcon",
+  //   data_type = 0,
+  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 15.0,
+  //   minutes_allow_after = 15.0,
+  //   text_off_threshold = 0.4,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,                        
+  // {
+  //   menu_label = "Falcon Track 10-min",
+  //   url = "spdbp:AcTrack2Symprod:10_min//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ac_posn/falcon",
+  //   data_type = 0,
+  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 15.0,
+  //   minutes_allow_after = 15.0,
+  //   text_off_threshold = 0.4,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,                        
+  // {
+  //   menu_label = "Falcon Track 20-min",
+  //   url = "spdbp:AcTrack2Symprod:20_min//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ac_posn/falcon",
+  //   data_type = 0,
+  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 15.0,
+  //   minutes_allow_after = 15.0,
+  //   text_off_threshold = 0.4,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,                        
+  // {
+  //   menu_label = "P3 Track 20-min",
+  //   url = "spdbp:AcTrack2Symprod:20_min//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ac_posn/p3",
+  //   data_type = 0,
+  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 15.0,
+  //   minutes_allow_after = 15.0,
+  //   text_off_threshold = 0.4,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,                        
+  // {
+  //   menu_label = "P3 Track 40-min",
+  //   url = "spdbp:AcTrack2Symprod:40_min//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ac_posn/p3",
+  //   data_type = 0,
+  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 15.0,
+  //   minutes_allow_after = 15.0,
+  //   text_off_threshold = 0.4,
+  //   FALSE,
+  //   FALSE
+  // }
+  // ,                        
+  // {
+  //   menu_label = "P3 Track 60-min",
+  //   url = "spdbp:AcTrack2Symprod:60_min//$(DATA_HOST)::$(DATA_DIR)/medellin/spdb/ac_posn/p3",
+  //   data_type = 0,
+  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+  //   on_by_default = FALSE,
+  //   minutes_allow_before = 15.0,
+  //   minutes_allow_after = 15.0,
+  //   text_off_threshold = 0.4,
+  //   FALSE,
+  //   FALSE
+  // }
 };
 
 </SYMPRODS> 

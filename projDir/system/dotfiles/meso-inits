@@ -1,0 +1,111 @@
+# Mesoscale Customizations to .cshrc file
+
+# called as last thing in .cshrc file
+unset mychoice
+set mychoice=openwin
+
+#linux color
+alias  ls 'ls -ahC --color'
+
+alias help man
+alias rm rm -i
+alias cp cp -i
+alias mv mv -i
+alias zsocket "source /home/disk/blitz/bin/zsocket.internal"
+alias xanim xanim +V0
+
+#default the printer to the LaserJet in 611
+setenv LPDEST lj611
+
+#set environment variable for tsdis toolkit config and ancillary data files
+setenv TSDISTK /home/disk/blitz/src/toolkit
+#echo $HOST | grep doppler > /dev/null
+# FOR 64-BIT MACHINES
+if ($HOST == "atoll"   || $HOST == "anvil"     || $HOST == "blitz"   || $HOST == "bob" || \
+   $HOST == "cband"   || $HOST == "downdraft" || $HOST == "flood"   || $HOST == "graupel" || \
+   $HOST == "kband"   || $HOST == "mcs"       || $HOST == "mjo"     || $HOST == "radar" || \
+   $HOST == "sband"   || $HOST == "stellar"   || $HOST == "xband" ) then 
+#  setenv GMTHOME /usr/lib/gmt
+   setenv GMT_SHAREDIR /home/disk/blitz/data/gmt
+   #setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit/TSDISorbitViewer
+   #setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-ifort11
+   setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-6.0.0w
+   set path = ($path /usr/sbin /home/disk/sys/local/linux64/ncarg-ifort10/bin \
+	    /home/disk/meso-home/meso/lrose/bin \
+	    /home/disk/meso-home/meso/cidd/bin \
+       	    /usr/local/ncarg/bin /rdss/bin /zebra5/bin \
+	    /home/disk/blitz/bin \
+	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/system/scripts \
+	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/display/scripts \
+	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/partrain/scripts \
+	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/ingest/scripts \
+	    /home/disk/meso-home/meso/bin /home/disk/blitz/src/rdss/bin \
+	    /home/disk/mjo/map/bin /home/disk/blitz/src/mcidas-lite/mclite/bin \
+	    /home/disk/blitz/src/RIP4 /home/disk/mm5rt/bin /opt/opengrads )
+# FOR 32-BIT MACHINES
+else    
+   # setenv GMTHOME /usr/local/gmt
+   setenv GMT_SHAREDIR /home/disk/blitz/data/gmt
+   #setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit_32/TSDISorbitViewer
+   setenv NCARG_ROOT /home/disk/sys/local/linux/ncarg-ifort10
+   set path = ($path /usr/sbin /home/disk/sys/local/linux/ncarg-ifort10/bin \
+	    /usr/local/ncarg/bin /rdss/bin /zebra5/bin \
+	    /home/disk/blitz/bin /home/disk/meso-home/meso/bin \
+	    /home/disk/blitz/src/rdss/bin /home/disk/mjo/map/bin \
+	    /home/disk/blitz/src/mcidas-lite/mclite/bin /home/disk/blitz/src/RIP4 \
+	    /home/disk/mm5rt/bin /home/disk/blitz/src/hawk/hawk-LATEST/bin \
+	    /home/disk/blitz/src/titan5-20110503/bin)
+endif 
+
+#LJM on rainband
+#setenv NCARG_ROOT /usr/local/ncl
+
+#set environment variable for RIP4 software
+setenv RIP_ROOT /home/disk/blitz/src/RIP4
+
+# TKIO settings
+#setenv TKIO /home/disk/blitz/src/tkio
+#set CLASSPATH = ($CLASSPATH $TKIO/classes)
+
+# UDUNITS
+setenv UDUNITS_PATH /usr/local/etc/udunits.dat
+
+# CIDD settings
+setenv DATA_DIR /home/disk/mjo/data.server
+#setenv DATA_HOST mjo.atmos.washington.edu
+
+# RSL setting
+setenv RSL_PATH /home/disk/blitz
+
+# ECNWF settings
+#setenv PYTHONPATH /usr/local/ecmwfapi
+if($?PYTHONPATH) then
+  set PYTHONPATH = ($PYTHONPATH /usr/local/lib/python2.7/dist-packages)
+else
+  set PYTHONPATH = (/usr/local/lib/python2.7/dist-packages)
+endif
+
+if ($?prompt == 0) exit
+
+set history = 200
+
+# Define prompt to include history number and host name
+set prompt =  "`hostname | sed -e 's/\..*//'`:`whoami`:\!>"
+
+# local shell scripts for commands
+alias xdump /home/disk/meso-home/meso/bin/xdump
+alias xdisp /home/disk/meso-home/meso/bin/xdisp
+#alias nw-stations /usr/local/ldm/loops/stations/nw-stations
+#alias wa-stations /usr/local/ldm/loops/stations/wa-stations
+#alias puget-stations /usr/local/ldm/loops/stations/puget-stations
+#alias eject-exabyte 'mt -f /dev/nrst1 offline'
+#alias wxl 'cd /usr/local/ldm/loops'
+#alias ts /usr/local/ldm/loops/stations/ts
+
+# load user custom initializations
+# if there is a local .alias file, else do nothing
+if ( -f $HOME/.alias ) then
+	source $HOME/.alias 
+endif
+
+

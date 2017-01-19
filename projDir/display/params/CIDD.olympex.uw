@@ -751,7 +751,8 @@ cidd.debug2_flag:           0
 # temporal rounding. 
 
 #srb comment out for real-time use
-cidd.demo_time:  21:00 11/12/15
+#cidd.demo_time:  21:00 11/12/15
+cidd.demo_time:  15:00 12/05/15
 
 # Set times to the nearest value divisible by the number of seconds
 cidd.temporal_rounding:    1

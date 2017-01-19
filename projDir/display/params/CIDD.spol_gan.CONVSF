@@ -380,7 +380,7 @@ cidd.debug2_flag:           0
 # demo time. The movie frame will be centered on the time after applying
 # temporal rounding. 
 
-# cidd.demo_time:  1:00 01/16/08
+cidd.demo_time:  12:00 10/16/2011
 
 # Set times to the nearest value divisible by the number of seconds
 cidd.temporal_rounding:    1

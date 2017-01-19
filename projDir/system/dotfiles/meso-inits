@@ -21,10 +21,10 @@ setenv LPDEST lj611
 setenv TSDISTK /home/disk/blitz/src/toolkit
 #echo $HOST | grep doppler > /dev/null
 # FOR 64-BIT MACHINES
-if ($HOST == "atoll"   || $HOST == "anvil"     || $HOST == "blitz"   || $HOST == "bob" || \
-   $HOST == "cband"   || $HOST == "downdraft" || $HOST == "flood"   || $HOST == "graupel" || \
-   $HOST == "kband"   || $HOST == "mcs"       || $HOST == "mjo"     || $HOST == "radar" || \
-   $HOST == "sband"   || $HOST == "stellar"   || $HOST == "xband" ) then 
+#if ($HOST == "atoll"   || $HOST == "anvil"     || $HOST == "blitz"   || $HOST == "bob" || \
+#   $HOST == "cband"   || $HOST == "downdraft" || $HOST == "flood"   || $HOST == "graupel" || \
+#   $HOST == "kband"   || $HOST == "mcs"       || $HOST == "mjo"     || $HOST == "radar" || \
+#   $HOST == "sband"   || $HOST == "stellar"   || $HOST == "xband" ) then 
 #  setenv GMTHOME /usr/lib/gmt
    setenv GMT_SHAREDIR /home/disk/blitz/data/gmt
    #setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit/TSDISorbitViewer
@@ -34,28 +34,28 @@ if ($HOST == "atoll"   || $HOST == "anvil"     || $HOST == "blitz"   || $HOST ==
 	    /home/disk/meso-home/meso/lrose/bin \
 	    /home/disk/meso-home/meso/cidd/bin \
        	    /usr/local/ncarg/bin /rdss/bin /zebra5/bin \
-	    /home/disk/blitz/bin \
 	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/system/scripts \
 	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/display/scripts \
 	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/partrain/scripts \
 	    /home/disk/meso-home/meso/git/lrose-uw-general/projDir/ingest/scripts \
+	    /home/disk/blitz/bin \
 	    /home/disk/meso-home/meso/bin /home/disk/blitz/src/rdss/bin \
 	    /home/disk/mjo/map/bin /home/disk/blitz/src/mcidas-lite/mclite/bin \
 	    /home/disk/blitz/src/RIP4 /home/disk/mm5rt/bin /opt/opengrads )
 # FOR 32-BIT MACHINES
-else    
-   # setenv GMTHOME /usr/local/gmt
-   setenv GMT_SHAREDIR /home/disk/blitz/data/gmt
-   #setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit_32/TSDISorbitViewer
-   setenv NCARG_ROOT /home/disk/sys/local/linux/ncarg-ifort10
-   set path = ($path /usr/sbin /home/disk/sys/local/linux/ncarg-ifort10/bin \
-	    /usr/local/ncarg/bin /rdss/bin /zebra5/bin \
-	    /home/disk/blitz/bin /home/disk/meso-home/meso/bin \
-	    /home/disk/blitz/src/rdss/bin /home/disk/mjo/map/bin \
-	    /home/disk/blitz/src/mcidas-lite/mclite/bin /home/disk/blitz/src/RIP4 \
-	    /home/disk/mm5rt/bin /home/disk/blitz/src/hawk/hawk-LATEST/bin \
-	    /home/disk/blitz/src/titan5-20110503/bin)
-endif 
+#else    
+#   # setenv GMTHOME /usr/local/gmt
+#   setenv GMT_SHAREDIR /home/disk/blitz/data/gmt
+#   #setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit_32/TSDISorbitViewer
+#   setenv NCARG_ROOT /home/disk/sys/local/linux/ncarg-ifort10
+#   set path = ($path /usr/sbin /home/disk/sys/local/linux/ncarg-ifort10/bin \
+#	    /usr/local/ncarg/bin /rdss/bin /zebra5/bin \
+#	    /home/disk/blitz/bin /home/disk/meso-home/meso/bin \
+#	    /home/disk/blitz/src/rdss/bin /home/disk/mjo/map/bin \
+#	    /home/disk/blitz/src/mcidas-lite/mclite/bin /home/disk/blitz/src/RIP4 \
+#	    /home/disk/mm5rt/bin /home/disk/blitz/src/hawk/hawk-LATEST/bin \
+#	    /home/disk/blitz/src/titan5-20110503/bin)
+#endif 
 
 #LJM on rainband
 #setenv NCARG_ROOT /usr/local/ncl

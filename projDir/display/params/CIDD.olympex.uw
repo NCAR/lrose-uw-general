@@ -28,12 +28,12 @@ field_list = {
   { "NEXRAD", "NEXR_" },
 #  { "DOW_HI_QC",  "DOWHIQ_" },
   { "DOW_LO_QC",  "DOWLOQ_" },
-  { "DOW_RT_CFR", "DOWRTC_" },
-  { "DOW_RT_MDV", "DOWRTM_" },
+#  { "DOW_RT_CFR", "DOWRTC_" },
+#  { "DOW_RT_MDV", "DOWRTM_" },
 #  { "DOW_QC_MDV", "DOWQCM_" },
 #  { "DOW_LO_CFR", "DOWLOC_" },
 #  { "DOW_LO_MDV", "DOWLOM_" },
-  { "NPOL", "NPOL_" },
+#  { "NPOL", "NPOL_" },
   { "NPOL_QC2", "NPOLQC2_" },
   { "XBAND", "XBAND_" },
   { "WRF", "WRF_" },
@@ -227,11 +227,20 @@ XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer
 XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-XBAND_DBZ    XBAND_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_VEL    XBAND_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband/sur&VEL        vel_k.colors      m/s    -5 80 5 radial 1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_DBZ    XBAND_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_UDBZ   XBAND_UDBZ   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_VEL    XBAND_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&VEL   vel_k.colors      m/s    -5 80 5 radial 1 0
+XBAND_WIDTH  XBAND_WIDTH  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
 
+XBAND_ZDR    XBAND_ZDR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
+XBAND_PHIDP  XBAND_PHIDP  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_UPHIDP XBAND_UPHIDP mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_RHOHV  XBAND_RHOHV  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
+
+XBAND_SQI    XBAND_SQI    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&SQI    ncp.colors        -      -5 80 5 radial 1 0
+XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
        
 # DOW
 
@@ -1795,19 +1804,19 @@ prod_info = {
     request_data_on_zoom = FALSE,
     request_data_on_vert_change = FALSE
    }
-  , 
-   {
-    menu_label = "RHI-NPOL-QC2",
-    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/npol_qc2",
-    data_type = 0,
-    render_type = RENDER_ALL_VALID,
-    on_by_default = TRUE,
-    minutes_allow_before = 20,
-    minutes_allow_after = 10,
-    text_off_threshold = 0.4,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-   }
+  // , 
+  //  {
+  //   menu_label = "RHI-NPOL-QC2",
+  //   url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/npol_qc2",
+  //   data_type = 0,
+  //   render_type = RENDER_ALL_VALID,
+  //   on_by_default = TRUE,
+  //   minutes_allow_before = 20,
+  //   minutes_allow_after = 10,
+  //   text_off_threshold = 0.4,
+  //   request_data_on_zoom = FALSE,
+  //   request_data_on_vert_change = FALSE
+  //  }
   , 
    {
     menu_label = "RHI-DOW",
@@ -1816,7 +1825,6 @@ prod_info = {
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
     minutes_allow_before = 20,
-      
     minutes_allow_after = 10,
     text_off_threshold = 0.4,
     request_data_on_zoom = FALSE,
@@ -1851,7 +1859,7 @@ prod_info = {
    //, 
    {
     menu_label = "RHI-XBAND",
-    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/xband",
+    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/xband_all",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,

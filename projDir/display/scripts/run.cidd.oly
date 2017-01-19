@@ -27,5 +27,4 @@ xset fp= /usr/X11R6/lib/X11/fonts/misc/,/usr/X11R6/lib/X11/fonts/75dpi/,/usr/X11
     
 setenv PROJ_DIR /home/disk/meso-home/meso/git/lrose-uw-general/projDir
 
-/home/disk/blitz/bin/CIDD -p /home/disk/meso-home/meso/git/lrose-uw-general/projDir/display/params/CIDD.olympex.uw -v 2
-
+CIDD -p /home/disk/meso-home/meso/git/lrose-uw-general/projDir/display/params/CIDD.olympex.uw 

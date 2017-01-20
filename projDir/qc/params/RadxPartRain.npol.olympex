@@ -186,7 +186,7 @@ input_file_search_ext = "nc";
 // Type: string
 //
 
-input_file_search_substr = "SUR";
+input_file_search_substr = "PPI";
 
 //======================================================================
 //
@@ -207,54 +207,6 @@ input_file_search_substr = "SUR";
 //
 
 aggregate_sweep_files_on_read = FALSE;
-
-///////////// remove_rays_with_antenna_transitions ////
-//
-// Option to remove rays taken while the antenna was in transition.
-//
-// If true, rays with the transition flag set will not be used. The 
-//   transiton flag is set when the antenna is in transtion between one 
-//   sweep and the next.
-//
-//
-// Type: boolean
-//
-
-remove_rays_with_antenna_transitions = FALSE;
-
-///////////// transition_nrays_margin /////////////////
-//
-// Number of transition rays to include as a margin.
-//
-// Sometimes the transition flag is turned on too early in a transition, 
-//   on not turned off quickly enough after a transition. If you set this 
-//   to a number greater than 0, that number of rays will be included at 
-//   each end of the transition, i.e. the transition will effectively be 
-//   shorter at each end by this number of rays.
-//
-//
-// Type: int
-//
-
-transition_nrays_margin = 0;
-
-///////////// trim_surveillance_sweeps_to_360deg //////
-//
-// Option to trip surveillance sweeps so that they only cover 360 
-//   degrees.
-//
-// Some sweeps will have rays which cover more than a 360-degree 
-//   rotation. Often these include antenna transitions. If this is set to 
-//   true, rays are trimmed off either end of the sweep to limit the 
-//   coverage to 360 degrees. The median elevation angle is computed and 
-//   the end ray which deviates from the median in elevation is trimmed 
-//   first.
-//
-//
-// Type: boolean
-//
-
-trim_surveillance_sweeps_to_360deg = FALSE;
 
 ///////////// set_max_range ///////////////////////////
 //
@@ -1343,7 +1295,7 @@ sounding_search_time_margin_secs = 43200;
 // Type: string
 //
 
-sounding_location_name = "KPOL";
+sounding_location_name = "NPOL";
 
 ///////////// sounding_check_pressure_range ///////////
 //
@@ -2559,7 +2511,7 @@ zdr_bias_write_results_to_spdb = TRUE;
 // Type: string
 //
 
-zdr_bias_spdb_output_url = "spdbp:://bob.atmos.washington.edu:0:olympex/spdb/npol/zdr_bias";
+zdr_bias_spdb_output_url = "spdbp:://bob.atmos.washington.edu:0:olympex/qc/spdb/zdr_bias/npol";
 
 //======================================================================
 //
@@ -2861,7 +2813,7 @@ self_consistency_max_phase_shift_on_backscatter = 4;
 //     SELF_CON_ZDR_POLYMONIAL_METHOD
 //
 
-self_consisteny_method = SELF_CON_ZDR_POWER_LAW_METHOD;
+self_consistency_method = SELF_CON_ZDR_POWER_LAW_METHOD;
 
 ///////////// self_consistency_kdp_z_expon ////////////
 //
@@ -2995,7 +2947,7 @@ self_consistency_write_results_to_spdb = TRUE;
 // Type: string
 //
 
-self_consistency_spdb_output_url = "spdbp:://bob.atmos.washington.edu:0:olympex/spdb/npol/selfcon";
+self_consistency_spdb_output_url = "spdbp:://bob.atmos.washington.edu:0:olympex/qc/spdb/selfcon/npol";
 
 ///////////// self_consistency_debug //////////////////
 //
@@ -3471,7 +3423,7 @@ write_output_volume = TRUE;
 // Type: string
 //
 
-output_dir = "$(DATA_DIR)/olympex/cfradial/qc/npol/partrain";
+output_dir = "$(DATA_DIR)/olympex/qc/cfradial/partrain/npol/sur";
 
 ///////////// output_filename_mode ////////////////////
 //

@@ -75,15 +75,15 @@
 
 # NPOL MOMENTS
 
-ZZ        ZZ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&ZZ       dbz.colors        dBZ    -5 80 5 radial 1 0
-CZ        CZ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&CZ       dbz.colors        dBZ    -5 80 5 radial 1 0
-VR        VR       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&VR       vel_spol.colors   m/s    -5 80 5 radial 1 0
-SW        SW       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&SW       width.colors      m/s    -5 80 5 radial 1 0
-DR        DR       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&DR       zdr.colors        dB     -5 80 5 radial 1 0
-RH        RH       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&RH       ldr.colors        _      -5 80 5 radial 1 0
-FH        FH       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&FH       ldr.colors        _      -5 80 5 radial 1 0
-PH        PH       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&PH       phidp.colors      deg    -5 80 5 radial 1 0
-KD        KD       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&KD       kdp_sband.colors  deg/km -5 80 5 radial 1 0     
+ZZ        ZZ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&ZZ       dbz.colors        dBZ    -5 80 5 radial 1 0
+CZ        CZ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&CZ       dbz.colors        dBZ    -5 80 5 radial 1 0
+VR        VR       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&VR       vel_spol.colors   m/s    -5 80 5 radial 1 0
+SW        SW       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&SW       width.colors      m/s    -5 80 5 radial 1 0
+DR        DR       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&DR       zdr.colors        dB     -5 80 5 radial 1 0
+RH        RH       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&RH       ldr.colors        _      -5 80 5 radial 1 0
+FH        FH       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&FH       ldr.colors        _      -5 80 5 radial 1 0
+PH        PH       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&PH       phidp.colors      deg    -5 80 5 radial 1 0
+KD        KD       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&KD       kdp_sband.colors  deg/km -5 80 5 radial 1 0     
 
 ======== ========  mdvp::static//$(DATA_HOST):0:ifloods/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 ======== ========  mdvp::static//$(DATA_HOST):0:ifloods/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
@@ -91,8 +91,8 @@ KD        KD       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&KD       kdp_sban
 
 # NPOL SNR and SQ
 
-SN        SN       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&SN       snr.colors        dB     -5 80 5 radial 1 0
-SQ        SQ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&SQ       snr.colors        _      -5 80 5 radial 1 0
+SN        SN       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&SN       snr.colors        dB     -5 80 5 radial 1 0
+SQ        SQ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&SQ       snr.colors        _      -5 80 5 radial 1 0
 
 ======== ========  mdvp::static//$(DATA_HOST):0:ifloods/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 ======== ========  mdvp::static//$(DATA_HOST):0:ifloods/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
@@ -101,7 +101,7 @@ SQ        SQ       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&SQ       snr.colo
 
 # RAIN RATE
 
-RR        RR       mdvp:://$(DATA_HOST):0:ifloods/cfradial/ppi&RR       precip_color      none   -5 80 5 radial 1 0
+RR        RR       mdvp:://$(DATA_HOST):0:ifloods/cfradial/npol/sur&RR       precip_color      none   -5 80 5 radial 1 0
 
 ======== ========  mdvp::static//$(DATA_HOST):0:ifloods/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
@@ -241,7 +241,7 @@ cidd.debug2_flag:           0
 # demo time. The movie frame will be centered on the time after applying
 # temporal rounding. 
 
-cidd.demo_time:  00:00 05/05/2013
+cidd.demo_time:  00:00 05/26/2013
 
 # Set times to the nearest value divisible by the number of seconds
 cidd.temporal_rounding:    1

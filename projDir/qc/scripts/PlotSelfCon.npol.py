@@ -2,7 +2,7 @@
 
 #===========================================================================
 #
-# Produce plots for self consistency analysis for KDDC
+# Produce plots for self consistency analysis for NPOL
 #
 #===========================================================================
 
@@ -38,15 +38,11 @@ def main():
                       help='Set verbose debugging on')
     parser.add_option('--sc_file',
                       dest='scFilePath',
-                      default='../data/pecan/selfcon.kddc.txt',
+                      default='../data/olympex/selfcon.npol.txt',
                       help='Self consistency results file path')
-    parser.add_option('--cp_file',
-                      dest='cpFilePath',
-                      default='../data/pecan/spol_pecan_CP_analysis_20150524_000021.txt',
-                      help='CP results file path')
     parser.add_option('--title',
                       dest='title',
-                      default='SELF CONSISTENCY FOR Z CHECK - KDDC',
+                      default='SELF CONSISTENCY FOR Z CHECK - NPOL',
                       help='Title for plot')
     parser.add_option('--width',
                       dest='figWidthMm',
@@ -73,7 +69,6 @@ def main():
     if (options.debug == True):
         print >>sys.stderr, "Running %prog"
         print >>sys.stderr, "  scFilePath: ", options.scFilePath
-        print >>sys.stderr, "  cpFilePath: ", options.cpFilePath
         print >>sys.stderr, "  lenMean: ", options.lenMean
         print >>sys.stderr, "  minElev: ", options.minElev
 
@@ -87,19 +82,9 @@ def main():
 
     scData, scTimes = readInputData(options.scFilePath, scHdrs, scData)
 
-    # read in column headers for CP results
-
-    iret, cpHdrs, cpData = readColumnHeaders(options.cpFilePath)
-    if (iret != 0):
-        sys.exit(-1)
-
-    # read in data for CP results
-
-    cpData, cpTimes = readInputData(options.cpFilePath, cpHdrs, cpData)
-
     # render the plot
     
-    doPlot(scData, scTimes, cpData, cpTimes)
+    doPlot(scData, scTimes)
 
     sys.exit(0)
     
@@ -198,7 +183,7 @@ def movingAverage(values, window):
 ########################################################################
 # Plot
 
-def doPlot(scData, scTimes, cpData, cpTimes):
+def doPlot(scData, scTimes):
 
     widthIn = float(options.figWidthMm) / 25.4
     htIn = float(options.figHeightMm) / 25.4
@@ -250,13 +235,13 @@ def doPlot(scData, scTimes, cpData, cpTimes):
         
     # mean bias for project
     
-    startTime = datetime.datetime(2015, 05, 28, 0, 0, 0)
-    endTime = datetime.datetime(2015, 07, 17, 0, 0, 0)
+    startTime = datetime.datetime(2015, 11, 12, 0, 0, 0)
+    endTime = datetime.datetime(2015, 12, 10, 0, 0, 0)
     meanBiasProject = computePeriodStats(biasTimes, validDbzBias, startTime, endTime)
-    print >>sys.stderr, "KDDC mean bias for project, May 28 - July 17: ", meanBiasProject
+    print >>sys.stderr, "NPOL mean bias for project, Nov 12 - Dec 10: ", meanBiasProject
 
-    meanTimes =  [ datetime.datetime(2015, 05, 28, 00, 00, 00), \
-                   datetime.datetime(2015, 07, 17, 00, 00, 00) ]
+    meanTimes =  [ datetime.datetime(2015, 11, 12, 00, 00, 00), \
+                   datetime.datetime(2015, 12, 10, 00, 00, 00) ]
 
     meanBias = [ meanBiasProject, meanBiasProject ]
 

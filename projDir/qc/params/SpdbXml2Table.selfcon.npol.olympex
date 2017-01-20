@@ -53,7 +53,7 @@ debug = DEBUG_OFF;
 // Type: string
 //
 
-input_url = "spdbp:://hail:0:$(project)/qc/spdb/kddc/selfcon";
+input_url = "spdbp:://bob.atmos.washington.edu:0:olympex/qc/spdb/selfcon/npol";
 
 ///////////// start_time //////////////////////////////
 //
@@ -76,8 +76,8 @@ input_url = "spdbp:://hail:0:$(project)/qc/spdb/kddc/selfcon";
 
 start_time = {
     year = 2015,
-    month = 5,
-    day = 24,
+    month = 11,
+    day = 12,
     hour = 0,
     min = 0,
     sec = 0
@@ -104,8 +104,8 @@ start_time = {
 
 end_time = {
     year = 2015,
-    month = 7,
-    day = 17,
+    month = 12,
+    day = 10,
     hour = 0,
     min = 0,
     sec = 0

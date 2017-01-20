@@ -42,11 +42,11 @@ def main():
                       help='Set verbose debugging on')
     parser.add_option('--bias_file',
                       dest='biasFilePath',
-                      default='../data/pecan/zdr_bias.kddc.txt',
+                      default='../data/olympex/zdr_bias.npol.txt',
                       help='File path for bias results')
     parser.add_option('--title',
                       dest='title',
-                      default='ZDR BIAS FROM ICE AND BRAGG',
+                      default='NPOL ZDR BIAS FROM ICE',
                       help='Title for plot')
     parser.add_option('--width',
                       dest='figWidthMm',
@@ -62,11 +62,11 @@ def main():
                       help='Len of moving mean filter')
     parser.add_option('--start',
                       dest='startTime',
-                      default='2015 05 28 00 00 00',
+                      default='2015 11 05 00 00 00',
                       help='Start time for XY plot')
     parser.add_option('--end',
                       dest='endTime',
-                      default='2015 07 17 00 00 00',
+                      default='2016 01 15 00 00 00',
                       help='End time for XY plot')
     
     (options, args) = parser.parse_args()
@@ -254,6 +254,8 @@ def prepareData(biasData, biasTimes):
     (dailyTimeIce, dailyValIce) = computeDailyStats(validIceBtimes, validIceVals)
     (dailyTimeBragg, dailyValBragg) = computeDailyStats(validBraggBtimes, validBraggVals)
 
+    return
+
     # site temp
 
     global tempSite, validTempSite
@@ -342,7 +344,7 @@ def doPlot():
     timeRangeMargin = timeRange / 50
     #ax1a.set_xlim(startTime - timeRangeMargin, endTime + timeRangeMargin)
     ax1a.set_xlim(startTime - oneDay, endTime + oneDay)
-    title = "KDDC ZDR bias in ice and Bragg"
+    title = "NPOL ZDR bias in ice"
     ax1a.set_title(title)
 
     ax1a.plot(validBraggBtimes, validBraggVals, \
@@ -357,29 +359,29 @@ def doPlot():
     
     #ax1a.plot(tempTimes, tempNorm, \
     #          label = 'Norm-temps', color='orange', linewidth=1)
-    ax1a.plot(btimes, tempNorm, \
-              label = 'Norm-temps', color='orange', linewidth=1)
+    #ax1a.plot(btimes, tempNorm, \
+    #          label = 'Norm-temps', color='orange', linewidth=1)
     
     configDateAxis(ax1a, -9999, 9999, "ZDR Bias (dB)", 'upper right')
 
     # ZDR vs temp
 
-    label2a = "KDDC ZDR Bias In Ice = " + ("%.5f" % ww[0]) + " * temp + " + ("%.3f" % ww[1])
-    ax2a.plot(tempIceVals, tempIceBias, 
-              "x", label = label2a, color = 'blue')
-    ax2a.plot(tempRegrX, tempRegrY, linewidth=3, color = 'blue')
+#    label2a = "NPOL ZDR Bias In Ice = " + ("%.5f" % ww[0]) + " * temp + " + ("%.3f" % ww[1])
+#    ax2a.plot(tempIceVals, tempIceBias, 
+#              "x", label = label2a, color = 'blue')
+#    ax2a.plot(tempRegrX, tempRegrY, linewidth=3, color = 'blue')
     
-    legend2a = ax2a.legend(loc="upper left", ncol=4)
-    for label2a in legend2a.get_texts():
-        label2a.set_fontsize(12)
-        ax2a.set_xlabel("Site temperature (C)")
-        ax2a.set_ylabel("ZDR Bias (dB)")
-        ax2a.grid(True)
-        ax2a.set_ylim([-0.5, 0.5])
-        ax2a.set_xlim([minTemp - 1, maxTemp + 1])
-        title2a = "KDDC ZDR Bias In Ice Vs Temp\n" + str(startTime) + " - " + str(endTime)
-        #title2a = "KDDC ZDR Bias In Ice Vs Temp"
-        ax2a.set_title(title2a)
+#    legend2a = ax2a.legend(loc="upper left", ncol=4)
+#    for label2a in legend2a.get_texts():
+#        label2a.set_fontsize(12)
+#        ax2a.set_xlabel("Site temperature (C)")
+#        ax2a.set_ylabel("ZDR Bias (dB)")
+#        ax2a.grid(True)
+#        ax2a.set_ylim([-0.5, 0.5])
+#        ax2a.set_xlim([minTemp - 1, maxTemp + 1])
+#        title2a = "NPOL ZDR Bias In Ice Vs Temp\n" + str(startTime) + " - " + str(endTime)
+        #title2a = "NPOL ZDR Bias In Ice Vs Temp"
+#        ax2a.set_title(title2a)
 
     fig1.autofmt_xdate()
     fig1.tight_layout()

@@ -42,7 +42,8 @@ field_list = {
 #  { "D3R", "D3R_" },
   { "D3R_QC", "D3RQC_" },
   { "CART_NPOL_RHI", "CARTNPOLRHI_" },
-  { "CART_NPOL_SUR", "CARTNPOLSUR_" }
+  { "CART_NPOL_SUR", "CARTNPOLSUR_" },
+  { "NPOLCOMP_", "NPOLCOMP_" }
 };
 
 </GUI_CONFIG>
@@ -618,6 +619,11 @@ CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv
 CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
 CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
 CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+NPOLCOMP_DBZ NPOLCOMP_DBZ  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&DBZ   dbz.colors   dBZ        -5 80 5 cart 1 0
+NPOLCOMP_ZDR NPOLCOMP_ZDR  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&ZDR   zdr.colors   dB        -5 80 5 cart 1 0
+NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 #CZ_CART   CZ_CART   mdvp:://$(DATA_HOST):0:olympex/mdv/sur&CZ       dbz.colors       dBZ    -5 80 5 radial 1 0
 #VR_CART   VR_CART   mdvp:://$(DATA_HOST):0:olympex/mdv/sur&VR       vel_spol.colors  m/s    -5 80 5 radial 1 0

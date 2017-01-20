@@ -448,7 +448,6 @@ threshold_value_for_min_pts = 20;
 ///////////// output_dir //////////////////////////////
 //
 // Directory for output files.
-//
 // Files will be named by the date.
 //
 //
@@ -468,7 +467,7 @@ output_dir = "$(DATA_DIR)/olympex/radar_comparison/npol_klgx";
 // Type: string
 //
 
-output_file_prefix = "KGLX_minus_NPOL";
+output_file_prefix = "NPOL_minus_KGLX_minus_";
 
 ///////////// output_file_ext /////////////////////////
 //

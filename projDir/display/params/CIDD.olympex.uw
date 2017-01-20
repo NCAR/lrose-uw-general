@@ -194,7 +194,7 @@ NPOLQC2_N2        NPOL_QC2_N2        mdvp:://$(DATA_HOST):0:olympex/cfradial/mom
 NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 NPOLQC2_PID  NPOLQC2_PID mdvp:://$(DATA_HOST):0:olympex/qc/cfradial/partrain/npol/sur&PID  pid.colors  none -5 80 5 radial 1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_PID_TEMP   NPOLQC2_PID_TEMP mdvp:://$(DATA_HOST):0:olympex/qc/cfradial/partrain/npol/sur&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
 NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 

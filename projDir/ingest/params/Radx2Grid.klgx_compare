@@ -127,7 +127,7 @@ n_compute_threads = 8;
 // Type: string
 //
 
-input_dir = "$(DATA_DIR)/olympex/cfradial/klgx/sur";
+input_dir = "$(DATA_DIR)/olympex/cfradial/moments/klgx";
 
 ///////////// mode ////////////////////////////////////
 //
@@ -2403,7 +2403,7 @@ conv_strat_write_debug_fields = FALSE;
 // Type: string
 //
 
-output_dir = "$(DATA_DIR)/olympex/mdv/cart/npol_compare";
+output_dir = "$(DATA_DIR)/olympex/mdv/cart/klgx_compare";
 
 ///////////// specify_output_filename /////////////////
 //

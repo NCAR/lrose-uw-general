@@ -42,7 +42,7 @@ debug = DEBUG_OFF;
 // Type: string
 //
 
-instance = "spol_kddc";
+instance = "npol_klgx";
 
 //======================================================================
 //
@@ -192,7 +192,7 @@ sleep_after_trigger = 0;
 // Type: string
 //
 
-primary_url = "mdvp:://localhost::pecan/raw/mdv/radarCart/spol/compare";
+primary_url = "$(DATA_DIR)/olympex/mdv/cart/npol_compare";
 
 ///////////// primary_field_name //////////////////////
 //
@@ -216,7 +216,7 @@ primary_field_name = "DBZ";
 // Type: string
 //
 
-secondary_url = "mdvp:://localhost::pecan/raw/mdv/radarCart/kddc/compare";
+secondary_url = "$(DATA_DIR)/olympex/mdv/cart/klgx_compare";
 
 ///////////// secondary_field_name ////////////////////
 //
@@ -288,10 +288,10 @@ set_bounding_box = TRUE;
 //
 
 bounding_box = {
-    min_lat = 37.85,
-    min_lon = -100.7,
-    max_lat = 38.92,
-    max_lon = -98.38
+    min_lat = 46.0,
+    min_lon = -126.0,
+    max_lat = 47.5,
+    max_lon = -124.25
 };
 
 ///////////// request_composite ///////////////////////
@@ -326,7 +326,7 @@ set_vlevel_limits = TRUE;
 // Type: double
 //
 
-lower_vlevel = 2.9;
+lower_vlevel = 0.9;
 
 ///////////// upper_vlevel ////////////////////////////
 //
@@ -336,7 +336,7 @@ lower_vlevel = 2.9;
 // Type: double
 //
 
-upper_vlevel = 4.1;
+upper_vlevel = 1.6;
 
 ///////////// set_range_limits ////////////////////////
 //
@@ -455,7 +455,7 @@ threshold_value_for_min_pts = 20;
 // Type: string
 //
 
-output_dir = "$(DATA_DIR)/pecan/radar_comparison/spol_kddc";
+output_dir = "$(DATA_DIR)/olympex/radar_comparison/npol_klgx";
 
 ///////////// output_file_prefix //////////////////////
 //
@@ -468,7 +468,7 @@ output_dir = "$(DATA_DIR)/pecan/radar_comparison/spol_kddc";
 // Type: string
 //
 
-output_file_prefix = "SPOL_minus_KDDC";
+output_file_prefix = "KGLX_minus_NPOL";
 
 ///////////// output_file_ext /////////////////////////
 //
@@ -546,5 +546,5 @@ write_results_to_spdb = TRUE;
 // Type: string
 //
 
-spdb_output_url = "spdbp:://hail:0:$(project)/spdb/spol/spol_kddc_compare";
+spdb_output_url = "spdbp:://localhost::olympex/qc/spdb/npol_klgx_compare";
 

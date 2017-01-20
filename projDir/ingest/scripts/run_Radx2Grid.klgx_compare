@@ -1,0 +1,6 @@
+#! /bin/csh
+
+cd $PROJ_DIR/ingest/params
+
+Radx2Grid -params Radx2Grid.klgx_compare -debug -start "2015 11 05 00 00 00" -end "2016 01 15 00 00 00"
+

@@ -25,9 +25,12 @@ xset fp= /usr/X11R6/lib/X11/fonts/misc/,/usr/X11R6/lib/X11/fonts/75dpi/,/usr/X11
 
 # set up environment
     
+setenv DATA_DIR /home/disk/bob/data.server
 setenv DATA_HOST bob.atmos.washington.edu
 setenv PROJ_DIR /home/disk/meso-home/meso/projDir
-source $PROJ_DIR/system/params/site_info_dynamo
+source $PROJ_DIR/system/params/site_info_improve2
 
-CIDD -p $PROJ_DIR/display/params/CIDD.dynamo >& /dev/null &
+# start CIDD
+    
+CIDD -p $PROJ_DIR/display/params/CIDD.improve2 >& /dev/null &
     

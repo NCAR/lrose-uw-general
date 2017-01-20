@@ -96,556 +96,556 @@ field_list = {
 
 # NEXRAD
 
-NEXR_KLGX_DBZ    KLGX_DBZ     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
-NEXR_KLGX_VEL30  KLGX_VEL30   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&VEL       vel_30.colors   m/s -5 80 5 radial 1 0
-NEXR_KLGX_VEL45  KLGX_VEL45   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&VEL       vel_45.colors   m/s -5 80 5 radial 1 0
-NEXR_KLGX_VELNEX KLGX_VELNEX  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&VEL   vel_nexrad.colors   m/s -5 80 5 radial 1 0
-NEXR_KLGX_WIDTH  KLGX_WIDTH   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&WIDTH     width.colors m/s -5 80 5 radial 1 0
-NEXR_KLGX_ZDR    KLGX_ZDR     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&ZDR       zdr.colors   dB  -5 80 5 radial 1 0
-NEXR_KLGX_PHIDP  KLGX_PHIDP   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&PHIDP     phidp.colors deg -5 80 5 radial 1 0
-NEXR_KLGX_RHOHV  KLGX_RHOHV   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&RHOHV     rhohv.colors -   -5 80 5 radial 1 0
+NEXR_KLGX_DBZ    KLGX_DBZ     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
+NEXR_KLGX_VEL30  KLGX_VEL30   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&VEL       vel_30.colors   m/s -5 80 5 radial 1 0
+NEXR_KLGX_VEL45  KLGX_VEL45   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&VEL       vel_45.colors   m/s -5 80 5 radial 1 0
+NEXR_KLGX_VELNEX KLGX_VELNEX  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&VEL   vel_nexrad.colors   m/s -5 80 5 radial 1 0
+NEXR_KLGX_WIDTH  KLGX_WIDTH   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&WIDTH     width.colors m/s -5 80 5 radial 1 0
+NEXR_KLGX_ZDR    KLGX_ZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&ZDR       zdr.colors   dB  -5 80 5 radial 1 0
+NEXR_KLGX_PHIDP  KLGX_PHIDP   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&PHIDP     phidp.colors deg -5 80 5 radial 1 0
+NEXR_KLGX_RHOHV  KLGX_RHOHV   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&RHOHV     rhohv.colors -   -5 80 5 radial 1 0
 
-NEXR_KLGX_PID        KLGX_PID         mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&PID          pid.colors    -      -5 80 5 radial 1 0
-NEXR_KLGX_PID_TEMP   KLGX_PID_TEMP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
-NEXR_KLGX_KDP        KLGX_KDP         mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&KDP          kdp_sband.colors    deg/km -5 80 5 radial 1 0
-NEXR_KLGX_RATE_ZH    KLGX_RATE_ZH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&RATE_ZH      precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KLGX_RATE_ZZDR  KLGX_RATE_ZZDR   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&RATE_Z_ZDR   precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KLGX_RATE_KDP   KLGX_RATE_KDP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&RATE_KDP     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KLGX_RATE_PID   KLGX_RATE_PID    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&RATE_PID     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KLGX_RATE_HYBR  KLGX_RATE_HYB    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/klgx&RATE_HYBRID  precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KLGX_PID        KLGX_PID         mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&PID          pid.colors    -      -5 80 5 radial 1 0
+NEXR_KLGX_PID_TEMP   KLGX_PID_TEMP    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
+NEXR_KLGX_KDP        KLGX_KDP         mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&KDP          kdp_sband.colors    deg/km -5 80 5 radial 1 0
+NEXR_KLGX_RATE_ZH    KLGX_RATE_ZH     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&RATE_ZH      precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KLGX_RATE_ZZDR  KLGX_RATE_ZZDR   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&RATE_Z_ZDR   precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KLGX_RATE_KDP   KLGX_RATE_KDP    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&RATE_KDP     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KLGX_RATE_PID   KLGX_RATE_PID    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&RATE_PID     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KLGX_RATE_HYBR  KLGX_RATE_HYB    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/klgx&RATE_HYBRID  precip_rate.colors  mm/hr  -5 80 5 radial 1 0
 
-NEXR_==== ========  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/klgx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
-NEXR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NEXR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NEXR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NEXR_==== ========  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/klgx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
+NEXR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NEXR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NEXR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-NEXR_KATX_DBZ    KATX_DBZ     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
-NEXR_KATX_VEL30  KATX_VEL30   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&VEL       vel_30.colors   m/s -5 80 5 radial 1 0
-NEXR_KATX_VEL45  KATX_VEL45   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&VEL       vel_45.colors   m/s -5 80 5 radial 1 0
-NEXR_KATX_VELNEX KATX_VELNEX  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&VEL   vel_nexrad.colors   m/s -5 80 5 radial 1 0
-NEXR_KATX_WIDTH  KATX_WIDTH   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&WIDTH     width.colors m/s -5 80 5 radial 1 0
-NEXR_KATX_ZDR    KATX_ZDR     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&ZDR       zdr.colors   dB  -5 80 5 radial 1 0
-NEXR_KATX_PHIDP  KATX_PHIDP   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&PHIDP     phidp.colors deg -5 80 5 radial 1 0
-NEXR_KATX_RHOHV  KATX_RHOHV   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/katx&RHOHV     rhohv.colors -   -5 80 5 radial 1 0
+NEXR_KATX_DBZ    KATX_DBZ     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
+NEXR_KATX_VEL30  KATX_VEL30   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&VEL       vel_30.colors   m/s -5 80 5 radial 1 0
+NEXR_KATX_VEL45  KATX_VEL45   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&VEL       vel_45.colors   m/s -5 80 5 radial 1 0
+NEXR_KATX_VELNEX KATX_VELNEX  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&VEL   vel_nexrad.colors   m/s -5 80 5 radial 1 0
+NEXR_KATX_WIDTH  KATX_WIDTH   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&WIDTH     width.colors m/s -5 80 5 radial 1 0
+NEXR_KATX_ZDR    KATX_ZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&ZDR       zdr.colors   dB  -5 80 5 radial 1 0
+NEXR_KATX_PHIDP  KATX_PHIDP   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&PHIDP     phidp.colors deg -5 80 5 radial 1 0
+NEXR_KATX_RHOHV  KATX_RHOHV   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/katx&RHOHV     rhohv.colors -   -5 80 5 radial 1 0
 
-NEXR_KATX_PID        KATX_PID         mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&PID          pid.colors    -      -5 80 5 radial 1 0
-NEXR_KATX_PID_TEMP   KATX_PID_TEMP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
-NEXR_KATX_KDP        KATX_KDP         mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&KDP          kdp_sband.colors    deg/km -5 80 5 radial 1 0
-NEXR_KATX_RATE_ZH    KATX_RATE_ZH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&RATE_ZH      precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KATX_RATE_ZZDR  KATX_RATE_ZZDR   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&RATE_Z_ZDR   precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KATX_RATE_KDP   KATX_RATE_KDP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&RATE_KDP     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KATX_RATE_PID   KATX_RATE_PID    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&RATE_PID     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
-NEXR_KATX_RATE_HYBR  KATX_RATE_HYB    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/katx&RATE_HYBRID  precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KATX_PID        KATX_PID         mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&PID          pid.colors    -      -5 80 5 radial 1 0
+NEXR_KATX_PID_TEMP   KATX_PID_TEMP    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
+NEXR_KATX_KDP        KATX_KDP         mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&KDP          kdp_sband.colors    deg/km -5 80 5 radial 1 0
+NEXR_KATX_RATE_ZH    KATX_RATE_ZH     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_ZH      precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KATX_RATE_ZZDR  KATX_RATE_ZZDR   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_Z_ZDR   precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KATX_RATE_KDP   KATX_RATE_KDP    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_KDP     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KATX_RATE_PID   KATX_RATE_PID    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_PID     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
+NEXR_KATX_RATE_HYBR  KATX_RATE_HYB    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_HYBRID  precip_rate.colors  mm/hr  -5 80 5 radial 1 0
 
 # NPOL MOMENTS
 
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-NPOL_DBZ       NPOL_DBZ       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-NPOL_VEL30     NPOL_VEL30     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&VEL        vel_30.colors     m/s    -5 80 5 radial 1 0
-NPOL_VEL45     NPOL_VEL45     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&VEL        vel_45.colors     m/s    -5 80 5 radial 1 0
-NPOL_VELNEX    NPOL_VELNEX    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&VEL        vel_nexrad.colors     m/s    -5 80 5 radial 1 0
-NPOL_ZDR       NPOL_ZDR       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
-NPOL_RHOHV     NPOL_RHOHV     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-#NPOL_WIDTH     NPOL_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s      -5 80 5 radial 1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_DBZ       NPOL_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+NPOL_VEL30     NPOL_VEL30     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_30.colors     m/s    -5 80 5 radial 1 0
+NPOL_VEL45     NPOL_VEL45     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_45.colors     m/s    -5 80 5 radial 1 0
+NPOL_VELNEX    NPOL_VELNEX    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_nexrad.colors     m/s    -5 80 5 radial 1 0
+NPOL_ZDR       NPOL_ZDR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
+NPOL_RHOHV     NPOL_RHOHV     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
+#NPOL_WIDTH     NPOL_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s      -5 80 5 radial 1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#NPOL_DBZ_TOT   NPOL_DBZ_TOT   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&DBZ_TOT    dbz.colors        dBZ    -5 80 5 radial 1 0
-#NPOL_WIDTH     NPOL_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s    -5 80 5 radial 1 0
-#NPOL_KDP       NPOL_KPD       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&KDP        kdp_sband.colors  deg/km -5 80 5 radial 1 0
-#NPOL_NCP       NPOL_NCP       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
-#NPOL_PHIDP     NPOL_PHIDP     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
-#NPOL_DBZ_V     NPOL_DBZ_V     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&DBZ_V      dbz.colors        dBZ    -5 80 5 radial 1 0
-#NPOL_DBZ_TOT_V NPOL_DBZ_TOT_V mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&DBZ_TOT_V  dbz.colors        dBZ    -5 80 5 radial 1 0
-#NPOL_SNR       NPOL_SNR       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
+#NPOL_DBZ_TOT   NPOL_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_TOT    dbz.colors        dBZ    -5 80 5 radial 1 0
+#NPOL_WIDTH     NPOL_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s    -5 80 5 radial 1 0
+#NPOL_KDP       NPOL_KPD       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&KDP        kdp_sband.colors  deg/km -5 80 5 radial 1 0
+#NPOL_NCP       NPOL_NCP       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
+#NPOL_PHIDP     NPOL_PHIDP     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
+#NPOL_DBZ_V     NPOL_DBZ_V     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_V      dbz.colors        dBZ    -5 80 5 radial 1 0
+#NPOL_DBZ_TOT_V NPOL_DBZ_TOT_V mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_TOT_V  dbz.colors        dBZ    -5 80 5 radial 1 0
+#NPOL_SNR       NPOL_SNR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
 
 # NPOL QC2 MOMENTS
 
-NPOLQC2_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
-#NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
-NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz.colors         dBZ        -5 80 5 radial 1 0
-NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz.colors         dBZ        -5 80 5 radial 1 0
-NPOLQC2_VEL30     NPOL_QC2_VEL30     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_30.colors      m/s        -5 80 5 radial 1 0
-NPOLQC2_VEL45     NPOL_QC2_VEL45     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_45.colors      m/s        -5 80 5 radial 1 0
-NPOLQC2_VELNEX    NPOL_QC2_VELNEX    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_nexrad.colors  m/s        -5 80 5 radial 1 0
-NPOLQC2_WIDTH     NPOL_QC2_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&WIDTH     width.colors       m/s        -5 80 5 radial 1 0
-NPOLQC2_ZDR       NPOL_QC2_ZDR       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&ZDR       zdr.colors         dB         -5 80 5 radial 1 0
-NPOLQC2_RHOHV     NPOL_QC2_RHOHV     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&RHOHV     rhohv.colors       _          -5 80 5 radial 1 0
-NPOLQC2_PHIDP     NPOL_QC2_PHIDP     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&PHIDP     phidp.colors       deg        -5 80 5 radial 1 0
-NPOLQC2_KDP       NPOL_QC2_KDP       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&KDP       kdp.colors         deg/km     -5 80 5 radial 1 0
-NPOLQC2_RR_DROPS  NPOL_QC2_RR_DROPS  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&RR_DROPS2 precip_rate.colors deg/km     -5 80 5 radial 1 0
-NPOLQC2_RR_POL_ZR NPOL_QC2_RR_POL_ZR mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&RR_POL_ZR precip_rate.colors deg/km     -5 80 5 radial 1 0
-NPOLQC2_RR_CIF    NPOL_QC2_RR_CIF    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&RR_CIF    precip_rate.colors deg/km     -5 80 5 radial 1 0
-NPOLQC2_HID       NPOL_QC2_HID       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&HID       hid.colors         -          -5 80 5 radial 1 0
-NPOLQC2_SQ        NPOL_QC2_SQ        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&SQ        snr.colors         -          -5 80 5 radial 1 0
-NPOLQC2_D0        NPOL_QC2_D0        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&D0        trip.colors        mm         -5 80 5 radial 1 0
-NPOLQC2_NW        NPOL_QC2_NW        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&NW        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
-NPOLQC2_DM        NPOL_QC2_DM        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&DM        trip.colors        mm         -5 80 5 radial 1 0
-NPOLQC2_N2        NPOL_QC2_N2        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol_qc2/sur&N2        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
-NPOLQC2_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
+#NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
+NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz.colors         dBZ        -5 80 5 radial 1 0
+NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz.colors         dBZ        -5 80 5 radial 1 0
+NPOLQC2_VEL30     NPOL_QC2_VEL30     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_30.colors      m/s        -5 80 5 radial 1 0
+NPOLQC2_VEL45     NPOL_QC2_VEL45     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_45.colors      m/s        -5 80 5 radial 1 0
+NPOLQC2_VELNEX    NPOL_QC2_VELNEX    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_nexrad.colors  m/s        -5 80 5 radial 1 0
+NPOLQC2_WIDTH     NPOL_QC2_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&WIDTH     width.colors       m/s        -5 80 5 radial 1 0
+NPOLQC2_ZDR       NPOL_QC2_ZDR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&ZDR       zdr.colors         dB         -5 80 5 radial 1 0
+NPOLQC2_RHOHV     NPOL_QC2_RHOHV     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RHOHV     rhohv.colors       _          -5 80 5 radial 1 0
+NPOLQC2_PHIDP     NPOL_QC2_PHIDP     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&PHIDP     phidp.colors       deg        -5 80 5 radial 1 0
+NPOLQC2_KDP       NPOL_QC2_KDP       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&KDP       kdp.colors         deg/km     -5 80 5 radial 1 0
+NPOLQC2_RR_DROPS  NPOL_QC2_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_DROPS2 precip_rate.colors deg/km     -5 80 5 radial 1 0
+NPOLQC2_RR_POL_ZR NPOL_QC2_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_POL_ZR precip_rate.colors deg/km     -5 80 5 radial 1 0
+NPOLQC2_RR_CIF    NPOL_QC2_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_CIF    precip_rate.colors deg/km     -5 80 5 radial 1 0
+NPOLQC2_HID       NPOL_QC2_HID       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&HID       hid.colors         -          -5 80 5 radial 1 0
+NPOLQC2_SQ        NPOL_QC2_SQ        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&SQ        snr.colors         -          -5 80 5 radial 1 0
+NPOLQC2_D0        NPOL_QC2_D0        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&D0        trip.colors        mm         -5 80 5 radial 1 0
+NPOLQC2_NW        NPOL_QC2_NW        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&NW        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
+NPOLQC2_DM        NPOL_QC2_DM        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DM        trip.colors        mm         -5 80 5 radial 1 0
+NPOLQC2_N2        NPOL_QC2_N2        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&N2        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # NPOL PARTRAIN
 
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-NPOL_PID          NPOL_PID           mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&PID           pid.colors  none -5 80 5 radial 1 0
-NPOL_PID_TEMP     NPOL_PID_TEMP      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&TEMP_FOR_PID  temp.colors    C -5 80 5 redial 1 0
-NPOL_DBZ_FOR_RATE NPOL_DBZ_FOR_RATE  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&DBZ_FOR_RATE  dbz.colors   dBZ -5 80 5 radial 1 0
-NPOL_ZDR_FOR_RATE NPOL_ZDR_FOR_RATE  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&ZDR_FOR_RATE  zdr.colors   dB -5 80 5 radial 1 0
-NPOL_KDP_FOR_RATE NPOL_KDP_FOR_RATE  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&KDP_FOR_RATE  kdp_sband.colors   deg/km -5 80 5 radial 1 0
-NPOL_KDP2         NPOL_KDP2          mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&KDP           kdp_sband.colors   deg/km -5 80 5 radial 1 0     
-NPOL_RATE_ZZDR    NPOL_RATE_ZZDR     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_Z_ZDR    precip_rate.colors none -5 80 5 radial 1 0
-======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_PID          NPOL_PID           mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&PID           pid.colors  none -5 80 5 radial 1 0
+NPOL_PID_TEMP     NPOL_PID_TEMP      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&TEMP_FOR_PID  temp.colors    C -5 80 5 redial 1 0
+NPOL_DBZ_FOR_RATE NPOL_DBZ_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&DBZ_FOR_RATE  dbz.colors   dBZ -5 80 5 radial 1 0
+NPOL_ZDR_FOR_RATE NPOL_ZDR_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&ZDR_FOR_RATE  zdr.colors   dB -5 80 5 radial 1 0
+NPOL_KDP_FOR_RATE NPOL_KDP_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&KDP_FOR_RATE  kdp_sband.colors   deg/km -5 80 5 radial 1 0
+NPOL_KDP2         NPOL_KDP2          mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&KDP           kdp_sband.colors   deg/km -5 80 5 radial 1 0     
+NPOL_RATE_ZZDR    NPOL_RATE_ZZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_Z_ZDR    precip_rate.colors none -5 80 5 radial 1 0
+======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-NPOL_RATE_ZH      NPOL_RATE_ZH       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_ZH       precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_ZH_SNOW NPOL_RATE_ZH_SNOW  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_ZH_SNOW  precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_KDP     NPOL_RATE_KDP      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_KDP      precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_KZDR    NPOL_RATE_KZDR     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_KDP_ZDR  precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_HYBRID  NPOL_RATE_HYBRID   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_HYBRID   precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_PID     NPOL_RATE_PID      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_PID      precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_HIDRO   NPOL_RATE_HIDRO    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_HIDRO    precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_BRINGI  NPOL_RATE_BRINGI   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/partrain/npol/sur&RATE_BRINGI   precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_ZH      NPOL_RATE_ZH       mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_ZH       precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_ZH_SNOW NPOL_RATE_ZH_SNOW  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_ZH_SNOW  precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_KDP     NPOL_RATE_KDP      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_KDP      precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_KZDR    NPOL_RATE_KZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_KDP_ZDR  precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_HYBRID  NPOL_RATE_HYBRID   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_HYBRID   precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_PID     NPOL_RATE_PID      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_PID      precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_HIDRO   NPOL_RATE_HIDRO    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_HIDRO    precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_BRINGI  NPOL_RATE_BRINGI   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_BRINGI   precip_rate.colors none -5 80 5 radial 1 0
 
-NPOL_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # XBAND
 
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-XBAND_DBZ    XBAND_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_UDBZ   XBAND_UDBZ   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_VEL    XBAND_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&VEL   vel_k.colors      m/s    -5 80 5 radial 1 0
-XBAND_WIDTH  XBAND_WIDTH  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
+XBAND_DBZ    XBAND_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_UDBZ   XBAND_UDBZ   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&VEL   vel_k.colors      m/s    -5 80 5 radial 1 0
+XBAND_WIDTH  XBAND_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
 
-XBAND_ZDR    XBAND_ZDR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
-XBAND_PHIDP  XBAND_PHIDP  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
-XBAND_UPHIDP XBAND_UPHIDP mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
-XBAND_RHOHV  XBAND_RHOHV  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
+XBAND_ZDR    XBAND_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
+XBAND_PHIDP  XBAND_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_UPHIDP XBAND_UPHIDP mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_RHOHV  XBAND_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
 
-XBAND_SQI    XBAND_SQI    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/xband_all/sur&SQI    ncp.colors        -      -5 80 5 radial 1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_SQI    XBAND_SQI    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&SQI    ncp.colors        -      -5 80 5 radial 1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
        
 # DOW
 
 ## QC high cfradial 
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#DOWHIQ_DBZHC       DOW_HI_QC_DBZHC      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&DBZHC         dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWHIQ_DBZHC_F     DOW_HI_QC_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&DBZHC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWHIQ_DBZVC       DOW_HI_QC_DBZVC      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&DBZVC         dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWHIQ_DBZVC_F     DOW_HI_QC_DBZVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&DBZVC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWHIQ_VEL30       DOW_HI_QC_VEL30      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&VEL           vel_30.colors     m/s    -5 80 5 radial 1 0
-#DOWHIQ_VEL30_F     DOW_HI_QC_VEL30_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&VEL_F         vel_30.colors     m/s    -5 80 5 radial 1 0
-#DOWHIQ_VEL45       DOW_HI_QC_VEL45      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&VEL           vel_45.colors     m/s    -5 80 5 radial 1 0
-#DOWHIQ_VEL45_F     DOW_HI_QC_VEL45_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&VEL_F         vel_45.colors     m/s    -5 80 5 radial 1 0
-#DOWHIQ_WIDTH       DOW_HI_QC_WIDTH      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&WIDTH         width.colors      m/s    -5 80 5 radial 1 0
-#DOWHIQ_WIDTH_F     DOW_HI_QC_WIDTH_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&WIDTH_F       width.colors      m/s    -5 80 5 radial 1 0
-#DOWHIQ_ZDRM        DOW_HI_QC_ZDRM       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRM          zdr.colors        dB     -5 80 5 radial 1 0
-#DOWHIQ_ZDRM_F      DOW_HI_QC_ZDRM_F     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRM_F        zdr.colors        dB     -5 80 5 radial 1 0
-#DOWHIQ_RHOHV       DOW_HI_QC_RHOHV      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&RHOHV         rhohv.colors      _      -5 80 5 radial 1 0
-#DOWHIQ_RHOHV_F     DOW_HI_QC_RHOHV_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&RHOHV_F       rhohv.colors      _      -5 80 5 radial 1 0
-#DOWHIQ_PHIDP       DOW_HI_QC_PHIDP      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&PHIDP         phidp.colors      deg    -5 80 5 radial 1 0
-#DOWHIQ_PHIDP_F     DOW_HI_QC_PHIDP_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&PHIDP_F       phidp.colors      deg    -5 80 5 radial 1 0
-#DOWHIQ_KDP         DOW_HI_QC_KDP        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&KDP           kdp.colors        deg/km -5 80 5 radial 1 0
-#DOWHIQ_KDP_F       DOW_HI_QC_KDP_F      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&KDP_F         kdp.colors        deg/km -5 80 5 radial 1 0
-#DOWHIQ_ZDRC        DOW_HI_QC_ZDRC       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRC          zdr.colors        dB     -5 80 5 radial 1 0
-#DOWHIQ_ZDRC_F      DOW_HI_QC_ZDRC_F     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRC_F        zdr.colors        dB     -5 80 5 radial 1 0
-#DOWHIQ_TRIP_FLA    DOW_HI_QC_TRIP_FLA   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_hi_qc/sec&TRIP_FLA      trip_flag2.colors -      -5 80 5 radial 1 0
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWHIQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_DBZHC       DOW_HI_QC_DBZHC      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&DBZHC         dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWHIQ_DBZHC_F     DOW_HI_QC_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&DBZHC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWHIQ_DBZVC       DOW_HI_QC_DBZVC      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&DBZVC         dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWHIQ_DBZVC_F     DOW_HI_QC_DBZVC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&DBZVC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWHIQ_VEL30       DOW_HI_QC_VEL30      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&VEL           vel_30.colors     m/s    -5 80 5 radial 1 0
+#DOWHIQ_VEL30_F     DOW_HI_QC_VEL30_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&VEL_F         vel_30.colors     m/s    -5 80 5 radial 1 0
+#DOWHIQ_VEL45       DOW_HI_QC_VEL45      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&VEL           vel_45.colors     m/s    -5 80 5 radial 1 0
+#DOWHIQ_VEL45_F     DOW_HI_QC_VEL45_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&VEL_F         vel_45.colors     m/s    -5 80 5 radial 1 0
+#DOWHIQ_WIDTH       DOW_HI_QC_WIDTH      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&WIDTH         width.colors      m/s    -5 80 5 radial 1 0
+#DOWHIQ_WIDTH_F     DOW_HI_QC_WIDTH_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&WIDTH_F       width.colors      m/s    -5 80 5 radial 1 0
+#DOWHIQ_ZDRM        DOW_HI_QC_ZDRM       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRM          zdr.colors        dB     -5 80 5 radial 1 0
+#DOWHIQ_ZDRM_F      DOW_HI_QC_ZDRM_F     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRM_F        zdr.colors        dB     -5 80 5 radial 1 0
+#DOWHIQ_RHOHV       DOW_HI_QC_RHOHV      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&RHOHV         rhohv.colors      _      -5 80 5 radial 1 0
+#DOWHIQ_RHOHV_F     DOW_HI_QC_RHOHV_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&RHOHV_F       rhohv.colors      _      -5 80 5 radial 1 0
+#DOWHIQ_PHIDP       DOW_HI_QC_PHIDP      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&PHIDP         phidp.colors      deg    -5 80 5 radial 1 0
+#DOWHIQ_PHIDP_F     DOW_HI_QC_PHIDP_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&PHIDP_F       phidp.colors      deg    -5 80 5 radial 1 0
+#DOWHIQ_KDP         DOW_HI_QC_KDP        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&KDP           kdp.colors        deg/km -5 80 5 radial 1 0
+#DOWHIQ_KDP_F       DOW_HI_QC_KDP_F      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&KDP_F         kdp.colors        deg/km -5 80 5 radial 1 0
+#DOWHIQ_ZDRC        DOW_HI_QC_ZDRC       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRC          zdr.colors        dB     -5 80 5 radial 1 0
+#DOWHIQ_ZDRC_F      DOW_HI_QC_ZDRC_F     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&ZDRC_F        zdr.colors        dB     -5 80 5 radial 1 0
+#DOWHIQ_TRIP_FLA    DOW_HI_QC_TRIP_FLA   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_hi_qc/sec&TRIP_FLA      trip_flag2.colors -      -5 80 5 radial 1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWHIQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # QC low cfradial 
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-DOWLOQ_DBZHC       DOW_LO_QC_DBZHC      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&DBZHC         dbz.colors        dBZ    -5 80 5 radial 1 0
-DOWLOQ_DBZHC_F     DOW_LO_QC_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&DBZHC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
-DOWLOQ_DBZVC       DOW_LO_QC_DBZVC      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&DBZVC         dbz.colors        dBZ    -5 80 5 radial 1 0
-DOWLOQ_DBZVC_F     DOW_LO_QC_DBZVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&DBZVC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
-DOWLOQ_VEL30       DOW_LO_QC_VEL30      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&VEL           vel_30.colors     m/s    -5 80 5 radial 1 0
-DOWLOQ_VEL30_F     DOW_LO_QC_VEL30_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&VEL_F         vel_30.colors     m/s    -5 80 5 radial 1 0
-DOWLOQ_VEL45       DOW_LO_QC_VEL45      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&VEL           vel_45.colors     m/s    -5 80 5 radial 1 0
-DOWLOQ_VEL45_F     DOW_LO_QC_VEL45_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&VEL_F         vel_45.colors     m/s    -5 80 5 radial 1 0
-DOWLOQ_WIDTH       DOW_LO_QC_WIDTH      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&WIDTH         width.colors      m/s    -5 80 5 radial 1 0
-DOWLOQ_WIDTH_F     DOW_LO_QC_WIDTH_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&WIDTH_F       width.colors      m/s    -5 80 5 radial 1 0
-DOWLOQ_ZDRM        DOW_LO_QC_ZDRM       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRM          zdr.colors        dB     -5 80 5 radial 1 0
-DOWLOQ_ZDRM_F      DOW_LO_QC_ZDRM_F     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRM_F        zdr.colors        dB     -5 80 5 radial 1 0
-DOWLOQ_RHOHV       DOW_LO_QC_RHOHV      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&RHOHV         rhohv.colors      _      -5 80 5 radial 1 0
-DOWLOQ_RHOHV_F     DOW_LO_QC_RHOHV_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&RHOHV_F       rhohv.colors      _      -5 80 5 radial 1 0
-DOWLOQ_PHIDP       DOW_LO_QC_PHIDP      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&PHIDP         phidp.colors      deg    -5 80 5 radial 1 0
-DOWLOQ_PHIDP_F     DOW_LO_QC_PHIDP_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&PHIDP_F       phidp.colors      deg    -5 80 5 radial 1 0
-DOWLOQ_KDP         DOW_LO_QC_KDP        mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&KDP           kdp.colors        deg/km -5 80 5 radial 1 0
-DOWLOQ_KDP_F       DOW_LO_QC_KDP_F      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&KDP_F         kdp.colors        deg/km -5 80 5 radial 1 0
-DOWLOQ_ZDRC        DOW_LO_QC_ZDRC       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRC          zdr.colors        dB     -5 80 5 radial 1 0
-#DOWLOQ_ZDRC_F      DOW_LO_QC_ZDRC_F     mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRC_F        zdr.colors        dB     -5 80 5 radial 1 0
-DOWLOQ_TRIP_FLA    DOW_LO_QC_TRIP_FLA   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo_qc/sec&TRIP_FLA      trip_flag2.colors -      -5 80 5 radial 1 0
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_DBZHC       DOW_LO_QC_DBZHC      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&DBZHC         dbz.colors        dBZ    -5 80 5 radial 1 0
+DOWLOQ_DBZHC_F     DOW_LO_QC_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&DBZHC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
+DOWLOQ_DBZVC       DOW_LO_QC_DBZVC      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&DBZVC         dbz.colors        dBZ    -5 80 5 radial 1 0
+DOWLOQ_DBZVC_F     DOW_LO_QC_DBZVC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&DBZVC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
+DOWLOQ_VEL30       DOW_LO_QC_VEL30      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&VEL           vel_30.colors     m/s    -5 80 5 radial 1 0
+DOWLOQ_VEL30_F     DOW_LO_QC_VEL30_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&VEL_F         vel_30.colors     m/s    -5 80 5 radial 1 0
+DOWLOQ_VEL45       DOW_LO_QC_VEL45      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&VEL           vel_45.colors     m/s    -5 80 5 radial 1 0
+DOWLOQ_VEL45_F     DOW_LO_QC_VEL45_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&VEL_F         vel_45.colors     m/s    -5 80 5 radial 1 0
+DOWLOQ_WIDTH       DOW_LO_QC_WIDTH      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&WIDTH         width.colors      m/s    -5 80 5 radial 1 0
+DOWLOQ_WIDTH_F     DOW_LO_QC_WIDTH_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&WIDTH_F       width.colors      m/s    -5 80 5 radial 1 0
+DOWLOQ_ZDRM        DOW_LO_QC_ZDRM       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRM          zdr.colors        dB     -5 80 5 radial 1 0
+DOWLOQ_ZDRM_F      DOW_LO_QC_ZDRM_F     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRM_F        zdr.colors        dB     -5 80 5 radial 1 0
+DOWLOQ_RHOHV       DOW_LO_QC_RHOHV      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&RHOHV         rhohv.colors      _      -5 80 5 radial 1 0
+DOWLOQ_RHOHV_F     DOW_LO_QC_RHOHV_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&RHOHV_F       rhohv.colors      _      -5 80 5 radial 1 0
+DOWLOQ_PHIDP       DOW_LO_QC_PHIDP      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&PHIDP         phidp.colors      deg    -5 80 5 radial 1 0
+DOWLOQ_PHIDP_F     DOW_LO_QC_PHIDP_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&PHIDP_F       phidp.colors      deg    -5 80 5 radial 1 0
+DOWLOQ_KDP         DOW_LO_QC_KDP        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&KDP           kdp.colors        deg/km -5 80 5 radial 1 0
+DOWLOQ_KDP_F       DOW_LO_QC_KDP_F      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&KDP_F         kdp.colors        deg/km -5 80 5 radial 1 0
+DOWLOQ_ZDRC        DOW_LO_QC_ZDRC       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRC          zdr.colors        dB     -5 80 5 radial 1 0
+#DOWLOQ_ZDRC_F      DOW_LO_QC_ZDRC_F     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRC_F        zdr.colors        dB     -5 80 5 radial 1 0
+DOWLOQ_TRIP_FLA    DOW_LO_QC_TRIP_FLA   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&TRIP_FLA      trip_flag2.colors -      -5 80 5 radial 1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # real-time cfradial 
-DOWRTC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWRTC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWRTC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWRTC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-DOWRTC_DBZHC_F     DOW_RT_CFR_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&DBZHC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
-DOWRTC_VEL30_F     DOW_RT_CFR_VEL30_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&VEL_F         vel_30.colors     m/s    -5 80 5 radial 1 0
-DOWRTC_VEL45_F     DOW_RT_CFR_VEL45_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&VEL_F         vel_45.colors     m/s    -5 80 5 radial 1 0
-DOWRTC_VELNEX_F    DOW_RT_CFR_VELNEX_F   mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&VEL_F         vel_nexrad.colors m/s    -5 80 5 radial 1 0
-DOWRTC_WIDTH_F     DOW_RT_CFR_WIDTH_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&WIDTH_F       width.colors      m/s    -5 80 5 radial 1 0
-DOWRTC_ZDR_F       DOW_RT_CFR_ZDR_F      mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&ZDR_F         zdr.colors        dB     -5 80 5 radial 1 0
-DOWRTC_RHOHV_F     DOW_RT_CFR_RHOHV_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow/sec&RHOHV_F       rhohv.colors      _      -5 80 5 radial 1 0
-DOWRTC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTC_DBZHC_F     DOW_RT_CFR_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&DBZHC_F       dbz.colors        dBZ    -5 80 5 radial 1 0
+DOWRTC_VEL30_F     DOW_RT_CFR_VEL30_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&VEL_F         vel_30.colors     m/s    -5 80 5 radial 1 0
+DOWRTC_VEL45_F     DOW_RT_CFR_VEL45_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&VEL_F         vel_45.colors     m/s    -5 80 5 radial 1 0
+DOWRTC_VELNEX_F    DOW_RT_CFR_VELNEX_F   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&VEL_F         vel_nexrad.colors m/s    -5 80 5 radial 1 0
+DOWRTC_WIDTH_F     DOW_RT_CFR_WIDTH_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&WIDTH_F       width.colors      m/s    -5 80 5 radial 1 0
+DOWRTC_ZDR_F       DOW_RT_CFR_ZDR_F      mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&ZDR_F         zdr.colors        dB     -5 80 5 radial 1 0
+DOWRTC_RHOHV_F     DOW_RT_CFR_RHOHV_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow/sec&RHOHV_F       rhohv.colors      _      -5 80 5 radial 1 0
+DOWRTC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # real-time mdv
-DOWRTM_====	   ========	 	 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWRTM_==== 	   ========  		 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWRTM_====        ========  		 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWRTM_====        ========  		 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTM_====	   ========	 	 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTM_==== 	   ========  		 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTM_====        ========  		 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+DOWRTM_====        ========  		 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-DOWRTM_DBZHC_F     DOW_RT_MDV_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&DBZHC_F      dbz.colors        dBZ    -5 80 5 radial 1 0
-DOWRTM_VEL30_F     DOW_RT_MDV_VEL30_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&VEL_F        vel_30.colors     m/s    -5 80 5 radial 1 0
-DOWRTM_VEL45_F     DOW_RT_MDV_VEL45_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&VEL_F        vel_45.colors     m/s    -5 80 5 radial 1 0
-DOWRTM_VELNEX_F    DOW_RT_MDV_VELNEX_F   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&VEL_F        vel_nexrad.colors m/s    -5 80 5 radial 1 0
-DOWRTM_WIDTH_F     DOW_RT_MDV_WIDTH_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&WIDTH_F      width.colors      m/s    -5 80 5 radial 1 0
-DOWRTM_ZDR_F       DOW_RT_MDV_ZDR_F      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&ZDR_F        zdr.colors        dB     -5 80 5 radial 1 0
-DOWRTM_RHOHV_F     DOW_RT_MDV_RHOHV_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow/sec&RHOHV_F      rhohv.colors      _      -5 80 5 radial 1 0
-DOWRTM_==== 	   ========  		   mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
+DOWRTM_DBZHC_F     DOW_RT_MDV_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&DBZHC_F      dbz.colors        dBZ    -5 80 5 radial 1 0
+DOWRTM_VEL30_F     DOW_RT_MDV_VEL30_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&VEL_F        vel_30.colors     m/s    -5 80 5 radial 1 0
+DOWRTM_VEL45_F     DOW_RT_MDV_VEL45_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&VEL_F        vel_45.colors     m/s    -5 80 5 radial 1 0
+DOWRTM_VELNEX_F    DOW_RT_MDV_VELNEX_F   mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&VEL_F        vel_nexrad.colors m/s    -5 80 5 radial 1 0
+DOWRTM_WIDTH_F     DOW_RT_MDV_WIDTH_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&WIDTH_F      width.colors      m/s    -5 80 5 radial 1 0
+DOWRTM_ZDR_F       DOW_RT_MDV_ZDR_F      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&ZDR_F        zdr.colors        dB     -5 80 5 radial 1 0
+DOWRTM_RHOHV_F     DOW_RT_MDV_RHOHV_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow/sec&RHOHV_F      rhohv.colors      _      -5 80 5 radial 1 0
+DOWRTM_==== 	   ========  		   mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
 
 ## QC mdv
-#DOWQCM_====	   ========	 	 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWQCM_==== 	   ========  		 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWQCM_====        ========  		 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWQCM_====        ========  		 mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWQCM_====	   ========	 	 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWQCM_==== 	   ========  		 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWQCM_====        ========  		 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWQCM_====        ========  		 mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#DOWQCM_DBMHC       DOW_QC_MDV_DBMHC      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBMHC        dbm.colors        dBm    -5 80 5 radial 1 0
-#DOWQCM_DBMVC       DOW_QC_MDV_DBMVC      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBMVC        dbm.colors        dBm    -5 80 5 radial 1 0
-#DOWQCM_DBZHC       DOW_QC_MDV_DBZHC      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZHC        dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWQCM_DBZHC_F     DOW_QC_MDV_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZHC_F      dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWQCM_DBZVC       DOW_QC_MDV_DBZVC      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZVC        dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWQCM_DBZVC_F     DOW_QC_MDV_DBZVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZVC_F      dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWQCM_KDP         DOW_QC_MDV_KDP        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&KDP          kdp.colors        deg/km -5 80 5 radial 1 0
-#DOWQCM_KDP_F       DOW_QC_MDV_KDP_F      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&KDP_F        kdp.colors        deg/km -5 80 5 radial 1 0
-#DOWQCM_NCP         DOW_QC_MDV_NCP        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&NCP          ncp.colors        -      -5 80 5 radial 1 0
-#DOWQCM_PHIDP       DOW_QC_MDV_PHIDP      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&PHIDP        phidp.colors      deg    -5 80 5 radial 1 0
-#DOWQCM_PHIDP_F     DOW_QC_MDV_PHIDP_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&PHIDP_F      phidp.colors      deg    -5 80 5 radial 1 0
-#DOWQCM_RHOHV       DOW_QC_MDV_RHOHV      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&RHOHV        rhohv.colors      _      -5 80 5 radial 1 0
-#DOWQCM_RHOHV_F     DOW_QC_MDV_RHOHV_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&RHOHV_F      rhohv.colors      _      -5 80 5 radial 1 0
-#DOWQCM_SNRHC       DOW_QC_MDV_SNRHC      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&SNRHC        snr.colors        _      -5 80 5 radial 1 0
-#DOWQCM_SNRVC       DOW_QC_MDV_SNRVC      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&SNRVC        snr.colors        _      -5 80 5 radial 1 0
-#DOWQCM_TRIP_FLA    DOW_QC_MDV_TRIP_FLA   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&TRIP_FLA     trip_flag.colors  _      -5 80 5 radial 1 0
-#DOWQCM_VEL30       DOW_QC_MDV_VEL30      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&VEL          vel_30.colors     m/s    -5 80 5 radial 1 0
-#DOWQCM_VEL30_F     DOW_QC_MDV_VEL30_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&VEL_F        vel_30.colors     m/s    -5 80 5 radial 1 0
-#DOWQCM_WIDTH       DOW_QC_MDV_WIDTH      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&WIDTH        width.colors      m/s    -5 80 5 radial 1 0
-#DOWQCM_WIDTH_F     DOW_QC_MDV_WIDTH_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&WIDTH_F      width.colors      m/s    -5 80 5 radial 1 0
-#DOWQCM_ZDR         DOW_QC_MDV_ZDR        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDR          zdr.colors        dB     -5 80 5 radial 1 0
-#DOWQCM_ZDRC        DOW_QC_MDV_ZDRC       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRC         zdr.colors        dB     -5 80 5 radial 1 0
-#DOWQCM_ZDRC_F      DOW_QC_MDV_ZDRC_F     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRC_F       zdr.colors        dB     -5 80 5 radial 1 0
-#DOWQCM_ZDRM        DOW_QC_MDV_ZDRM       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRM         zdr.colors        dB     -5 80 5 radial 1 0
-#DOWQCM_ZDRM_F      DOW_QC_MDV_ZDRM_F     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRM_F       zdr.colors        dB     -5 80 5 radial 1 0
-#DOWQCM_==== 	   ========  		   mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
-#DOWQCM_==== 	   ========  		   mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
-#DOWQCM_==== 	   ========  		   mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
+#DOWQCM_DBMHC       DOW_QC_MDV_DBMHC      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBMHC        dbm.colors        dBm    -5 80 5 radial 1 0
+#DOWQCM_DBMVC       DOW_QC_MDV_DBMVC      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBMVC        dbm.colors        dBm    -5 80 5 radial 1 0
+#DOWQCM_DBZHC       DOW_QC_MDV_DBZHC      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZHC        dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWQCM_DBZHC_F     DOW_QC_MDV_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZHC_F      dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWQCM_DBZVC       DOW_QC_MDV_DBZVC      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZVC        dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWQCM_DBZVC_F     DOW_QC_MDV_DBZVC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&DBZVC_F      dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWQCM_KDP         DOW_QC_MDV_KDP        mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&KDP          kdp.colors        deg/km -5 80 5 radial 1 0
+#DOWQCM_KDP_F       DOW_QC_MDV_KDP_F      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&KDP_F        kdp.colors        deg/km -5 80 5 radial 1 0
+#DOWQCM_NCP         DOW_QC_MDV_NCP        mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&NCP          ncp.colors        -      -5 80 5 radial 1 0
+#DOWQCM_PHIDP       DOW_QC_MDV_PHIDP      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&PHIDP        phidp.colors      deg    -5 80 5 radial 1 0
+#DOWQCM_PHIDP_F     DOW_QC_MDV_PHIDP_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&PHIDP_F      phidp.colors      deg    -5 80 5 radial 1 0
+#DOWQCM_RHOHV       DOW_QC_MDV_RHOHV      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&RHOHV        rhohv.colors      _      -5 80 5 radial 1 0
+#DOWQCM_RHOHV_F     DOW_QC_MDV_RHOHV_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&RHOHV_F      rhohv.colors      _      -5 80 5 radial 1 0
+#DOWQCM_SNRHC       DOW_QC_MDV_SNRHC      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&SNRHC        snr.colors        _      -5 80 5 radial 1 0
+#DOWQCM_SNRVC       DOW_QC_MDV_SNRVC      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&SNRVC        snr.colors        _      -5 80 5 radial 1 0
+#DOWQCM_TRIP_FLA    DOW_QC_MDV_TRIP_FLA   mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&TRIP_FLA     trip_flag.colors  _      -5 80 5 radial 1 0
+#DOWQCM_VEL30       DOW_QC_MDV_VEL30      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&VEL          vel_30.colors     m/s    -5 80 5 radial 1 0
+#DOWQCM_VEL30_F     DOW_QC_MDV_VEL30_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&VEL_F        vel_30.colors     m/s    -5 80 5 radial 1 0
+#DOWQCM_WIDTH       DOW_QC_MDV_WIDTH      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&WIDTH        width.colors      m/s    -5 80 5 radial 1 0
+#DOWQCM_WIDTH_F     DOW_QC_MDV_WIDTH_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&WIDTH_F      width.colors      m/s    -5 80 5 radial 1 0
+#DOWQCM_ZDR         DOW_QC_MDV_ZDR        mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDR          zdr.colors        dB     -5 80 5 radial 1 0
+#DOWQCM_ZDRC        DOW_QC_MDV_ZDRC       mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRC         zdr.colors        dB     -5 80 5 radial 1 0
+#DOWQCM_ZDRC_F      DOW_QC_MDV_ZDRC_F     mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRC_F       zdr.colors        dB     -5 80 5 radial 1 0
+#DOWQCM_ZDRM        DOW_QC_MDV_ZDRM       mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRM         zdr.colors        dB     -5 80 5 radial 1 0
+#DOWQCM_ZDRM_F      DOW_QC_MDV_ZDRM_F     mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo_qc/sec&ZDRM_F       zdr.colors        dB     -5 80 5 radial 1 0
+#DOWQCM_==== 	   ========  		   mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
+#DOWQCM_==== 	   ========  		   mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
+#DOWQCM_==== 	   ========  		   mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  	      none.colors   	m      -5 80 5 dcont  1 0
 
 # post-project cfradial
-#DOWLOC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#DOWLOC_DBZHC_F     DOW_LO_CFR_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo/sec&DBZHC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWLOC_DBZVC_F     DOW_LO_CFR_DBZVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/dow_lo/sec&DBZVC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWLOC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOC_DBZHC_F     DOW_LO_CFR_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo/sec&DBZHC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWLOC_DBZVC_F     DOW_LO_CFR_DBZVC_F    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo/sec&DBZVC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWLOC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 ## post-project mdv
-#DOWLOM_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOM_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOM_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#DOWLOM_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#DOWLOM_DBZHC_F     DOW_LO_MDV_DBZHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&DBZHC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWLOM_DBZVC_F     DOW_LO_MDV_DBZVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&DBZVC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
-#DOWLOM_VEL30_F     DOW_LO_MDV_VEL30_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&VEL_F     vel_30.colors     m/s    -5 80 5 radial 1 0
-#DOWLOM_VEL45_F     DOW_LO_MDV_VEL45_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&VEL_F     vel_45.colors     m/s    -5 80 5 radial 1 0
-#DOWLOM_VELNEX_F    DOW_LO_MDV_VELNEX_F   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&VEL_F     vel_nexrad.colors m/s    -5 80 5 radial 1 0
-#DOWLOM_WIDTH_F     DOW_LO_MDV_WIDTH_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&WIDTH_F   width.colors      m/s    -5 80 5 radial 1 0
-#DOWLOM_ZDR_F       DOW_LO_MDV_ZDR_F      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&ZDR_F     zdr.colors        dB     -5 80 5 radial 1 0
-#DOWLOM_RHOHV_F     DOW_LO_MDV_RHOHV_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&RHOHV_F   rhohv.colors      _      -5 80 5 radial 1 0
-#DOWLOM_PHIDP_F     DOW_LO_MDV_PHIDP_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&PHIDP_F   phidp.colors      deg    -5 80 5 radial 1 0
-#DOWLOM_KDP_F       DOW_LO_MDV_KDP_F      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&KDP_F     kdp_sband.colors  deg/km -5 80 5 radial 1 0
-#DOWLOM_NCP_F       DOW_LO_MDV_NCP_F      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&NCP_F     fraction.colors   dB     -5 80 5 radial 1 0
-#DOWLOM_SNRHC_F     DOW_LO_MDV_SNRHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&SNRHC_F   snr.colors        dB     -5 80 5 radial 1 0
-#DOWLOM_SNRVC_F     DOW_LO_MDV_SNRVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&SNRVC_F   snr.colors        dB     -5 80 5 radial 1 0
-#DOWLOM_DBMHC_F     DOW_LO_MDV_DBMHC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&DBMHC_F   dbmlow.colors     dBm    -5 80 5 radial 1 0
-#DOWLOM_DBMVC_F     DOW_LO_DMDV_BMVC_F    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/radial/moments/dow_lo/sec&DBMVC_F   dbmlow.colors     dBm    -5 80 5 radial 1 0
-#DOWLOM_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOM_DBZHC_F     DOW_LO_MDV_DBZHC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&DBZHC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWLOM_DBZVC_F     DOW_LO_MDV_DBZVC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&DBZVC_F   dbz.colors        dBZ    -5 80 5 radial 1 0
+#DOWLOM_VEL30_F     DOW_LO_MDV_VEL30_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&VEL_F     vel_30.colors     m/s    -5 80 5 radial 1 0
+#DOWLOM_VEL45_F     DOW_LO_MDV_VEL45_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&VEL_F     vel_45.colors     m/s    -5 80 5 radial 1 0
+#DOWLOM_VELNEX_F    DOW_LO_MDV_VELNEX_F   mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&VEL_F     vel_nexrad.colors m/s    -5 80 5 radial 1 0
+#DOWLOM_WIDTH_F     DOW_LO_MDV_WIDTH_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&WIDTH_F   width.colors      m/s    -5 80 5 radial 1 0
+#DOWLOM_ZDR_F       DOW_LO_MDV_ZDR_F      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&ZDR_F     zdr.colors        dB     -5 80 5 radial 1 0
+#DOWLOM_RHOHV_F     DOW_LO_MDV_RHOHV_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&RHOHV_F   rhohv.colors      _      -5 80 5 radial 1 0
+#DOWLOM_PHIDP_F     DOW_LO_MDV_PHIDP_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&PHIDP_F   phidp.colors      deg    -5 80 5 radial 1 0
+#DOWLOM_KDP_F       DOW_LO_MDV_KDP_F      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&KDP_F     kdp_sband.colors  deg/km -5 80 5 radial 1 0
+#DOWLOM_NCP_F       DOW_LO_MDV_NCP_F      mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&NCP_F     fraction.colors   dB     -5 80 5 radial 1 0
+#DOWLOM_SNRHC_F     DOW_LO_MDV_SNRHC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&SNRHC_F   snr.colors        dB     -5 80 5 radial 1 0
+#DOWLOM_SNRVC_F     DOW_LO_MDV_SNRVC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&SNRVC_F   snr.colors        dB     -5 80 5 radial 1 0
+#DOWLOM_DBMHC_F     DOW_LO_MDV_DBMHC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&DBMHC_F   dbmlow.colors     dBm    -5 80 5 radial 1 0
+#DOWLOM_DBMVC_F     DOW_LO_DMDV_BMVC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&DBMVC_F   dbmlow.colors     dBm    -5 80 5 radial 1 0
+#DOWLOM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # Sat data
 
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-SAT_VIS  SAT_VIS   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/vis&vis sat_counts.colors      albedo  -5   80  5  cart   1 0
-SAT_IR   SAT_IR    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/ir&Tb   sat_tempK_oly.colors   K       -5   80  5  cart   1 0
-SAT_WV   SAT_WV    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/wv&Tb   wv_uw.colors           K       -5   80  5  cart   1 0
-SAT_GPM  SAT_GPM   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/gpm&refl dbz_carbone17.colors  dBZ     -5   80  5  cart   1 0
-SAT_GPMKA  SAT_GPMKA   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sat/gpm_ka_hs&refl dbz_carbone17.colors  dBZ     -5   80  5  cart   1 0
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_VIS  SAT_VIS   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/vis&vis sat_counts.colors      albedo  -5   80  5  cart   1 0
+SAT_IR   SAT_IR    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/ir&Tb   sat_tempK_oly.colors   K       -5   80  5  cart   1 0
+SAT_WV   SAT_WV    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/wv&Tb   wv_uw.colors           K       -5   80  5  cart   1 0
+SAT_GPM  SAT_GPM   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm&refl dbz_carbone17.colors  dBZ     -5   80  5  cart   1 0
+SAT_GPMKA  SAT_GPMKA   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm_ka_hs&refl dbz_carbone17.colors  dBZ     -5   80  5  cart   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # WRF output
 
-WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-WRF_TEMP_C    WRF_TEMP_C    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&Temp   temp.colors      C     -5 80 5 dcont 1 0
-WRF_THETA_E   WRF_THETA_E   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&THETA  tempK.colors        %     -5 80 5 dcont 1 0
-WRF_RH        WRF_RH        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&RH     rh.colors        %     -5 80 5 dcont 1 0
-WRF_Q         WRF_Q         mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&Q      mix_frac.colors  kg/kg -5 80 5 dcont 1 0
-WRF_WSPEED    WRF_WSPEED    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&Wspeed wspd.colors      m/s   -5 80 5 dcont 1 0
-WRF_W         WRF_W         mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&W      vert_wspd.colors m/s   -5 80 5 dcont 1 0
-WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_TEMP_C    WRF_TEMP_C    mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&Temp   temp.colors      C     -5 80 5 dcont 1 0
+WRF_THETA_E   WRF_THETA_E   mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&THETA  tempK.colors        %     -5 80 5 dcont 1 0
+WRF_RH        WRF_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&RH     rh.colors        %     -5 80 5 dcont 1 0
+WRF_Q         WRF_Q         mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&Q      mix_frac.colors  kg/kg -5 80 5 dcont 1 0
+WRF_WSPEED    WRF_WSPEED    mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&Wspeed wspd.colors      m/s   -5 80 5 dcont 1 0
+WRF_W         WRF_W         mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&W      vert_wspd.colors m/s   -5 80 5 dcont 1 0
+WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#WRF_U         WRF_U         mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&U      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
-#WRF_V         WRF_V         mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&V      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
+#WRF_U         WRF_U         mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&U      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
+#WRF_V         WRF_V         mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&V      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
 
 # D3R MOMENTS
 
-#D3R_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#D3R_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#D3R_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#D3R_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#D3R_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#D3R_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#D3R_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#D3R_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#D3R_KA_DBZ    D3R_KA_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-#D3R_KA_VEL    D3R_KA_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&VEL        vel_k.colors     m/s    -5 80 5 radial 1 0
-#D3R_KA_WIDTH  D3R_KA_WIDTH  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&WIDTH      width_k.colors     m/s    -5 80 5 radial 1 0
-#D3R_KA_ZDR    D3R_KA_ZDR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
-#D3R_KA_RHOHV  D3R_KA_RHOHV  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-#D3R_KA_PHIDP  D3R_KA_PHIDP  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
-#D3R_KA_NCP    D3R_KA_NCP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
-#D3R_KA_SNR    D3R_KA_SNR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
+#D3R_KA_DBZ    D3R_KA_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+#D3R_KA_VEL    D3R_KA_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&VEL        vel_k.colors     m/s    -5 80 5 radial 1 0
+#D3R_KA_WIDTH  D3R_KA_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&WIDTH      width_k.colors     m/s    -5 80 5 radial 1 0
+#D3R_KA_ZDR    D3R_KA_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
+#D3R_KA_RHOHV  D3R_KA_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
+#D3R_KA_PHIDP  D3R_KA_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
+#D3R_KA_NCP    D3R_KA_NCP    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
+#D3R_KA_SNR    D3R_KA_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
 
-#D3R_KU_DBZ    D3R_KU_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-#D3R_KU_VEL    D3R_KU_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&VEL        vel_k.colors     m/s    -5 80 5 radial 1 0
-#D3R_KU_WIDTH  D3R_KU_WIDTH  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&WIDTH      width_k.colors     m/s    -5 80 5 radial 1 0
-#D3R_KU_ZDR    D3R_KU_ZDR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
-#D3R_KU_RHOHV  D3R_KU_RHOHV  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-#D3R_KU_PHIDP  D3R_KU_PHIDP  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
-#D3R_KU_NCP    D3R_KU_NCP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
-#D3R_KU_SNR    D3R_KU_SNR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
+#D3R_KU_DBZ    D3R_KU_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+#D3R_KU_VEL    D3R_KU_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&VEL        vel_k.colors     m/s    -5 80 5 radial 1 0
+#D3R_KU_WIDTH  D3R_KU_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&WIDTH      width_k.colors     m/s    -5 80 5 radial 1 0
+#D3R_KU_ZDR    D3R_KU_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
+#D3R_KU_RHOHV  D3R_KU_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
+#D3R_KU_PHIDP  D3R_KU_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
+#D3R_KU_NCP    D3R_KU_NCP    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
+#D3R_KU_SNR    D3R_KU_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
 
 # D3R QC MOMENTS
 
-D3RQC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-D3RQC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-D3RQC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-D3RQC_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+D3RQC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+D3RQC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+D3RQC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+D3RQC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-D3RQC_KA_DBZ    D3R_QC_KA_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-D3RQC_KA_VEL    D3R_QC_KA_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&VEL        vel_k.colors      m/s    -5 80 5 radial 1 0
-D3RQC_KA_WIDTH  D3R_QC_KA_WIDTH  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&WIDTH      width_k.colors    m/s    -5 80 5 radial 1 0
-D3RQC_KA_ZDR    D3R_QC_KA_ZDR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
-D3RQC_KA_RHOHV  D3R_QC_KA_RHOHV  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-D3RQC_KA_PHIDP  D3R_QC_KA_PHIDP  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
-D3RQC_KA_NCP    D3R_QC_KA_NCP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
-D3RQC_KA_SNR    D3R_QC_KA_SNR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ka_qc/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
+D3RQC_KA_DBZ    D3R_QC_KA_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+D3RQC_KA_VEL    D3R_QC_KA_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&VEL        vel_k.colors      m/s    -5 80 5 radial 1 0
+D3RQC_KA_WIDTH  D3R_QC_KA_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&WIDTH      width_k.colors    m/s    -5 80 5 radial 1 0
+D3RQC_KA_ZDR    D3R_QC_KA_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
+D3RQC_KA_RHOHV  D3R_QC_KA_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
+D3RQC_KA_PHIDP  D3R_QC_KA_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
+D3RQC_KA_NCP    D3R_QC_KA_NCP    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
+D3RQC_KA_SNR    D3R_QC_KA_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ka_qc/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
 
-D3RQC_KU_DBZ    D3R_QC_KU_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-D3RQC_KU_VEL    D3R_QC_KU_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&VEL        vel_k.colors      m/s    -5 80 5 radial 1 0
-D3RQC_KU_WIDTH  D3R_QC_KU_WIDTH  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&WIDTH      width_k.colors    m/s    -5 80 5 radial 1 0
-D3RQC_KU_ZDR    D3R_QC_KU_ZDR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
-D3RQC_KU_RHOHV  D3R_QC_KU_RHOHV  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-D3RQC_KU_PHIDP  D3R_QC_KU_PHIDP  mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
-D3RQC_KU_NCP    D3R_QC_KU_NCP    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
-D3RQC_KU_SNR    D3R_QC_KU_SNR    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/d3r_ku_qc/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
+D3RQC_KU_DBZ    D3R_QC_KU_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+D3RQC_KU_VEL    D3R_QC_KU_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&VEL        vel_k.colors      m/s    -5 80 5 radial 1 0
+D3RQC_KU_WIDTH  D3R_QC_KU_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&WIDTH      width_k.colors    m/s    -5 80 5 radial 1 0
+D3RQC_KU_ZDR    D3R_QC_KU_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
+D3RQC_KU_RHOHV  D3R_QC_KU_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
+D3RQC_KU_PHIDP  D3R_QC_KU_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
+D3RQC_KU_NCP    D3R_QC_KU_NCP    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
+D3RQC_KU_SNR    D3R_QC_KU_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
 
 ## KING MOMENTS
 
-#KING_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#KING_KA_DBZ    KING_KA_DBZ    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/king/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-#KING_KA_VEL    KING_KA_VEL    mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/king/sur&VEL        vel.colors     m/s    -5 80 5 radial 1 0
-#KING_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_KA_DBZ    KING_KA_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/king/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+#KING_KA_VEL    KING_KA_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/king/sur&VEL        vel.colors     m/s    -5 80 5 radial 1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
 # RAIN RATE
 
-#RR        RR       mdvp:://bob.atmos.washington.edu:0:olympex/cfradial/moments/npol/sur&RR       precip_color      none   -5 80 5 radial 1 0
+#RR        RR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&RR       precip_color      none   -5 80 5 radial 1 0
 
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # CART NPOL RHI MOMENTS
 
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLRHI_DBZ_TOT   CART_NPOL_RHI_DBZ_TOT   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_DBZ       CART_NPOL_RHI_DBZ       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_VEL30     CART_NPOL_RHI_VEL30     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VEL45     CART_NPOL_RHI_VEL45     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VELNEX    CART_NPOL_RHI_VELNEX    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_WIDTH     CART_NPOL_RHI_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_ZDR       CART_NPOL_RHI_ZDR       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLRHI_RHOHV     CART_NPOL_RHI_RHOHV     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLRHI_PHIDP     CART_NPOL_RHI_PHIDP     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLRHI_KDP       CART_NPOL_RHI_KDP       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR_DROPS  CART_NPOL_RHI_RR_DROPS  mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR_POL_ZR CART_NPOL_RHI_RR_POL_ZR mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR_CIF    CART_NPOL_RHI_RR_CIF    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_HID       CART_NPOL_RHI_HID       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_SQ        CART_NPOL_RHI_SQ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_D0        CART_NPOL_RHI_D0        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_NW        CART_NPOL_RHI_NW        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLRHI_DM        CART_NPOL_RHI_DM        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_N2        CART_NPOL_RHI_N2        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLRHI_DBZ_TOT   CART_NPOL_RHI_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLRHI_DBZ       CART_NPOL_RHI_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLRHI_VEL30     CART_NPOL_RHI_VEL30     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_VEL45     CART_NPOL_RHI_VEL45     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_VELNEX    CART_NPOL_RHI_VELNEX    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_WIDTH     CART_NPOL_RHI_WIDTH     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_ZDR       CART_NPOL_RHI_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
+CARTNPOLRHI_RHOHV     CART_NPOL_RHI_RHOHV     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
+CARTNPOLRHI_PHIDP     CART_NPOL_RHI_PHIDP     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
+CARTNPOLRHI_KDP       CART_NPOL_RHI_KDP       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_RR_DROPS  CART_NPOL_RHI_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_RR_POL_ZR CART_NPOL_RHI_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_RR_CIF    CART_NPOL_RHI_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_HID       CART_NPOL_RHI_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&HID       hid.colors             -          -5 80 5 cart 1 0
+CARTNPOLRHI_SQ        CART_NPOL_RHI_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&SQ        snr.colors             -          -5 80 5 cart 1 0
+CARTNPOLRHI_D0        CART_NPOL_RHI_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&D0        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLRHI_NW        CART_NPOL_RHI_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLRHI_DM        CART_NPOL_RHI_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DM        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLRHI_N2        CART_NPOL_RHI_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLRHI_ZZ        CART_NPOL_RHI_ZZ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_CZ        CART_NPOL_RHI_CZ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_VR30      CART_NPOL_RHI_VR30      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VR45      CART_NPOL_RHI_VR45      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VRNEX     CART_NPOL_RHI_VRNEX     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_SW        CART_NPOL_RHI_SW        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_DR        CART_NPOL_RHI_DR        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLRHI_RH        CART_NPOL_RHI_RH        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLRHI_PH        CART_NPOL_RHI_PH        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLRHI_KD        CART_NPOL_RHI_KD        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR        CART_NPOL_RHI_RR        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RP        CART_NPOL_RHI_RP        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RC        CART_NPOL_RHI_RC        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-#CARTNPOLRHI_HID       CART_NPOL_RHI_HID       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_SQ        CART_NPOL_RHI_SQ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_D0        CART_NPOL_RHI_D0        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_NW        CART_NPOL_RHI_NW        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLRHI_DM        CART_NPOL_RHI_DM        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_N2        CART_NPOL_RHI_N2        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/rhi_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLRHI_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLRHI_ZZ        CART_NPOL_RHI_ZZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLRHI_CZ        CART_NPOL_RHI_CZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLRHI_VR30      CART_NPOL_RHI_VR30      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_VR45      CART_NPOL_RHI_VR45      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_VRNEX     CART_NPOL_RHI_VRNEX     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_SW        CART_NPOL_RHI_SW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
+CARTNPOLRHI_DR        CART_NPOL_RHI_DR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
+CARTNPOLRHI_RH        CART_NPOL_RHI_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
+CARTNPOLRHI_PH        CART_NPOL_RHI_PH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
+CARTNPOLRHI_KD        CART_NPOL_RHI_KD        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_RR        CART_NPOL_RHI_RR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_RP        CART_NPOL_RHI_RP        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLRHI_RC        CART_NPOL_RHI_RC        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+#CARTNPOLRHI_HID       CART_NPOL_RHI_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
+CARTNPOLRHI_SQ        CART_NPOL_RHI_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
+CARTNPOLRHI_D0        CART_NPOL_RHI_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLRHI_NW        CART_NPOL_RHI_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLRHI_DM        CART_NPOL_RHI_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLRHI_N2        CART_NPOL_RHI_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLRHI_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # CART NPOL SUR MOMENTS
 
-CARTNPOLSUR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLSUR_DBZ_TOT   CART_NPOL_SUR_DBZ_TOT   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_DBZ       CART_NPOL_SUR_DBZ       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_VEL30     CART_NPOL_SUR_VEL30     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VEL45     CART_NPOL_SUR_VEL45     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VELNEX    CART_NPOL_SUR_VELNEX    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_WIDTH     CART_NPOL_SUR_WIDTH     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_ZDR       CART_NPOL_SUR_ZDR       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLSUR_RHOHV     CART_NPOL_SUR_RHOHV     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLSUR_PHIDP     CART_NPOL_SUR_PHIDP     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLSUR_KDP       CART_NPOL_SUR_KDP       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR_DROPS  CART_NPOL_SUR_RR_DROPS  mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR_POL_ZR CART_NPOL_SUR_RR_POL_ZR mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR_CIF    CART_NPOL_SUR_RR_CIF    mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_HID       CART_NPOL_SUR_HID       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_SQ        CART_NPOL_SUR_SQ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_D0        CART_NPOL_SUR_D0        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLSUR_DBZ_TOT   CART_NPOL_SUR_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLSUR_DBZ       CART_NPOL_SUR_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLSUR_VEL30     CART_NPOL_SUR_VEL30     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_VEL45     CART_NPOL_SUR_VEL45     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_VELNEX    CART_NPOL_SUR_VELNEX    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_WIDTH     CART_NPOL_SUR_WIDTH     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_ZDR       CART_NPOL_SUR_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
+CARTNPOLSUR_RHOHV     CART_NPOL_SUR_RHOHV     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
+CARTNPOLSUR_PHIDP     CART_NPOL_SUR_PHIDP     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
+CARTNPOLSUR_KDP       CART_NPOL_SUR_KDP       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_RR_DROPS  CART_NPOL_SUR_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_RR_POL_ZR CART_NPOL_SUR_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_RR_CIF    CART_NPOL_SUR_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_HID       CART_NPOL_SUR_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&HID       hid.colors             -          -5 80 5 cart 1 0
+CARTNPOLSUR_SQ        CART_NPOL_SUR_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&SQ        snr.colors             -          -5 80 5 cart 1 0
+CARTNPOLSUR_D0        CART_NPOL_SUR_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&D0        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DM        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLSUR_ZZ        CART_NPOL_SUR_ZZ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_CZ        CART_NPOL_SUR_CZ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_VR30      CART_NPOL_SUR_VR30      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VR45      CART_NPOL_SUR_VR45      mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VRNEX     CART_NPOL_SUR_VRNEX     mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_SW        CART_NPOL_SUR_SW        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_DR        CART_NPOL_SUR_DR        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLSUR_RH        CART_NPOL_SUR_RH        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLSUR_PH        CART_NPOL_SUR_PH        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLSUR_KD        CART_NPOL_SUR_KD        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR        CART_NPOL_SUR_RR        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RP        CART_NPOL_SUR_RP        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RC        CART_NPOL_SUR_RC        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-#CARTNPOLSUR_HID       CART_NPOL_SUR_HID       mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_SQ        CART_NPOL_SUR_SQ        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_D0        CART_NPOL_SUR_D0        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://bob.atmos.washington.edu:0:olympex/mdv/cart/npol/sur_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_==== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+CARTNPOLSUR_ZZ        CART_NPOL_SUR_ZZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLSUR_CZ        CART_NPOL_SUR_CZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+CARTNPOLSUR_VR30      CART_NPOL_SUR_VR30      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_VR45      CART_NPOL_SUR_VR45      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_VRNEX     CART_NPOL_SUR_VRNEX     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_SW        CART_NPOL_SUR_SW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
+CARTNPOLSUR_DR        CART_NPOL_SUR_DR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
+CARTNPOLSUR_RH        CART_NPOL_SUR_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
+CARTNPOLSUR_PH        CART_NPOL_SUR_PH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
+CARTNPOLSUR_KD        CART_NPOL_SUR_KD        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_RR        CART_NPOL_SUR_RR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_RP        CART_NPOL_SUR_RP        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+CARTNPOLSUR_RC        CART_NPOL_SUR_RC        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+#CARTNPOLSUR_HID       CART_NPOL_SUR_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
+CARTNPOLSUR_SQ        CART_NPOL_SUR_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
+CARTNPOLSUR_D0        CART_NPOL_SUR_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
+CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-#CZ_CART   CZ_CART   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sur&CZ       dbz.colors       dBZ    -5 80 5 radial 1 0
-#VR_CART   VR_CART   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sur&VR       vel_spol.colors  m/s    -5 80 5 radial 1 0
-#CZ_CART_RHI  CZ_CART_RHI   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/rhi&CZ      dbz.colors       dBZ    -5 80 5 radial 1 0
-#VR_CART_RHI  VR_CART_RHI   mdvp:://bob.atmos.washington.edu:0:olympex/mdv/rhi&VR      vel_spol.colors  m/s    -5 80 5 radial 1 0
+#CZ_CART   CZ_CART   mdvp:://$(DATA_HOST):0:olympex/mdv/sur&CZ       dbz.colors       dBZ    -5 80 5 radial 1 0
+#VR_CART   VR_CART   mdvp:://$(DATA_HOST):0:olympex/mdv/sur&VR       vel_spol.colors  m/s    -5 80 5 radial 1 0
+#CZ_CART_RHI  CZ_CART_RHI   mdvp:://$(DATA_HOST):0:olympex/mdv/rhi&CZ      dbz.colors       dBZ    -5 80 5 radial 1 0
+#VR_CART_RHI  VR_CART_RHI   mdvp:://$(DATA_HOST):0:olympex/mdv/rhi&VR      vel_spol.colors  m/s    -5 80 5 radial 1 0
 
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # RAIN RATE CART
 
-#RR_CART   RR_CART mdvp:://bob.atmos.washington.edu:0:olympex/mdv/sur&RR     precip_color none -5 80 5 radial 1 0
+#RR_CART   RR_CART mdvp:://$(DATA_HOST):0:olympex/mdv/sur&RR     precip_color none -5 80 5 radial 1 0
 
 
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # Sat data
 
-#VIS      VIS      mdvp:://bob.atmos.washington.edu::olympex/mdv/sat/vis&VIS sat_albedo.colors     albedo% -5   80  5  cart   1 0
-#IR       IR       mdvp:://bob.atmos.washington.edu::olympex/mdv/sat/ir&IR   sat_tempK_toga.colors K       -5   80  5  cart   1 0
-#WV       WV       mdvp:://bob.atmos.washington.edu::olympex/mdv/sat/wv&WV   wv_uw.colors          K       -5   80  5  cart   1 0
+#VIS      VIS      mdvp:://$(DATA_HOST)::olympex/mdv/sat/vis&VIS sat_albedo.colors     albedo% -5   80  5  cart   1 0
+#IR       IR       mdvp:://$(DATA_HOST)::olympex/mdv/sat/ir&IR   sat_tempK_toga.colors K       -5   80  5  cart   1 0
+#WV       WV       mdvp:://$(DATA_HOST)::olympex/mdv/sat/wv&WV   wv_uw.colors          K       -5   80  5  cart   1 0
 
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
 
-#IR-color IR-color  mdvp:://bob.atmos.washington.edu::olympex/mdv/sat/ir&IR                sat_tempK_2.colors K -5   80  5  cart   1 0
-#WV-color WV-color  mdvp:://bob.atmos.washington.edu::olympex/mdv/sat/wv&WV                sat_tempK_2.colors K -5   80  5  cart   1 0
+#IR-color IR-color  mdvp:://$(DATA_HOST)::olympex/mdv/sat/ir&IR                sat_tempK_2.colors K -5   80  5  cart   1 0
+#WV-color WV-color  mdvp:://$(DATA_HOST)::olympex/mdv/sat/wv&WV                sat_tempK_2.colors K -5   80  5  cart   1 0
 
-#======== ========  mdvp::static//bob.atmos.washington.edu:0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
+#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
 
 </GRIDS>
 
@@ -717,8 +717,8 @@ counties      counties       us_counties.map         0  0.0 1000000.0  blue
 # Legend_label  URL U V W_fieldnames units  Style [Color]
 #----------------------------------------------------------------------------
 
-#WRF mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&  U V None  m/s  -1,arrow  yellow
-WRF mdvp:://bob.atmos.washington.edu:0:olympex/mdv/wrf&  U V None  m/s  0  yellow
+#WRF mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&  U V None  m/s  -1,arrow  yellow
+WRF mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&  U V None  m/s  0  yellow
 
 </WINDS>
 
@@ -1795,7 +1795,7 @@ short_requests = TRUE;
 prod_info = {
    {
     menu_label = "RHI-NPOL",
-    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/npol",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/npol",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
@@ -1808,7 +1808,7 @@ prod_info = {
   // , 
   //  {
   //   menu_label = "RHI-NPOL-QC2",
-  //   url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/npol_qc2",
+  //   url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/npol_qc2",
   //   data_type = 0,
   //   render_type = RENDER_ALL_VALID,
   //   on_by_default = TRUE,
@@ -1821,7 +1821,7 @@ prod_info = {
   , 
    {
     menu_label = "RHI-DOW",
-    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/dow",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/dow",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
@@ -1834,7 +1834,7 @@ prod_info = {
   , 
    //   {
    //    menu_label = "RHI-DOW-QC",
-   //    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/dow_qc_lo",
+   //    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/dow_qc_lo",
    //    data_type = 0,
    //    render_type = RENDER_ALL_VALID,
    //    on_by_default = FALSE,
@@ -1847,7 +1847,7 @@ prod_info = {
    //  , 
    //{
    //menu_label = "RHI-KING",
-   //url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/king",
+   //url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/king",
    //data_type = 0,
    //render_type = RENDER_ALL_VALID,
    //on_by_default = FALSE,
@@ -1860,7 +1860,7 @@ prod_info = {
    //, 
    {
     menu_label = "RHI-XBAND",
-    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/xband_all",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/xband_all",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
@@ -1873,7 +1873,7 @@ prod_info = {
   , 
    {
     menu_label = "RHI-D3R-QC",
-    url = "spdbp:Rhi2Symprod:ticks//bob.atmos.washington.edu::olympex/spdb/rhi/d3r_qc",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/d3r_qc",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = TRUE,
@@ -1886,7 +1886,7 @@ prod_info = {
   // , 
   // {
   //   menu_label = "RHI-label",
-  //   url = "spdbp:Rhi2Symprod:label//bob.atmos.washington.edu::olympex/spdb/rhi/npol",
+  //   url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::olympex/spdb/rhi/npol",
   //   data_type = 0,
   //   render_type = RENDER_ALL_VALID,
   //   on_by_default = FALSE,
@@ -1899,7 +1899,7 @@ prod_info = {
   ,                        
   {
     menu_label = "DC8 15_min",
-    url = "spdbp:AcTrack2Symprod:N817NA.15_min//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N817NA.15_min//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1912,7 +1912,7 @@ prod_info = {
   ,                        
   {
     menu_label = "DC8 30_min",
-    url = "spdbp:AcTrack2Symprod:N817NA.30_min//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N817NA.30_min//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1925,7 +1925,7 @@ prod_info = {
   ,                        
   {
     menu_label = "DC8 5_hr",
-    url = "spdbp:AcTrack2Symprod:N817NA.5_hr//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N817NA.5_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1938,7 +1938,7 @@ prod_info = {
   ,                        
   {
     menu_label = "DC8 10_hr",
-    url = "spdbp:AcTrack2Symprod:N817NA.10_hr//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N817NA.10_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1951,7 +1951,7 @@ prod_info = {
   ,                        
   {
     menu_label = "CITATION 15_min",
-    url = "spdbp:AcTrack2Symprod:N555DS.15_min//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N555DS.15_min//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1964,7 +1964,7 @@ prod_info = {
   ,                        
   {
     menu_label = "CITATION 30_min",
-    url = "spdbp:AcTrack2Symprod:N555DS.30_min//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N555DS.30_min//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1977,7 +1977,7 @@ prod_info = {
   ,                        
   {
     menu_label = "CITATION 5_hr",
-    url = "spdbp:AcTrack2Symprod:N555DS.5_hr//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N555DS.5_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -1990,7 +1990,7 @@ prod_info = {
   ,                        
   {
     menu_label = "CITATION 10_hr",
-    url = "spdbp:AcTrack2Symprod:N555DS.10_hr//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N555DS.10_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -2003,7 +2003,7 @@ prod_info = {
   ,                        
   {
     menu_label = "ER2 15_min",
-    url = "spdbp:AcTrack2Symprod:N809NA.15_min//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N809NA.15_min//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -2016,7 +2016,7 @@ prod_info = {
   ,                        
   {
     menu_label = "ER2 30_min",
-    url = "spdbp:AcTrack2Symprod:N809NA.30_min//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N809NA.30_min//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -2029,7 +2029,7 @@ prod_info = {
   ,                        
   {
     menu_label = "ER2 5_hr",
-    url = "spdbp:AcTrack2Symprod:N809NA.5_hr//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N809NA.5_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -2042,7 +2042,7 @@ prod_info = {
   ,                        
   {
     menu_label = "ER2 10_hr",
-    url = "spdbp:AcTrack2Symprod:N809NA.10_hr//bob.atmos.washington.edu::olympex/spdb/ac_posn",
+    url = "spdbp:AcTrack2Symprod:N809NA.10_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
     data_type = 0,
     render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
     on_by_default = FALSE,
@@ -2055,7 +2055,7 @@ prod_info = {
    //,
    //  {
    //    menu_label = "METARS-simple",
-   //    url = "spdbp:Metar2Symprod:simple//bob.atmos.washington.edu::olympex/spdb/metar",
+   //    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::olympex/spdb/metar",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
    //    on_by_default = FALSE,
@@ -2068,7 +2068,7 @@ prod_info = {
    //  ,
    //  {
    //    menu_label = "METARS-full",
-   //    url = "spdbp:Metar2Symprod:labels//bob.atmos.washington.edu::olympex/spdb/metar",
+   //    url = "spdbp:Metar2Symprod:labels//$(DATA_HOST)::olympex/spdb/metar",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
    //    on_by_default = FALSE,
@@ -2081,7 +2081,7 @@ prod_info = {
    //  ,
    //  {
    //    menu_label = "SHIP-OBS",
-   //    url = "spdbp:Metar2Symprod:simple//bob.atmos.washington.edu::olympex/spdb/ship_obs",
+   //    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::olympex/spdb/ship_obs",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
    //    on_by_default = FALSE,
@@ -2094,7 +2094,7 @@ prod_info = {
    //  ,
    //{
    //menu_label = "SYN-OBS",
-   //url = "spdbp:Metar2Symprod:simple//bob.atmos.washington.edu::olympex/spdb/synop_obs",
+   //url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::olympex/spdb/synop_obs",
    //data_type = 0,
    //render_type = RENDER_LATEST_IN_FRAME,
    //on_by_default = TRUE,

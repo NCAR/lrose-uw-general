@@ -70,8 +70,8 @@ setenv RIP_ROOT /home/disk/blitz/src/RIP4
 # UDUNITS
 setenv UDUNITS_PATH /usr/local/etc/udunits.dat
 
-# CIDD settings
-setenv DATA_DIR /home/disk/mjo/data.server
+# DATA settings
+#setenv DATA_DIR /home/disk/mjo/data.server
 #setenv DATA_HOST mjo.atmos.washington.edu
 
 # RSL setting

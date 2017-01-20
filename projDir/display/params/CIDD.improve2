@@ -77,211 +77,38 @@
 
 # S-BAND MOMENTS
 
-DBZ_S        DBZ_S       mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&DBZ_S       dbz.colors   dBZ -5 80 5 radial 1 0
-CZ_S         CZ_S        mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&CZ_S        dbz.colors   dBZ -5 80 5 radial 1 0
-VEL_S        VEL_S       mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&VEL_S       vel_spol.colors   m/s -5 80 5 radial 1 0
-WIDTH_S      WIDTH_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&WIDTH_S     width.colors m/s -5 80 5 radial 1 0
-ZDR_S        ZDR_S       mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&ZDR_S       zdr.colors   dB  -5 80 5 radial 1 0
-LDRH_S       LDRH_S      mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&LDRH_S      ldr.colors   dB  -5 80 5 radial 1 0
-LDRV_S       LDRV_S      mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&LDRV_S      ldr.colors   dB  -5 80 5 radial 1 0
-PHIDP_S      PHIDP_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&PHIDP_S     phidp.colors deg -5 80 5 radial 1 0
-RHOHV_S      RHOHV_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&RHOHV_S     rhohv.colors _   -5 80 5 radial 1 0
-KDP_S        KDP_S       mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&KDP_S       kdp_sband.colors   deg/km -5 80 5 radial 1 0
+DZ           DZ          mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&DZ          dbz.colors   dBZ -5 80 5 radial 1 0
+VE           VE          mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&VE          vel_spol.colors   m/s -5 80 5 radial 1 0
+VU           VU          mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&VU          vel_spol.colors   m/s -5 80 5 radial 1 0
+SW           SW          mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&SW          width.colors m/s -5 80 5 radial 1 0
+ZDR          ZDR         mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&ZDR         zdr.colors   dB  -5 80 5 radial 1 0
+LDR          LDR         mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&LDR         ldr.colors   dB  -5 80 5 radial 1 0
+PHI          PHI         mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&PHI         phidp.colors deg -5 80 5 radial 1 0
+RHOHV        RHOHV       mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&RHOHV       rhohv.colors _   -5 80 5 radial 1 0
+KDP          KDP         mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&KDP         kdp_sband.colors   deg/km -5 80 5 radial 1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-CONVSF       CONVSF      mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_SCOTT CONVSF_SCOTT mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_scott&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_SMARTR_OLD CONVSF_SMARTR_OLD mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/convsf/sur_smartr&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_SMARTR_NEW CONVSF_SMARTR_NEW mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/convsf/sur_tamu&raintype  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_STACY CONVSF_STACY mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_stacy&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_1.5   CONVSF_1.5  mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_01.5&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_2.5   CONVSF_2.5  mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_02.5&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_3.5   CONVSF_3.5  mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_03.5&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_5.0   CONVSF_5.0  mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_05.0&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_7.0   CONVSF_7.0  mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_07.0&convsf  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_PY   CONVSF_PY  mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_09.0&raintype  convsf.colors.7 none 0 4 1 radial 1 0
-CONVSF_MAT  CONVSF_MAT mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/convsf/sur_11.0&convsf    convsf.colors.7 none 0 4 1 radial 1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:improve2/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # S-BAND SNR and DBM
+DM           DM          mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&DM          dbm.colors   dBm -5 80 5 radial 1 0
+DX           DX          mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&DX          dbm.colors   dBm -5 80 5 radial 1 0
 
-SNRHC_S      SNRHC_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&SNRHC_S     snr.colors   dB     -5 80 5 radial 1 0
-SNRVC_S      SNRVC_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&SNRVC_S     snr.colors   dB     -5 80 5 radial 1 0
-SNRHX_S      SNRHX_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&SNRHX_S     snr.colors   dB     -5 80 5 radial 1 0
-SNRVX_S      SNRVX_S     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&SNRVX_S     snr.colors   dB     -5 80 5 radial 1 0
-DBMHC_S      DBMHC_S     mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&DBMHC_S      dbmlow.colors dBm -5 80 5 radial 1 0
-DBMVC_S      DBMVC_S     mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&DBMVC_S      dbmlow.colors dBm -5 80 5 radial 1 0
-DBMHX_S      DBMHX_S     mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&DBMHX_S      dbmlow.colors dBm -5 80 5 radial 1 0
-DBMVX_S      DBMVX_S     mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&DBMVX_S      dbmlow.colors dBm -5 80 5 radial 1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:improve2/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # CMD
 
-CPA_S        CPA_S       mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&CPA_S        fraction.colors  -  -5 80 5 radial 1 0
-NCP_S        NCP_S       mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&NCP_S        fraction.colors  dB -5 80 5 radial 1 0
-CMD_S        CMD_S       mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&CMD_S        cmd.colors none -5 80 5 radial 1 0
-CMD_FLAG_S   CMD_FLAG_S  mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&CMD_FLAG_S   cmd_flag.colors none -5 80 5 radial 1 0
-CLUT_S       CLUT_S      mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&CLUT_S       dbz.colors dB -5 80 5 radial 1 0
+NCP          NCP         mdvp:://$(DATA_HOST)::improve2/cfradial/spol/ppi&NCP          fraction.colors  dB -5 80 5 radial 1 0
 
-======== ========  mdvp::static//$(DATA_HOST):0:mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+======== ========  mdvp::static//$(DATA_HOST):0:improve2/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # PARTICLE ID
 
-PID              PID              mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&PID             pid.colors  none -5 80 5 radial 1 0
-TEMP_FOR_PID     TEMP_FOR_PID     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&TEMP_FOR_PID    temp.colors C -5 80 5 redial 1 0
+PD               PD               mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&PD              pid.colors  none -5 80 5 radial 1 0
+WPD              WPD              mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&WPD             pid.colors  none -5 80 5 radial 1 0
+CPD              CPD              mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&CPD             pid.colors  none -5 80 5 radial 1 0
+CWPD             CWPD             mdvp:://$(DATA_HOST):0:improve2/cfradial/spol/ppi&CWPD            pid.colors  none -5 80 5 radial 1 0
 
-# RAIN RATE
-
-RATE_ZH        RATE_ZH        mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&RATE_ZH        precip_color none -5 80 5 radial 1 0
-RATE_Z_ZDR     RATE_Z_ZDR     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&RATE_Z_ZDR     precip_color none -5 80 5 radial 1 0
-RATE_KDP         RATE_KDP         mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&RATE_KDP         precip_color none -5 80 5 radial 1 0
-RATE_KDP_ZDR     RATE_KDP_ZDR     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&RATE_KDP_ZDR     precip_color none -5 80 5 radial 1 0
-RATE_HYBRID      RATE_HYBRID      mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&RATE_HYBRID      precip_color none -5 80 5 radial 1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# K-BAND MOMENTS
-
-DBZ_K        DBZ_K       mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&DBZ_K       dbz.colors   dBZ -5 80 5 radial 1 0
-LDRH_K       LDRH_K      mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&LDRH_K      ldr.colors     dB  -5 80 5 radial 1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# K-BAND SNR and DBM
-
-SNRHC_K      SNRHC_K     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&SNRHC_K     snr.colors   dB  -5 80 5 radial 1 0
-SNRVX_K      SNRVX_K     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/spolka/sur&SNRVX_K     snr.colors   dB  -5 80 5 radial 1 0
-DBMHC_K      DBMHC_K     mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&DBMHC_K      dbmlow.colors dBm -5 80 5 radial 1 0
-DBMVX_K      DBMVX_K     mdvp:://$(DATA_HOST)::dynamo/cfradial/QCed/spolka/sur&DBMVX_K      dbmlow.colors dBm -5 80 5 radial 1 0
-
-# Diff between S and K BAND MOMENTS
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# SMARTR MOMENTS
-
-DBZ_SMARTR    DBZ_SMARTR    mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur&DZ      dbz.colors      dBZ -5 80 5 radial 1 0
-VEL_SMARTR    VEL_SMARTR    mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur&VR      vel_spol.colors m/s -5 80 5 radial 1 0
-CZ_SMARTR     CZ_SMARTR     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur&CZ      dbz.colors      dBZ -5 80 5 radial 1 0
-CA_SMARTR     CA_SMARTR     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur&CA      dbz.colors      dBZ -5 80 5 radial 1 0
-
-DBZ_SMARTR_TEST    DBZ_SMARTR_TEST    mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur-test&DBZ             dbz.colors      dBZ -5 80 5 radial 1 0
-#RT_SMARTR_TEST     RT_SMARTR_TEST     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/convsf/sur_test&raintype convsf.colors.7 none 0  4 1 radial 1 0
-RT_SMARTR_TEST     RT_SMARTR_TEST     mdvp:://bob.atmos.washington.edu:0:dynamo/cfradial/QCed/smartr/convsf&raintype convsf.colors.7 none 0  4 1 radial 1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-DBZ_SMARTR_MOD    DBZ_SMARTR_MOD    mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur-mod&DZ      dbz.colors      dBZ -5 80 5 radial 1 0
-VEL_SMARTR_MOD    VEL_SMARTR_MOD    mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur-mod&VR      vel_spol.colors m/s -5 80 5 radial 1 0
-CZ_SMARTR_MOD     CZ_SMARTR_MOD     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur-mod&CZ      dbz.colors      dBZ -5 80 5 radial 1 0
-CA_SMARTR_MOD     CA_SMARTR_MOD     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/smartr/sur-mod&CA      dbz.colors      dBZ -5 80 5 radial 1 0
-
-DBZ_SMARTR_CART    DBZ_SMARTR_CART    mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/smartr/sur&DZ     dbz.colors      dBZ -5 80 5 radial 1 0
-VEL_SMARTR_CART    VEL_SMARTR_CART    mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/smartr/sur&VR     vel_spol.colors m/s -5 80 5 radial 1 0
-CZ_SMARTR_CART     CZ_SMARTR_CART     mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/smartr/sur&CZ     dbz.colors      dBZ -5 80 5 radial 1 0
-CA_SMARTR_CART     CZ_SMARTR_CART     mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/smartr/sur&CZ     dbz.colors      dBZ -5 80 5 radial 1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# TOGA MOMENTS
-
-#DZ_TOGA     DZ_TOGA     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/toga/ppi&DZ      dbz.colors      dBZ -5 80 5 radial 1 0
-#VEL_TOGA    VEL_TOGA    mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/toga/ppi&VR      vel_spol.colors m/s -5 80 5 radial 1 0
-#CZ_TOGA     CZ_TOGA     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/toga/ppi&CZ      dbz.colors      dBZ -5 80 5 radial 1 0
-#CA_TOGA     CA_TOGA     mdvp:://$(DATA_HOST):0:dynamo/cfradial/QCed/toga/ppi&CA      dbz.colors      dBZ -5 80 5 radial 1 0
-
-#DZ_TOGA_CART     DZ_TOGA_CART     mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/toga/ppi&DZ      dbz.colors      dBZ -5 80 5 radial 1 0
-#VEL_TOGA_CART    VEL_TOGA_CART    mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/toga/ppi&VR      vel_spol.colors m/s -5 80 5 radial 1 0
-#CZ_TOGA_CART     CZ_TOGA_CART     mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/toga/ppi&CZ      dbz.colors      dBZ -5 80 5 radial 1 0
-#CA_TOGA_CART     CA_TOGA_CART     mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/toga/ppi&CA      dbz.colors      dBZ -5 80 5 radial 1 0
-
-#======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# REPOH
-
-# CART MOMENTS
-
-DBZ_S_CART   DBZ_S_CART   mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/sur&DBZ_S       dbz.colors       dBZ    -5 80 5 radial 1 0
-VEL_S_CART   VEL_S_CART   mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/sur&VEL_S       vel_spol.colors  m/s    -5 80 5 radial 1 0
-DBZ_S_CART_RHI  DBZ_S_CART_RHI   mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/rhi&DBZ_S      dbz.colors       dBZ    -5 80 5 radial 1 0
-DBZ_S_CART_RHI_NEW  DBZ_S_CART_RHI_NEW   mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/rhi-jay&DBZ_S      dbz.colors       dBZ    -5 80 5 radial 1 0
-VEL_S_CART_RHI  VEL_S_CART_RHI   mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/rhi&VEL_S      vel_spol.colors  m/s    -5 80 5 radial 1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# PARTICLE ID CART
-
-PID_CART       PID_CART      mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/sur&PID              pid.colors  none -5 80 5 radial 1 0
-PID_CART_RHI   PID_CART_RHI  mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/rhi&PID              pid.colors  none -5 80 5 radial 1 0
-PID_CART_RHI_NEW   PID_CART_RHI_NEW  mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/rhi-jay&PID              pid.colors  none -5 80 5 radial 1 0
-
-# RAIN RATE CART
-
-RATE_HYBRID_CART RATE_HYBRID_CART mdvp:://$(DATA_HOST):0:dynamo/mdv/QCed/cart/spolka/sur&RATE_HYBRID     precip_color none -5 80 5 radial 1 0
-
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# Sat data
-
-VIS      VIS      mdvp:://$(DATA_HOST)::dynamo/mdv/sat/vis&VIS sat_albedo.colors     albedo% -5   80  5  cart   1 0
-IR       IR       mdvp:://$(DATA_HOST)::dynamo/mdv/sat/ir&IR   sat_tempK_toga.colors K       -5   80  5  cart   1 0
-WV       WV       mdvp:://$(DATA_HOST)::dynamo/mdv/sat/wv&WV   wv_uw.colors          K       -5   80  5  cart   1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
-
-IR-color IR-color  mdvp:://$(DATA_HOST)::dynamo/mdv/sat/ir&IR                sat_tempK_2.colors K -5   80  5  cart   1 0
-WV-color WV-color  mdvp:://$(DATA_HOST)::dynamo/mdv/sat/wv&WV                sat_tempK_2.colors K -5   80  5  cart   1 0
-
-======== ========  mdvp::static//$(DATA_HOST):0:dynamo/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
+======== ========  mdvp::static//$(DATA_HOST):0:improve2/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 </GRIDS>
 
@@ -297,9 +124,6 @@ WV-color WV-color  mdvp:://$(DATA_HOST)::dynamo/mdv/sat/wv&WV                sat
 #------------------------------------------------------------------------------------------
 
 World         World          world_states.map        1  0.0 1000000.0  white
-Maldives      Maldives       maldives.map            1  0.0 10000.0    white
-Towers        Towers         dynamo_towers.map       0  0.0 10000.0    cyan
-Points        Points         dynamo_points.map       1  0.0 1000000.0  cyan
 
 </MAPS>
 
@@ -380,7 +204,7 @@ cidd.debug2_flag:           0
 # demo time. The movie frame will be centered on the time after applying
 # temporal rounding. 
 
-cidd.demo_time:  12:00 10/16/2011
+cidd.demo_time:  16:15 11/28/2001
 
 # Set times to the nearest value divisible by the number of seconds
 cidd.temporal_rounding:    1
@@ -607,7 +431,7 @@ cidd.xsect_start_page:      1
 #
 # The Outer most domain:
 cidd.num_zoom_levels:       8
-cidd.start_zoom_level:      3
+cidd.start_zoom_level:      4
 cidd.min_zoom_threshold:    0
 
 # The number of Cached images for zooms.
@@ -629,37 +453,41 @@ cidd.level2_min_ykm:                -75.0
 cidd.level2_max_xkm:                75.0
 cidd.level2_max_ykm:                75.0
 #
-#
 cidd.level3_label:                  150km
 cidd.level3_min_xkm:                -150.0
 cidd.level3_min_ykm:                -150.0
 cidd.level3_max_xkm:                150.0
 cidd.level3_max_ykm:                150.0
 #
+cidd.level4_label:                  175km
+cidd.level4_min_xkm:                -175.0
+cidd.level4_min_ykm:                -175.0
+cidd.level4_max_xkm:                175.0
+cidd.level4_max_ykm:                175.0
 #
-cidd.level4_label:                  500km
-cidd.level4_min_xkm:                -500.0
-cidd.level4_min_ykm:                -500.0
-cidd.level4_max_xkm:                500.0
-cidd.level4_max_ykm:                500.0
+cidd.level5_label:                  500km
+cidd.level5_min_xkm:                -500.0
+cidd.level5_min_ykm:                -500.0
+cidd.level5_max_xkm:                500.0
+cidd.level5_max_ykm:                500.0
 #
-cidd.level5_label:                  1000km
-cidd.level5_min_xkm:                -1000.0
-cidd.level5_min_ykm:                -1000.0
-cidd.level5_max_xkm:                1000.0
-cidd.level5_max_ykm:                1000.0
+cidd.level6_label:                  1000km
+cidd.level6_min_xkm:                -1000.0
+cidd.level6_min_ykm:                -1000.0
+cidd.level6_max_xkm:                1000.0
+cidd.level6_max_ykm:                1000.0
 #
-cidd.level6_label:                  3000km
-cidd.level6_min_xkm:                -3000.0
-cidd.level6_min_ykm:                -3000.0
-cidd.level6_max_xkm:                3000.0
-cidd.level6_max_ykm:                3000.0
+cidd.level7_label:                  3000km
+cidd.level7_min_xkm:                -3000.0
+cidd.level7_min_ykm:                -3000.0
+cidd.level7_max_xkm:                3000.0
+cidd.level7_max_ykm:                3000.0
 #
-cidd.level7_label:                  5000km
-cidd.level7_min_xkm:                -5000.0
-cidd.level7_min_ykm:                -5000.0
-cidd.level7_max_xkm:                5000.0
-cidd.level7_max_ykm:                5000.0
+cidd.level8_label:                  5000km
+cidd.level8_min_xkm:                -5000.0
+cidd.level8_min_ykm:                -5000.0
+cidd.level8_max_xkm:                5000.0
+cidd.level8_max_ykm:                5000.0
 #
 
 # Vertical Range and Resolution - Establishes a vertical coordinate system
@@ -820,7 +648,7 @@ cidd.image_fill_threshold:    80000
 # used for 'dcont' style rendering
 cidd.dynamic_contour_threshold:    160000
 
-# Sets the format for output of Lat, Lon's. 0= Decimal Degrees, 1 = deg min' sec"
+# Sets the format for output of Lat, Lon. 0= Decimal Degrees, 1 = deg min sec
 cidd.latlon_mode:        0
 
 # Set the format for the time strings. See 'man strftime' for format options.
@@ -1401,7 +1229,7 @@ short_requests = TRUE;
 prod_info = {
    {
     menu_label = "RHI-ticks",
-    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::dynamo/spdb/rhi/sband",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::improve2/spdb/rhi/spol",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = TRUE,
@@ -1414,7 +1242,7 @@ prod_info = {
   , 
   {
     menu_label = "RHI-label",
-    url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::dynamo/spdb/rhi/sband",
+    url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::improve2/spdb/rhi/spol",
     data_type = 0,
     render_type = RENDER_ALL_VALID,
     on_by_default = FALSE,
@@ -1423,188 +1251,6 @@ prod_info = {
     text_off_threshold = 0.4,
     request_data_on_zoom = FALSE,
     request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "METARS-simple",
-    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::dynamo/spdb/metar",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = TRUE,
-    minutes_allow_before = 90.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "METARS-full",
-    url = "spdbp:Metar2Symprod:labels//$(DATA_HOST)::dynamo/spdb/metar",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = FALSE,
-    minutes_allow_before = 90.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "SHIP-OBS",
-    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::dynamo/spdb/ship_obs",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = TRUE,
-    minutes_allow_before = 120.0,
-    minutes_allow_after = 30.0,
-    text_off_threshold = 0.0001,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "SYN-OBS",
-    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::dynamo/spdb/synop_obs",
-    data_type = 0,
-    render_type = RENDER_LATEST_IN_FRAME,
-    on_by_default = TRUE,
-    minutes_allow_before = 240.0,
-    minutes_allow_after = 6.0,
-    text_off_threshold = 0.0,
-    request_data_on_zoom = FALSE,
-    request_data_on_vert_change = FALSE
-  }
-  ,
-  {
-    menu_label = "WWLLN-1hour" ,
-    url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::dynamo/spdb/wwlln",
-    data_type = 0,
-    render_type = RENDER_ALL_BEFORE_DATA_TIME,
-    on_by_default = TRUE,
-    minutes_allow_before = 60.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    FALSE,
-    FALSE
-  }
-  ,
-  {
-    menu_label = "WWLLN-3hour" ,
-    url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::dynamo/spdb/wwlln",
-    data_type = 0,
-    render_type = RENDER_ALL_BEFORE_DATA_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 180.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    FALSE,
-    FALSE
-  }
-  ,
-  {
-    menu_label = "WWLLN-6hour" ,
-    url = "spdbp:Ltg2Symprod:wwlln//$(DATA_HOST)::dynamo/spdb/wwlln",
-    data_type = 0,
-    render_type = RENDER_ALL_BEFORE_DATA_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 360.0,
-    minutes_allow_after = 0.0,
-    text_off_threshold = 0.0,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Falcon Track 05-min",
-    url = "spdbp:AcTrack2Symprod:05_min//$(DATA_HOST)::dynamo/spdb/ac_posn/falcon",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Falcon Track 10-min",
-    url = "spdbp:AcTrack2Symprod:10_min//$(DATA_HOST)::dynamo/spdb/ac_posn/falcon",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Falcon Track 20-min",
-    url = "spdbp:AcTrack2Symprod:20_min//$(DATA_HOST)::dynamo/spdb/ac_posn/falcon",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "P3 Track 20-min",
-    url = "spdbp:AcTrack2Symprod:20_min//$(DATA_HOST)::dynamo/spdb/ac_posn/p3",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "P3 Track 40-min",
-    url = "spdbp:AcTrack2Symprod:40_min//$(DATA_HOST)::dynamo/spdb/ac_posn/p3",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "P3 Track 60-min",
-    url = "spdbp:AcTrack2Symprod:60_min//$(DATA_HOST)::dynamo/spdb/ac_posn/p3",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 15.0,
-    minutes_allow_after = 15.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
-  }
-  ,                        
-  {
-    menu_label = "Revelle posn",
-    url = "spdbp:AcTrack2Symprod:ship//$(DATA_HOST)::dynamo/spdb/revelle_posn",
-    data_type = 0,
-    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-    on_by_default = FALSE,
-    minutes_allow_before = 60.0,
-    minutes_allow_after = 60.0,
-    text_off_threshold = 0.4,
-    FALSE,
-    FALSE
   }
 };
 

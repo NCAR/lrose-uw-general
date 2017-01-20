@@ -1,18 +1,24 @@
+#################################
 # .cshrc.local - NCAR
 
 setenv PROJ_DIR $HOME/projDir
 source $PROJ_DIR/system/params/site_info_olympex
 
-setenv HOST_OS LINUX
-setenv BUILD_DIR $HOME/cvs
-setenv RAP_MAKE_INC_DIR $BUILD_DIR/make_include
-setenv RAP_MAKE_BIN_DIR $BUILD_DIR/make_bin
-setenv RAP_INC_DIR $BUILD_DIR/include
-setenv RAP_LIB_DIR $BUILD_DIR/lib
-setenv RAP_SHARED_LIB_DIR $BUILD_DIR/lib
-setenv RAP_BIN_DIR $BUILD_DIR/bin
-setenv RAP_MAN_DIR $BUILD_DIR/man
-setenv RAP_DOC_DIR $BUILD_DIR/doc
+setenv HOST_OS LINUX_64
+
+setenv LROSE_CORE_DIR ~/git/lrose-core
+setenv LROSE_INSTALL_DIR ~/build
+setenv CODEBASE $HOME/git/lrose-core/codebase
+
+setenv RAP_MAKE_INC_DIR $CODEBASE/make_include
+setenv RAP_MAKE_BIN_DIR $CODEBASE/make_bin
+
+setenv INST_DIR ${HOME}/lrose
+setenv RAP_INC_DIR $INST_DIR/include
+setenv RAP_LIB_DIR $INST_DIR/lib
+setenv RAP_BIN_DIR $INST_DIR/bin
+setenv RAP_MAN_DIR $INST_DIR/man
+setenv RAP_DOC_DIR $INST_DIR/doc
 
 setenv RAP_SHARED_INC_DIR $RAP_INC_DIR
 setenv RAP_SHARED_LIB_DIR $RAP_LIB_DIR
@@ -48,7 +54,7 @@ setenv LD_LIBRARY_PATH $HOME/cvs/lib:$LD_LIBRARY_PATH
 # Assemble path to include all scripts directories
 # then projDir/bin, then the rest
 
-set path = ($HOME/cvs/bin $path)
+set path = ($HOME/cidd/bin $HOME/lrose/bin $path)
 
 if ( -d $PROJ_DIR ) then
   foreach dir ($PROJ_DIR/*)
@@ -102,6 +108,13 @@ if ($?prompt) then
   alias pcheckOK 'pcheck -ok'
   alias dcheckOK 'dcheck -ok'
   alias ph 'get_host_type'
+
+  alias gstat 'git status'
+  alias gcom 'git commit -am \!*'
+  alias gpush 'git push'
+  alias gpull 'git pull'
+  alias gdiff 'git diff '
+  alias gdtool 'git difftool -g -y '
 
 endif
 

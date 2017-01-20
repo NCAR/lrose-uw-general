@@ -25,7 +25,10 @@ xset fp= /usr/X11R6/lib/X11/fonts/misc/,/usr/X11R6/lib/X11/fonts/75dpi/,/usr/X11
 
 # start CIDD
     
+setenv DATA_HOST bob.atmos.washington.edu
 setenv PROJ_DIR /home/disk/meso-home/meso/git/lrose-uw-general/projDir
+source $PROJ_DIR/system/params/site_info_olympex
+
 
 CIDD -p $PROJ_DIR/display/params/CIDD.olympex.uw >& /dev/null &
     

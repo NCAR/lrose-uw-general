@@ -1,0 +1,20 @@
+#############################################
+# site-specific parameter file for NPOL
+#
+# Stacy Brodzik Mar 2014
+#############################################
+
+# site details
+
+setenv PROJECT_NAME               "ifloods"
+setenv SITE_NAME                  "npol"
+setenv RADAR_LAT                  42.2680512152778
+setenv RADAR_LON                  -92.5094444444444
+setenv RADAR_ALT_KM               0.312
+setenv RADAR_ALT_M                312
+setenv NEX_RADAR_LAT              41.7311
+setenv NEX_RADAR_LON              -93.7228
+setenv NEX_RADAR_ALT_KM           0.322
+setenv NEX_RADAR_ALT_M            322
+
+#############################################

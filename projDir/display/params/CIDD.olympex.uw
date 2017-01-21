@@ -625,8 +625,8 @@ NPOLCOMP_ZDR NPOLCOMP_ZDR  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&
 NPOLCOMP_KLGX_DBZ NPOLCOMP_KLGX_DBZ  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/klgx_compare&DBZ   dbz.colors   dBZ        -5 80 5 cart 1 0
 NPOLCOMP_KLGX_ZDR NPOLCOMP_KLGX_ZDR  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/klgx_compare&ZDR   zdr.colors   dB        -5 80 5 cart 1 0
 
-NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCOMP_DOW_DBZ NPOLCOMP_DOW_DBZ  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/dow6_compare&DBZ   dbz.colors   dBZ        -5 80 5 cart 1 0
+NPOLCOMP_DOW_ZDR NPOLCOMP_DOW_ZDR  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/dow6_compare&ZDR   zdr.colors   dB        -5 80 5 cart 1 0
 NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 

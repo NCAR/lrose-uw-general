@@ -1113,10 +1113,28 @@
 
 <!-- RANGE_RING Layers -->
 
-<Layer vis="on" type="RANGE_RINGS" name="Range Rings"
-       followData="false" radarLat="47.2755" radarLon="-124.209"
-       color="gray" width="1"
-       numRings="10" radiusIncr="25"
+<Layer vis="on" type="RANGE_RINGS" name="Dynamic Range Rings"
+       followData="true" radarLat="47.2772" radarLon="-124.211"
+       color="gray80" width="1"
+       numRings="5" radiusIncr="30"
+       displayAzLines="true" />
+
+<Layer vis="off" type="RANGE_RINGS" name="DOW Range Rings"
+       followData="false" radarLat="47.4885" radarLon="-123.869"
+       color="gray80" width="1"
+       numRings="5" radiusIncr="15"
+       displayAzLines="true" />
+
+<Layer vis="off" type="RANGE_RINGS" name="NPOL Range Rings"
+       followData="false" radarLat="47.2772" radarLon="-124.211"
+       color="gray80" width="1"
+       numRings="5" radiusIncr="30"
+       displayAzLines="true" />
+
+<Layer vis="off" type="RANGE_RINGS" name="KLGX Range Rings"
+       followData="false" radarLat="47.1169" radarLon="-124.107"
+       color="gray80" width="1"
+       numRings="8" radiusIncr="30"
        displayAzLines="true" />
 
 <!--
@@ -1364,7 +1382,7 @@
   </Path>
 </XSections-->
 
-<XSections>
+<XSections dataDrivenProperties="true" showGridLines="true" enableZoom="rubberband">
 </XSections>
 
 <!--

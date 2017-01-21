@@ -30,7 +30,8 @@ setenv TSDISTK /home/disk/blitz/src/toolkit
    #setenv TSDISorbitViewer_src /home/disk/blitz/src/orbit/TSDISorbitViewer
    #setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-ifort11
    setenv NCARG_ROOT /home/disk/sys/local/linux64/ncarg-6.0.0w
-   set path = ($path /usr/sbin /home/disk/sys/local/linux64/ncarg-ifort10/bin \
+   set path = (. /usr/java/latest/bin $path /usr/sbin \
+       	    /home/disk/sys/local/linux64/ncarg-ifort10/bin \
 	    /home/disk/meso-home/meso/lrose/bin \
 	    /home/disk/meso-home/meso/cidd/bin \
        	    /usr/local/ncarg/bin /rdss/bin /zebra5/bin \

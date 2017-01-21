@@ -109,7 +109,7 @@ use_multiple_threads = TRUE;
 // Type: int
 //
 
-n_compute_threads = 8;
+n_compute_threads = 6;
 
 //======================================================================
 //
@@ -812,6 +812,38 @@ KDP_check_zdr_sdev = TRUE;
 
 KDP_zdr_sdev_max = 2.5;
 
+///////////// KDP_threshold_for_ZZDR //////////////////
+//
+// Sets the threshold for computing conditional KDP from Z and ZDR.
+//
+// We can estimate KDP from Z and ZDR - we call this KDP_ZZDR. We can 
+//   then compute the conditioned KDP - we call this KDP_COND. To compute 
+//   KDP_COND, we first find the gates over which regular KDP exceeds this 
+//   threshold. Over this run of gates we compute the PHIDP change from 
+//   the regular KDP and from KDP_ZZDR. By taking the ratio of sum(KDP) / 
+//   sum(KDP_ZZDR), and applying that ratio to KDP_ZZDR over these gates, 
+//   we can compute KDP_COND such that the PHIDP change is the same for 
+//   both KDP and KDP_COND.
+//
+//
+// Type: double
+//
+
+KDP_threshold_for_ZZDR = 0.25;
+
+///////////// KDP_median_filter_len_for_ZZDR //////////
+//
+// Sets the length of the median filter when computing KDP_ZZDR.
+//
+// The Z and ZDR fields are smoothed with a median filter of this length 
+//   prior to estimating KDP_ZZDR.
+//
+//
+// Type: int
+//
+
+KDP_median_filter_len_for_ZZDR = 5;
+
 ///////////// KDP_debug ///////////////////////////////
 //
 // Option to print debug messages in KDP computation.
@@ -1239,6 +1271,76 @@ PID_ngates_for_sdev = 9;
 //
 
 PID_output_particle_interest_fields = FALSE;
+
+///////////// PID_locate_melting_layer ////////////////
+//
+// Option to locate the melting layer.
+//
+// If true, the melting layer will be located using the WET_SNOW 
+//   category. In addition, the ML_INTEREST field will be computed. 
+//   Otherwise it will be missing. Follows Giangrande et al. - Automatic 
+//   Designation of the Melting Layer with Polarimitric Prototype of 
+//   WSR-88D Radar - AMS JAMC, Vol47, 2008.
+//
+//
+// Type: boolean
+//
+
+PID_locate_melting_layer = FALSE;
+
+///////////// melting_layer_percentile_for_bottom_limit 
+//
+// Percentile value for estimating the bottom of the melting layer.
+//
+// To locate the melting layer limits, we rank the heights of all gates 
+//   containing WET_SNOW, from bottom to top. This is the percentile value 
+//   for the bottom of the layer.
+//
+//
+// Type: double
+//
+
+melting_layer_percentile_for_bottom_limit = 25;
+
+///////////// melting_layer_percentile_for_top_limit //
+//
+// Percentile value for estimating the top of the melting layer.
+//
+// To locate the melting layer limits, we rank the heights of all gates 
+//   containing WET_SNOW, from bottom to top. This is the percentile value 
+//   for the top of the layer.
+//
+//
+// Type: double
+//
+
+melting_layer_percentile_for_top_limit = 75;
+
+///////////// melting_layer_write_results_to_spdb /////
+//
+// Option to save melting layer properties to spdb.
+//
+// If true, the melting layer properties will be saved to SPDB using XML 
+//   encoding. See 'melting_layer_spdb_output_url'.
+//
+//
+// Type: boolean
+//
+
+melting_layer_write_results_to_spdb = FALSE;
+
+///////////// melting_layer_spdb_output_url ///////////
+//
+// URL for writing melting layer results to SPDB XML.
+//
+// For local writes, specify the directory. For remote writes, specify 
+//   the full url: spdbp:://host::dir.
+//
+//
+// Type: string
+//
+
+melting_layer_spdb_output_url = "/tmp/spdb/melting_layer";
 
 //======================================================================
 //
@@ -2176,7 +2278,7 @@ zdr_bias_ice_min_rho_vxhx = 0;
 // Type: double
 //
 
-zdr_bias_ice_max_rho_vxhx = 1.0;
+zdr_bias_ice_max_rho_vxhx = 1;
 
 ///////////// zdr_bias_ice_min_temp_c /////////////////
 //
@@ -2384,7 +2486,7 @@ zdr_bias_bragg_min_rho_vxhx = 0;
 // Type: double
 //
 
-zdr_bias_bragg_max_rho_vxhx = 1.0;
+zdr_bias_bragg_max_rho_vxhx = 1;
 
 ///////////// zdr_bias_bragg_min_temp_c ///////////////
 //
@@ -2793,7 +2895,7 @@ self_consistency_zdrm_correction = 0;
 
 self_consistency_max_phase_shift_on_backscatter = 4;
 
-///////////// self_consisteny_method //////////////////
+///////////// self_consistency_method /////////////////
 //
 // Method used to estimate KDP in self consistency method.
 //
@@ -2810,7 +2912,7 @@ self_consistency_max_phase_shift_on_backscatter = 4;
 // Type: enum
 // Options:
 //     SELF_CON_ZDR_POWER_LAW_METHOD
-//     SELF_CON_ZDR_POLYMONIAL_METHOD
+//     SELF_CON_ZDR_POLYNOMIAL_METHOD
 //
 
 self_consistency_method = SELF_CON_ZDR_POWER_LAW_METHOD;
@@ -2879,7 +2981,7 @@ self_consistency_zdr_atten_coefficient = 0.0038;
 //
 // Polynomial coefficent a0. C-band: 6.7; S-band: 3.19.
 //
-// SELF_CON_ZDR_POLYNOMIALMETHOD. See equation 4: Qing et al.
+// SELF_CON_ZDR_POLYNOMIAL_METHOD. See equation 4: Qing et al.
 //
 //
 // Type: double
@@ -2891,7 +2993,7 @@ self_consistency_polynomial_a0 = 3.19;
 //
 // Polynomial coefficent a1. C-band: -4.42; S-band: -2.16.
 //
-// SELF_CON_ZDR_POLYNOMIALMETHOD. See equation 4: Qing et al.
+// SELF_CON_ZDR_POLYNOMIAL_METHOD. See equation 4: Qing et al.
 //
 //
 // Type: double
@@ -2903,7 +3005,7 @@ self_consistency_polynomial_a1 = -2.16;
 //
 // Polynomial coefficent a2. C-band: 2.16; S-band: 0.795.
 //
-// SELF_CON_ZDR_POLYNOMIALMETHOD. See equation 4: Qing et al.
+// SELF_CON_ZDR_POLYNOMIAL_METHOD. See equation 4: Qing et al.
 //
 //
 // Type: double
@@ -2915,7 +3017,7 @@ self_consistency_polynomial_a2 = 0.795;
 //
 // Polynomial coefficent a3. C-band: -0.404; S-band: -0.119.
 //
-// SELF_CON_ZDR_POLYNOMIALMETHOD. See equation 4: Qing et al.
+// SELF_CON_ZDR_POLYNOMIAL_METHOD. See equation 4: Qing et al.
 //
 //
 // Type: double
@@ -3074,6 +3176,8 @@ site_temp_search_margin_secs = 7200;
 //          RHOHV_NNC
 //          PHIDP
 //          KDP
+//          KDP_ZZDR
+//          KDP_COND
 //          KDP_BRINGI
 //          PSOB
 //          ZDP
@@ -3127,6 +3231,10 @@ site_temp_search_margin_secs = 7200;
 //          ZDR_IN_BRAGG
 //          ZDR_FLAG_IN_ICE
 //          ZDR_FLAG_IN_BRAGG
+//          ML_INTEREST
+//          ELEVATION_ANGLE
+//          RANGE
+//          BEAM_HEIGHT
 //      string name;
 //      string long_name;
 //      string standard_name;

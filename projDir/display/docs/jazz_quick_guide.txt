@@ -115,8 +115,8 @@ Allows you to configure:
   * time and animation
   * advanced features
 
-6. Icons menus (below main menu)
---------------------------------
+6. Icon tools menu (below main menu)
+------------------------------------
 
 (a) +
 
@@ -164,6 +164,10 @@ Not applicable.
 (i) Toggle fields (double arrow)
 
 Toggle between 2 latest selected fields.
+
+(j) Time config tool
+
+Short-cut to "Configure -> time and animation"
 
 7. Reset to startup state
 -------------------------

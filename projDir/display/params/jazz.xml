@@ -1290,10 +1290,10 @@
 ####################################################################################################################################
 -->
 
-<!--View projection="LambertConformal" originLon="-124.2" originLat="47.27" stdLat1="47.27" /-->
 <!--View projection="Stereographic" tangentLon="-135.0" tangentLat="90.0"/-->
 <!--View projection="LatLon" /-->
-<View projection="Flat" originLon="-124.209056" originLat="47.275528" rotation="0.0" />
+<!-- View projection="Flat" originLon="-124.209056" originLat="47.275528" rotation="0.0" /-->
+<View projection="LambertConformal" originLon="-125.0" originLat="47.25" stdLat1="47.25" />
 
 <!--
 ####################################################################################################################################
@@ -1408,6 +1408,19 @@
 -->
 
 <SwapFieldsTool/>
+<TimeAndAnimationTool/>
+
+<!--
+  ####################################################################################################################################
+   Distance and Azimuth measuring tool:
+
+   distanceUnit = Optional unit in which to display the distance. Must be a length unit defined in units.xml file.
+                  Defaults to meter.
+   declination  = Optional magnetic declination from true north, expressed as a decimal degree. May be
+                  positive, negative, or contain an east-west direction suffix. Defaults to zero.
+  ####################################################################################################################################
+-->
+<DistanceAndAzimuthTool distanceUnit="nm" declination="6.3E"/>
 
 <!--
   ####################################################################################################################################

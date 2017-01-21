@@ -61,7 +61,7 @@ setenv RAP_JAR_DIR $LROSE_INSTALL_DIR/java/dist/lib
 # then projDir/bin, then the rest
 
 set path = ($HOME/cidd/bin $HOME/lrose/bin $path)
-set path = (/usr/java/latest/bin $path)
+set path = (/usr/java/latest/bin /usr/local/ant/bin $path)
 
 if ( -d $PROJ_DIR ) then
   foreach dir ($PROJ_DIR/*)

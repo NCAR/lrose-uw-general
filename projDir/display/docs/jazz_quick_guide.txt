@@ -1,0 +1,174 @@
+HOW TO USE JAZZ - a quick guide
+===============================
+
+1. Launching
+------------
+
+You will need Java 1.6 installed, along with Java Web Start (javaws).
+
+Launch with the following command:
+
+  javaws http://www.atmos.washington.edu/~brodzik/olympex/jazz/jazz.jnlp
+
+Authorize the application as required by the browser.
+
+Wait for the main screen to come up.
+
+2. Field menu - gridded fields
+------------------------------
+
+Click on
+
+  Pop-Ups -> Grid Table
+
+to pop up the list of gridded fields.
+
+Keep this menu around in a suitable place.
+
+Select the field you want.
+
+Explore other fields in the list.
+
+You can also use the:
+
+  Grids menu
+
+for access to the gridded fields.
+
+3. Features (e.g. RHI ticks, aircraft tracks)
+---------------------------------------------
+
+The
+
+  Features
+
+menu allows you to select / deselect features.
+
+To bring up a persistent menu, use
+
+  Pop-Ups -> Layer List
+
+and scroll down to the bottom of the list for the features.
+
+4. Changing time
+----------------
+
+(a) You can click on the time bar at the bottom of the window.
+
+or
+
+(b) Use the time and animation GUI:
+
+Click on:
+
+  Configure -> Time and Animation
+
+Set the end time you want, and Apply.
+
+The mottled bar may be dragged left and right to change time frame.
+
+5. Main menu items
+------------------
+
+(a) File
+
+You can
+
+  * 'Reset' to the startup configuration.
+  * 'Open' a different XML config file
+  * 'Export' the current image
+
+(b) Grids
+
+Same fields as in the Layer List - but less convenient since it is 
+not a pop-up.
+
+(c) Features
+
+Set the products you want on or off.
+
+(d) Maps
+
+Select the maps you want on or off.
+
+(e) View
+
+Select the view you want.
+
+(f) Pop-Ups
+
+You can pop up:
+
+  * Layer list
+  * Gridded field table
+  * Vertical section
+  * Blue dot tool showing data locations in time
+
+(g) Configure
+
+Allows you to configure:
+
+  * transparency
+  * layer order
+  * contouring
+  * overlays
+  * time and animation
+  * advanced features
+
+6. Icons menus (below main menu)
+--------------------------------
+
+(a) +
+
+Enter zoom mode (the default)
+
+(b) <-
+
+Go back one zoom state
+
+(c) ->
+
+Go forward one zoom state
+
+(d) Vert section
+
+Enter vertical section mode.
+
+You will stay in this mode until a new mode is selected.
+
+To select a vertical section, click on desired points, and
+double-click on last point. Multi-section RHIs are available.
+
+To display a measured RHI, click on thr radar, and then
+double-click on one of the RHI tick marks.
+
+(e) Pan (hand)
+
+Enter pan mode.
+
+To pan the display, click and drag.
+
+(f) Info mode (I)
+
+The value under the cursor is displayed at the top left.
+
+(g) Ruler mode
+
+The distance and bearing appears at the top left.
+The lat/lon appears under the cursor.
+
+(h) World navigation
+
+Not applicable.
+
+(i) Toggle fields (double arrow)
+
+Toggle between 2 latest selected fields.
+
+7. Reset to startup state
+-------------------------
+
+Click:
+
+  File -> Reset Application
+

@@ -104,6 +104,8 @@ if ($?prompt) then
   
   alias gate 'ssh -a -XY -C -L 2401:cvs.rap.ucar.edu:2401 -L 8888:svn.eol.ucar.edu:80 dixon@gate.ucar.edu'
 
+  alias bob 'ssh -XY bob'
+
   alias print_procmap 'print_procmap -hb -up -status'
   alias PrintDataMap 'PrintDataMap -all -relt -lreg'
   alias ppm 'print_procmap -hb -up -status'

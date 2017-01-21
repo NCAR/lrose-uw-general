@@ -1,0 +1,51 @@
+#! /bin/csh
+
+running "DsMdvServer -instance manager"
+if ($status == 1) then
+    DsMdvServer -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p DsMdvServer -i manager >& /dev/null &
+endif
+
+running "DsFmqServer -instance manager"
+if ($status == 1) then
+    DsFmqServer -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p DsFmqServer -i manager >& /dev/null &
+endif
+
+running "DsFCopyServer -instance manager"
+if ($status == 1) then
+    DsFCopyServer -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p DsFCopyServer -i manager >& /dev/null &
+endif
+
+running "Rhi2Symprod -instance manager"
+if ($status == 1) then
+    Rhi2Symprod -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p Rhi2Symprod -i manager >& /dev/null &
+endif
+
+running "AcTracks2Symprod -instance manager"
+if ($status == 1) then
+    AcTracks2Symprod -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p AcTracks2Symprod -i manager >& /dev/null &
+endif
+
+running "Ltg2Symprod -instance manager"
+if ($status == 1) then
+    Ltg2Symprod -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p Ltg2Symprod -i manager >& /dev/null &
+endif
+
+running "Metar2Symprod -instance manager"
+if ($status == 1) then
+    Metar2Symprod -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p Metar2Symprod -i manager >& /dev/null &
+endif
+
+running "Tstorms2Symprod -instance manager"
+if ($status == 1) then
+    Tstorms2Symprod -instance manager -qmax -1 |& \
+	LogFilter -d $ERRORS_LOG_DIR -p Tstorms2Symprod -i manager >& /dev/null &
+endif
+
+

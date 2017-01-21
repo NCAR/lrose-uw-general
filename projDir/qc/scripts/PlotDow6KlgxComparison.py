@@ -2,7 +2,7 @@
 
 #===========================================================================
 #
-# Produce plots for comparison between NPOL and KLGX
+# Produce plots for comparison between DOW6 and KLGX
 #
 #===========================================================================
 
@@ -38,11 +38,11 @@ def main():
                       help='Set verbose debugging on')
     parser.add_option('--compFile',
                       dest='compFilePath',
-                      default='/home/disk/meso-home/meso/projDir/data/olympex/radar_comparison/npol_klgx/NPOL_minus_KGLX_minus_20151105_161419.summary.txt',
+                      default='/home/disk/meso-home/meso/projDir/data/olympex/radar_comparison/dow6_klgx/DOW6_minus_KLGX_20151106_134817.summary.txt',
                       help='Comparison results file path')
     parser.add_option('--title',
                       dest='title',
-                      default='COMPARISON NPOL - KLGX',
+                      default='COMPARISON DOW6 - KLGX',
                       help='Title for plot')
     parser.add_option('--width',
                       dest='figWidthMm',
@@ -132,6 +132,8 @@ def readInputData(compFilePath, colHeaders, colData):
         # data
         
         data = line.strip().split()
+        if (len(data) < 12):
+            continue
 
         for index, var in enumerate(colHeaders, start=0):
             if (var == 'count' or var == 'obsNum' or \
@@ -223,12 +225,12 @@ def doPlot(compData, compTimes):
     # mean bias for project
     
     startTime = datetime.datetime(2015, 11, 12, 0, 0, 0)
-    endTime = datetime.datetime(2015, 12, 20, 0, 0, 0)
+    endTime = datetime.datetime(2016, 01, 13, 0, 0, 0)
     meanBiasProject = computePeriodStats(biasTimes, validDbzBias, startTime, endTime)
-    print >>sys.stderr, "NPOL mean bias for project, Nov 12 - Dec 10: ", meanBiasProject
+    print >>sys.stderr, "DOW6-KLGX mean bias for project, Nov 12 - Dec 10: ", meanBiasProject
 
     meanTimes =  [ datetime.datetime(2015, 11, 12, 00, 00, 00), \
-                   datetime.datetime(2015, 12, 20, 00, 00, 00) ]
+                   datetime.datetime(2016, 01, 13, 00, 00, 00) ]
 
     meanBias = [ meanBiasProject, meanBiasProject ]
 
@@ -243,9 +245,9 @@ def doPlot(compData, compTimes):
     for label in legend1.get_texts():
         label.set_fontsize('x-small')
     ax1.set_xlabel("Date")
-    ax1.set_ylabel("NPOL-KLGX DBZ BIAS (dB)")
+    ax1.set_ylabel("DOW6-KLGX DBZ BIAS (dB)")
     ax1.grid(True)
-    ax1.set_ylim([-5, 5])
+    # ax1.set_ylim([-5, 5])
     
     hfmt = dates.DateFormatter('%y/%m/%d')
     ax1.xaxis.set_major_locator(dates.DayLocator())

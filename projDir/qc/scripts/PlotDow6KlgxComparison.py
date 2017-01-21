@@ -225,12 +225,12 @@ def doPlot(compData, compTimes):
     # mean bias for project
     
     startTime = datetime.datetime(2015, 11, 12, 0, 0, 0)
-    endTime = datetime.datetime(2016, 01, 13, 0, 0, 0)
+    endTime = datetime.datetime(2015, 12, 20, 0, 0, 0)
     meanBiasProject = computePeriodStats(biasTimes, validDbzBias, startTime, endTime)
     print >>sys.stderr, "DOW6-KLGX mean bias for project, Nov 12 - Dec 10: ", meanBiasProject
 
     meanTimes =  [ datetime.datetime(2015, 11, 12, 00, 00, 00), \
-                   datetime.datetime(2016, 01, 13, 00, 00, 00) ]
+                   datetime.datetime(2015, 12, 20, 00, 00, 00) ]
 
     meanBias = [ meanBiasProject, meanBiasProject ]
 

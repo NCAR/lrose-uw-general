@@ -717,299 +717,299 @@
        menuGroup="D3R" menuName="D3R-QC-KU-SNR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI DBZ TOT" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="DBZ_TOT" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="DBZ_TOT" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-DBZ-TOT" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI DBZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="DBZ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="DBZ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-DBZ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI VEL30" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
+       field="VEL" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-VEL30" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI VEL45" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
+       field="VEL" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-VEL45" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI VELNEX" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
+       field="VEL" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-VELNEX" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI WIDTH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="WIDTH" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
+       field="WIDTH" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-WIDTH" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI ZDR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="ZDR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
+       field="ZDR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-ZDR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RHOHV" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="RHOHV" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
+       field="RHOHV" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RHOHV" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI PHIDP" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="PHIDP" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
+       field="PHIDP" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-PHIDP" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI KDP" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="KDP" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
+       field="KDP" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-KDP" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RR DROPS" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="RR_DROPS2" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR_DROPS2" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RR-DROPS" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RR POL ZR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="RR_POL_ZR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR_POL_ZR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RR-POL-ZR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RR CIF" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="RR_CIF" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR_CIF" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RR-CIF" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI HID" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="HID" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/hid.colors"
+       field="HID" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/hid.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-HID" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI SQ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="SQ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
+       field="SQ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-SQ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI D0" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="D0" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="D0" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-D0" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI NW" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="NW" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="NW" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-NW" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI DM" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="DM" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="DM" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-DM" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI N2" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi"
-       field="N2" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="N2" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-N2" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI ZZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="ZZ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="ZZ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-ZZ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI CZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="CZ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="CZ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-CZ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI VR30" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="VR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
+       field="VR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-VR30" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI VR45" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="VR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
+       field="VR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-VR45" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI VRNEX" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="VR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
+       field="VR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-VRNEX" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI SW" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="SW" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
+       field="SW" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-SW" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI DR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="DR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
+       field="DR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-DR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="RH" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
+       field="RH" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RH" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI PH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="PH" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
+       field="PH" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-PH" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI KD" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="KD" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
+       field="KD" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-KD" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="RR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RP" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="RP" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RP" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RP" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI RC" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="RC" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RC" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-RC" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI SQ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="SQ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
+       field="SQ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-SQ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI D0" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="D0" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="D0" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-D0" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI NW" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="NW" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="NW" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-NW" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI DM" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="DM" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="DM" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-DM" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLRHI N2" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/rhi_fromUF"
-       field="N2" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="N2" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_RHI" menuName="CART-NPOL-RHI-N2" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR DBZ TOT" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="DBZ_TOT" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="DBZ_TOT" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-DBZ-TOT" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR DBZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="DBZ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="DBZ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-DBZ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR VEL30" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
+       field="VEL" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-VEL30" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR VEL45" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
+       field="VEL" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-VEL45" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR VELNEX" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
+       field="VEL" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-VELNEX" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR WIDTH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="WIDTH" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
+       field="WIDTH" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-WIDTH" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR ZDR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="ZDR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
+       field="ZDR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-ZDR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RHOHV" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="RHOHV" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
+       field="RHOHV" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RHOHV" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR PHIDP" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="PHIDP" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
+       field="PHIDP" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-PHIDP" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR KDP" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="KDP" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
+       field="KDP" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-KDP" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RR DROPS" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="RR_DROPS2" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR_DROPS2" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RR-DROPS" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RR POL ZR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="RR_POL_ZR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR_POL_ZR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RR-POL-ZR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RR CIF" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="RR_CIF" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR_CIF" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RR-CIF" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR HID" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="HID" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/hid.colors"
+       field="HID" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/hid.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-HID" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR SQ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="SQ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
+       field="SQ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-SQ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR D0" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="D0" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="D0" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-D0" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR NW" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="NW" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="NW" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-NW" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR DM" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="DM" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="DM" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-DM" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR N2" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur"
-       field="N2" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="N2" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-N2" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR ZZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="ZZ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="ZZ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-ZZ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR CZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="CZ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       field="CZ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-CZ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR VR30" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="VR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
+       field="VR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-VR30" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR VR45" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="VR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
+       field="VR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_45.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-VR45" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR VRNEX" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="VR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
+       field="VR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_nexrad.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-VRNEX" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR SW" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="SW" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
+       field="SW" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/width.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-SW" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR DR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="DR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
+       field="DR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-DR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="RH" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
+       field="RH" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rhohv.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RH" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR PH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="PH" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
+       field="PH" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phidp.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-PH" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR KD" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="KD" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
+       field="KD" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/kdp.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-KD" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RR" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="RR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RR" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RR" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RP" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="RP" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RP" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RP" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR RC" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="RC" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
+       field="RC" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/precip_rate.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-RC" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR SQ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="SQ" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
+       field="SQ" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/snr.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-SQ" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR D0" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="D0" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="D0" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-D0" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR NW" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="NW" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="NW" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-NW" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR DM" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="DM" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
+       field="DM" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/trip.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-DM" />
 
 <Layer vis="off" type="MDV" name="CARTNPOLSUR N2" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol/sur_fromUF"
-       field="N2" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
+       field="N2" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/number25.colors"
        menuGroup="NPOL_CART_SUR" menuName="CART-NPOL-SUR-N2" />
 
 <Layer vis="off" type="MDV" name="NPOLCOMP DBZ" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/cart/npol_compare"

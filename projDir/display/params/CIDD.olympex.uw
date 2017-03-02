@@ -41,7 +41,7 @@ field_list = {
 #  { "KING", "KING_" },
 #  { "D3R", "D3R_" },
   { "D3R_QC", "D3RQC_" },
-#  { "CARTNC_NPOL_RHI", "CARTNCNPOLRHI_" },
+  { "CARTNC_NPOL_RHI", "CARTNCNPOLRHI_" },
   { "CART_NPOL_RHI", "CARTNPOLRHI_" },
   { "CART_NPOL_SUR", "CARTNPOLSUR_" },
   { "NPOLCOMP", "NPOLCOMP_" },
@@ -423,8 +423,8 @@ SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  no
 SAT_VIS  SAT_VIS   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/vis&vis sat_counts.colors      albedo  -5   80  5  cart   1 0
 SAT_IR   SAT_IR    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/ir&Tb   sat_tempK_oly.colors   K       -5   80  5  cart   1 0
 SAT_WV   SAT_WV    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/wv&Tb   wv_uw.colors           K       -5   80  5  cart   1 0
-SAT_GPM  SAT_GPM   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm&refl dbz_carbone17.colors  dBZ     -5   80  5  cart   1 0
-SAT_GPMKA  SAT_GPMKA   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm_ka_hs&refl dbz_carbone17.colors  dBZ     -5   80  5  cart   1 0
+SAT_GPM  SAT_GPM   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm&refl dbz_carbone17.colors  dBZ     -5   80  5  dcont   1 0
+SAT_GPMKA  SAT_GPMKA   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm_ka_hs&refl dbz_carbone17.colors  dBZ     -5   80  5  dcont   1 0
 SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
@@ -525,7 +525,7 @@ D3RQC_KU_SNR    D3R_QC_KU_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments
 ======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 ======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 ======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#CARTNCNPOLRHI_DBZ     CARTNC_NPOL_RHI_DBZ     mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/npol/rhi&DBZ   dbz.colors         dBZ        -5 80 5 cart 1 0
+CARTNCNPOLRHI_DBZ     CARTNC_NPOL_RHI_DBZ     mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/npol/rhi&DBZ   dbz.colors         dBZ        -5 80 5 dcont 1 0
 
 CARTNPOLRHI_DBZ_TOT   CART_NPOL_RHI_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
 CARTNPOLRHI_DBZ       CART_NPOL_RHI_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
@@ -644,10 +644,10 @@ NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevatio
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&refl           dbz.colors         dBZ        -5 80 5 cart 1 0
-GPM_FLAG_ECHO         GPM_FLAG_ECHO           mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&flag_echo      dbz.colors         -          -5 80 5 cart 1 0
-GPM_NSR               GPM_NSR                 mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&near_surf_rain rain_accum.colors  mm         -5 80 5 cart 1 0
-GPM_RT                GPM_RT                  mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&rain_type      conv3.colors       -          -5 80 5 cart 1 0
+GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&refl           dbz.colors         dBZ        -5 80 5 dcont 1 0
+GPM_FLAG_ECHO         GPM_FLAG_ECHO           mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&flag_echo      dbz.colors         -          -5 80 5 dcont 1 0
+GPM_NSR               GPM_NSR                 mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&near_surf_rain rain_accum.colors  mm         -5 80 5 dcont 1 0
+GPM_RT                GPM_RT                  mdvp:://$(DATA_HOST):0:olympex/cfnetcdf/moments/gpm&rain_type      conv3.colors       -          -5 80 5 dcont 1 0
 
 # RAIN RATE CART
 

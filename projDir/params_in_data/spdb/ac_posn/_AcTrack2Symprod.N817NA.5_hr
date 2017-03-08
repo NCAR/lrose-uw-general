@@ -749,3 +749,111 @@ callsign_colors = {
   }
 };
 
+//======================================================================
+//
+// ADD TIME LABELS TO TRACK.
+//
+// Option to add time labels at a specified time interval along the 
+//   track.
+//
+//======================================================================
+ 
+///////////// add_time_labels /////////////////////////
+//
+// Option to add time labels to the track at specified intervals.
+//
+// If TRUE, time labels are added at the specified time interval.
+//
+//
+// Type: boolean
+//
+
+add_time_labels = TRUE;
+
+///////////// time_label_color ////////////////////////
+//
+// Color for time labels.
+//
+// If empty, use the same color as the track.
+//
+//
+// Type: string
+//
+
+time_label_color = "cyan";
+
+///////////// time_label_interval_secs ////////////////
+//
+// Time interval for labels (secs).
+//
+// Number of seconds between time labels.
+//
+//
+// Type: int
+//
+
+time_label_interval_secs = 1800;
+
+///////////// time_label_format ///////////////////////
+//
+// Formatting for time label.
+//
+// Specify which elements in the time should appear in the label.
+//
+//
+// Type: enum
+// Options:
+//     TIME_LABEL_YYYY_MM_DD_HH_MM_SS
+//     TIME_LABEL_YYYY_MM_DD_HH_MM
+//     TIME_LABEL_HH_MM_SS
+//     TIME_LABEL_HH_MM
+//
+
+time_label_format = TIME_LABEL_HH_MM;
+
+///////////// time_label_offset ///////////////////////
+//
+// (x,y) offset for time labels.
+//
+// Pixel offsets for time label rendering. The label is rendered at the 
+//   given offsets from the track position at the label time. A positive 
+//   x_offset moves the label to the right; a positive y_offset moves the 
+//   label up.
+//
+//
+// Type: struct
+//   typedef struct {
+//      int x_offset;
+//      int y_offset;
+//   }
+//
+//
+
+time_label_offset = {
+    x_offset = 0,
+    y_offset = 0
+};
+
+///////////// time_label_icon /////////////////////////
+//
+// Icon for time label.
+//
+// Array defining the icon to be used for the time label positions. The 
+//   icon is a bit-mapped square icon.  You put 1's in the positions of 
+//   the icon where the bit should be displayed, and 0's in the positions 
+//   that are not a part of the icon. You may want to look at an example 
+//   parameter file to see how this is done.
+//
+//
+// Type: int
+// 2D array - variable size
+//
+
+time_label_icon = {
+  { 0, 0, 1, 0, 0 },
+  { 0, 1, 1, 1, 0 },
+  { 1, 1, 1, 1, 1 },
+  { 0, 1, 1, 1, 0 },
+  { 0, 0, 1, 0, 0 }
+};
+

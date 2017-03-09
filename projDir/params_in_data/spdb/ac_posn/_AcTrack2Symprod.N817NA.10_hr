@@ -780,7 +780,8 @@ add_time_labels = TRUE;
 // Type: string
 //
 
-time_label_color = "cyan";
+// time_label_color = "cyan";
+time_label_color = "white";
 
 ///////////// time_label_interval_secs ////////////////
 //

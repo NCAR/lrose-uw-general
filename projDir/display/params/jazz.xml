@@ -1036,6 +1036,22 @@
        field="ZDR" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/zdr.colors"
        menuGroup="compare" menuName="NPOLCOMP-DOW-ZDR" />
 
+<Layer vis="off" type="MDV" name="GPM REFL" location="mdvp:://bob.atmos.washington.edu:5440:olympex/cfcart/moments/gpm"
+       field="refl" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/dbz_carbone17.colors"
+       menuGroup="GPM" menuName="GPM-REFL" />
+
+<Layer vis="off" type="MDV" name="GPM Near Surf Rain" location="mdvp:://bob.atmos.washington.edu:5440:olympex/cfcart/moments/gpm"
+       field="near_surf_rain" render="fillcontours" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/rain_accum.colors"
+       menuGroup="GPM" menuName="GPM-NS-RAIN" />
+
+<Layer vis="off" type="MDV" name="GPM Rain Type" location="mdvp:://bob.atmos.washington.edu:5440:olympex/cfcart/moments/gpm"
+       field="rain_type" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/convsf_gpm.colors"
+       menuGroup="GPM" menuName="GPM-RAIN-TYPE" />
+
+<Layer vis="off" type="MDV" name="GPM Phase Type" location="mdvp:://bob.atmos.washington.edu:5440:olympex/cfcart/moments/gpm"
+       field="phase_type" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/phase_gpm.colors"
+       menuGroup="GPM" menuName="GPM-PHASE-TYPE" />
+
 <!-- MDVWIND Layers -->
 
 <Layer vis="off" type="MDVWIND" name="WRF" menuName="WRF" location="mdvp:://bob.atmos.washington.edu:5440:olympex/mdv/wrf"
@@ -1183,6 +1199,7 @@
   <MenuGroup name="NPOL_CART_RHI" label="CART_NPOL_RHI" parentGroup="GRIDS_MENU" />
   <MenuGroup name="NPOL_CART_SUR" label="CART_NPOL_SUR" parentGroup="GRIDS_MENU" />
   <MenuGroup name="compare" label="Compare" parentGroup="GRIDS_MENU" />
+  <MenuGroup name="GPM" label="GPM" parentGroup="GRIDS_MENU" />
 
 <!--
 ####################################################################################################################################

@@ -644,10 +644,10 @@ NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevatio
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&refl             dbz.colors         dBZ        -5 80 5 dcont 1 0
-GPM_FLAG_ECHO         GPM_FLAG_ECHO           mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&flag_echo        dbz.colors         -          -5 80 5 dcont 1 0
-GPM_NEARSURFRAIN      GPM_NEARSURFRAIN        mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&near_surf_rain   rain_accum.colors  mm         -5 80 5 dcont 1 0
-GPM_RAINTYPE          GPM_RAINTYPE            mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&rain_type        convsf.colors.gpm  -          -5 80 5 dcont 1 0
+GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&refl             dbz_carbone17.colors         dBZ        -5 80 5 dcont 1 0
+GPM_NEARSURFRAIN      GPM_NEARSURFRAIN        mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&near_surf_rain   rain_accum.colors            mm         -5 80 5 dcont 1 0
+GPM_RAINTYPE          GPM_RAINTYPE            mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&rain_type        convsf_gpm.colors            -          -5 80 5 cart  1 0
+GPM_PHASETYPE         GPM_PHASETYPE           mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&phase_type       phase_gpm.colors             -          -5 80 5 cart  1 0
 
 # RAIN RATE CART
 

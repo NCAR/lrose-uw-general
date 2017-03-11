@@ -94,14 +94,19 @@ WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.
 WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-WRF_TEMP_C    WRF_TEMP_C    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Temp   temp.colors      C     -5 80 5 dcont 1 0
-WRF_THETA_E   WRF_THETA_E   mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&THETA  tempK.colors        %     -5 80 5 dcont 1 0
-WRF_RH        WRF_RH        mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&RH     rh.colors        %     -5 80 5 dcont 1 0
-WRF_Q         WRF_Q         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Q      mix_frac.colors  kg/kg -5 80 5 dcont 1 0
-WRF_WSPEED    WRF_WSPEED    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Wspeed wspd.colors      m/s   -5 80 5 dcont 1 0
-WRF_W         WRF_W         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&W      vert_wspd.colors m/s   -5 80 5 dcont 1 0
-WRF_U         WRF_U         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&U      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
-WRF_V         WRF_V         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&V      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
+WRF_U         WRF_U         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&U         uv_wspd.colors   m/s   -5 80 5 dcont 1 0
+WRF_V         WRF_V         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&V         uv_wspd.colors   m/s   -5 80 5 dcont 1 0
+WRF_W         WRF_W         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&W         vert_wspd.colors m/s   -5 80 5 dcont 1 0
+WRF_WSPEED    WRF_WSPEED    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Wspeed    wspd.colors      m/s   -5 80 5 dcont 1 0
+WRF_TEMP_C    WRF_TEMP_C    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Temp      temp.colors      C     -5 80 5 dcont 1 0
+WRF_RH        WRF_RH        mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&RH        rh.colors        %     -5 80 5 dcont 1 0
+WRF_Q         WRF_Q         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Q         mix_frac.colors  kg/kg -5 80 5 dcont 1 0
+WRF_THETA     WRF_THETA     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&THETA     tempK.colors     K     -5 80 5 dcont 1 0
+WRF_PB        WRF_PB        mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&PB        press.colors     Pa    -5 80 5 dcont 1 0
+WRF_GEOHT     WRF_GEOHT     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&geo_hgt   heights.colors   m     -5 80 5 dcont 1 0
+
+WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # GPM
        
@@ -443,7 +448,7 @@ cidd.xsect_start_page:      1
 
 #
 # The Outer most domain:
-cidd.num_zoom_levels:       3
+cidd.num_zoom_levels:       4
 cidd.start_zoom_level:      1
 cidd.min_zoom_threshold:    0
 cidd.zoom_limits_in_latlon: 1

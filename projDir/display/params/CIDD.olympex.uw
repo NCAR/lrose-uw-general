@@ -41,10 +41,10 @@ field_list = {
 #  { "KING", "KING_" },
 #  { "D3R", "D3R_" },
   { "D3R_QC", "D3RQC_" },
-  { "CARTNC_NPOL_RHI", "CARTNCNPOLRHI_" },
-  { "CART_NPOL_RHI", "CARTNPOLRHI_" },
-  { "CART_NPOL_SUR", "CARTNPOLSUR_" },
-  { "NPOLCOMP", "NPOLCOMP_" },
+  { "CARTNC_NPOL_RHI", "NPOLNC_" },
+  { "CART_NPOL_RHI", "NPOLMR_" },
+  { "CART_NPOL_SUR", "NPOLMS_" },
+  { "NPOLCOMP", "NPOLCMP_" },
   { "GPM", "GPM_" }
 };
 
@@ -140,116 +140,6 @@ NEXR_KATX_RATE_KDP   KATX_RATE_KDP    mdvp:://$(DATA_HOST):0:olympex/cfradial/pa
 NEXR_KATX_RATE_PID   KATX_RATE_PID    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_PID     precip_rate.colors  mm/hr  -5 80 5 radial 1 0
 NEXR_KATX_RATE_HYBR  KATX_RATE_HYB    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/katx&RATE_HYBRID  precip_rate.colors  mm/hr  -5 80 5 radial 1 0
 
-# NPOL MOMENTS
-
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-NPOL_DBZ       NPOL_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-NPOL_VEL30     NPOL_VEL30     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_30.colors     m/s    -5 80 5 radial 1 0
-NPOL_VEL45     NPOL_VEL45     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_45.colors     m/s    -5 80 5 radial 1 0
-NPOL_VELNEX    NPOL_VELNEX    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_nexrad.colors     m/s    -5 80 5 radial 1 0
-NPOL_ZDR       NPOL_ZDR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
-NPOL_RHOHV     NPOL_RHOHV     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
-#NPOL_WIDTH     NPOL_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s      -5 80 5 radial 1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-#NPOL_DBZ_TOT   NPOL_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_TOT    dbz.colors        dBZ    -5 80 5 radial 1 0
-#NPOL_WIDTH     NPOL_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s    -5 80 5 radial 1 0
-#NPOL_KDP       NPOL_KPD       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&KDP        kdp_sband.colors  deg/km -5 80 5 radial 1 0
-#NPOL_NCP       NPOL_NCP       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
-#NPOL_PHIDP     NPOL_PHIDP     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
-#NPOL_DBZ_V     NPOL_DBZ_V     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_V      dbz.colors        dBZ    -5 80 5 radial 1 0
-#NPOL_DBZ_TOT_V NPOL_DBZ_TOT_V mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_TOT_V  dbz.colors        dBZ    -5 80 5 radial 1 0
-#NPOL_SNR       NPOL_SNR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
-
-# NPOL QC2 MOMENTS
-
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-#NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
-#NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
-NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz.colors         dBZ        -5 80 5 radial 1 0
-NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz.colors         dBZ        -5 80 5 radial 1 0
-NPOLQC2_VEL30     NPOL_QC2_VEL30     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_30.colors      m/s        -5 80 5 radial 1 0
-NPOLQC2_VEL45     NPOL_QC2_VEL45     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_45.colors      m/s        -5 80 5 radial 1 0
-NPOLQC2_VELNEX    NPOL_QC2_VELNEX    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_nexrad.colors  m/s        -5 80 5 radial 1 0
-NPOLQC2_WIDTH     NPOL_QC2_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&WIDTH     width.colors       m/s        -5 80 5 radial 1 0
-NPOLQC2_ZDR       NPOL_QC2_ZDR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&ZDR       zdr.colors         dB         -5 80 5 radial 1 0
-NPOLQC2_RHOHV     NPOL_QC2_RHOHV     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RHOHV     rhohv.colors       _          -5 80 5 radial 1 0
-NPOLQC2_PHIDP     NPOL_QC2_PHIDP     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&PHIDP     phidp.colors       deg        -5 80 5 radial 1 0
-NPOLQC2_KDP       NPOL_QC2_KDP       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&KDP       kdp.colors         deg/km     -5 80 5 radial 1 0
-NPOLQC2_RR_DROPS  NPOL_QC2_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_DROPS2 precip_rate.colors deg/km     -5 80 5 radial 1 0
-NPOLQC2_RR_POL_ZR NPOL_QC2_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_POL_ZR precip_rate.colors deg/km     -5 80 5 radial 1 0
-NPOLQC2_RR_CIF    NPOL_QC2_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_CIF    precip_rate.colors deg/km     -5 80 5 radial 1 0
-NPOLQC2_HID       NPOL_QC2_HID       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&HID       hid.colors         -          -5 80 5 radial 1 0
-NPOLQC2_SQ        NPOL_QC2_SQ        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&SQ        snr.colors         -          -5 80 5 radial 1 0
-NPOLQC2_D0        NPOL_QC2_D0        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&D0        trip.colors        mm         -5 80 5 radial 1 0
-NPOLQC2_NW        NPOL_QC2_NW        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&NW        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
-NPOLQC2_DM        NPOL_QC2_DM        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DM        trip.colors        mm         -5 80 5 radial 1 0
-NPOLQC2_N2        NPOL_QC2_N2        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&N2        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-NPOLQC2_PID  NPOLQC2_PID mdvp:://$(DATA_HOST):0:olympex/qc/cfradial/partrain/npol/sur&PID  pid.colors  none -5 80 5 radial 1 0
-NPOLQC2_PID_TEMP   NPOLQC2_PID_TEMP mdvp:://$(DATA_HOST):0:olympex/qc/cfradial/partrain/npol/sur&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# NPOL PARTRAIN
-
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-NPOL_PID          NPOL_PID           mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&PID           pid.colors  none -5 80 5 radial 1 0
-NPOL_PID_TEMP     NPOL_PID_TEMP      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&TEMP_FOR_PID  temp.colors    C -5 80 5 redial 1 0
-NPOL_DBZ_FOR_RATE NPOL_DBZ_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&DBZ_FOR_RATE  dbz.colors   dBZ -5 80 5 radial 1 0
-NPOL_ZDR_FOR_RATE NPOL_ZDR_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&ZDR_FOR_RATE  zdr.colors   dB -5 80 5 radial 1 0
-NPOL_KDP_FOR_RATE NPOL_KDP_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&KDP_FOR_RATE  kdp_sband.colors   deg/km -5 80 5 radial 1 0
-NPOL_KDP2         NPOL_KDP2          mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&KDP           kdp_sband.colors   deg/km -5 80 5 radial 1 0     
-NPOL_RATE_ZZDR    NPOL_RATE_ZZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_Z_ZDR    precip_rate.colors none -5 80 5 radial 1 0
-======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-NPOL_RATE_ZH      NPOL_RATE_ZH       mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_ZH       precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_ZH_SNOW NPOL_RATE_ZH_SNOW  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_ZH_SNOW  precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_KDP     NPOL_RATE_KDP      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_KDP      precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_KZDR    NPOL_RATE_KZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_KDP_ZDR  precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_HYBRID  NPOL_RATE_HYBRID   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_HYBRID   precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_PID     NPOL_RATE_PID      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_PID      precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_HIDRO   NPOL_RATE_HIDRO    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_HIDRO    precip_rate.colors none -5 80 5 radial 1 0
-NPOL_RATE_BRINGI  NPOL_RATE_BRINGI   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_BRINGI   precip_rate.colors none -5 80 5 radial 1 0
-
-NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# XBAND
-
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-XBAND_DBZ    XBAND_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_UDBZ   XBAND_UDBZ   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&VEL   vel_k.colors      m/s    -5 80 5 radial 1 0
-XBAND_WIDTH  XBAND_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
-
-XBAND_ZDR    XBAND_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
-XBAND_PHIDP  XBAND_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
-XBAND_UPHIDP XBAND_UPHIDP mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
-XBAND_RHOHV  XBAND_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
-
-XBAND_SQI    XBAND_SQI    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&SQI    ncp.colors        -      -5 80 5 radial 1 0
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-       
 # DOW
 
 ## QC high cfradial 
@@ -310,9 +200,10 @@ DOWLOQ_KDP_F       DOW_LO_QC_KDP_F      mdvp:://$(DATA_HOST):0:olympex/cfradial/
 DOWLOQ_ZDRC        DOW_LO_QC_ZDRC       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRC          zdr.colors        dB     -5 80 5 radial 1 0
 #DOWLOQ_ZDRC_F      DOW_LO_QC_ZDRC_F     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&ZDRC_F        zdr.colors        dB     -5 80 5 radial 1 0
 DOWLOQ_TRIP_FLA    DOW_LO_QC_TRIP_FLA   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/dow_lo_qc/sec&TRIP_FLA      trip_flag2.colors -      -5 80 5 radial 1 0
-DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#DOWLOQ_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # real-time cfradial 
 DOWRTC_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
@@ -413,21 +304,127 @@ DOWRTM_==== 	   ========  		   mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&E
 #DOWLOM_DBMVC_F     DOW_LO_DMDV_BMVC_F    mdvp:://$(DATA_HOST):0:olympex/mdv/radial/moments/dow_lo/sec&DBMVC_F   dbmlow.colors     dBm    -5 80 5 radial 1 0
 #DOWLOM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-# Sat data
+# NPOL MOMENTS
 
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-SAT_VIS  SAT_VIS   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/vis&vis sat_counts.colors      albedo  -5   80  5  cart   1 0
-SAT_IR   SAT_IR    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/ir&Tb   sat_tempK_oly.colors   K       -5   80  5  cart   1 0
-SAT_WV   SAT_WV    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/wv&Tb   wv_uw.colors           K       -5   80  5  cart   1 0
-SAT_GPM  SAT_GPM   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm&refl dbz_carbone17.colors  dBZ     -5   80  5  dcont   1 0
-SAT_GPMKA  SAT_GPMKA   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm_ka_hs&refl dbz_carbone17.colors  dBZ     -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_DBZ       NPOL_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+NPOL_VEL30     NPOL_VEL30     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_30.colors     m/s    -5 80 5 radial 1 0
+NPOL_VEL45     NPOL_VEL45     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_45.colors     m/s    -5 80 5 radial 1 0
+NPOL_VELNEX    NPOL_VELNEX    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&VEL        vel_nexrad.colors     m/s    -5 80 5 radial 1 0
+NPOL_ZDR       NPOL_ZDR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&ZDR        zdr.colors        dB     -5 80 5 radial 1 0
+NPOL_RHOHV     NPOL_RHOHV     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&RHOHV      rhohv.colors      _      -5 80 5 radial 1 0
+#NPOL_WIDTH     NPOL_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s      -5 80 5 radial 1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+#NPOL_DBZ_TOT   NPOL_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_TOT    dbz.colors        dBZ    -5 80 5 radial 1 0
+#NPOL_WIDTH     NPOL_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&WIDTH      width.colors      m/s    -5 80 5 radial 1 0
+#NPOL_KDP       NPOL_KPD       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&KDP        kdp_sband.colors  deg/km -5 80 5 radial 1 0
+#NPOL_NCP       NPOL_NCP       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
+#NPOL_PHIDP     NPOL_PHIDP     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&PHIDP      phidp.colors      deg    -5 80 5 radial 1 0
+#NPOL_DBZ_V     NPOL_DBZ_V     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_V      dbz.colors        dBZ    -5 80 5 radial 1 0
+#NPOL_DBZ_TOT_V NPOL_DBZ_TOT_V mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&DBZ_TOT_V  dbz.colors        dBZ    -5 80 5 radial 1 0
+#NPOL_SNR       NPOL_SNR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
+
+# NPOL QC2 MOMENTS
+
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+#NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
+#NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz_carbone17.colors         dBZ        -5 80 5 radial 1 0
+NPOLQC2_DBZ_TOT   NPOL_QC2_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ_TOT   dbz.colors         dBZ        -5 80 5 radial 1 0
+NPOLQC2_DBZ       NPOL_QC2_DBZ       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DBZ       dbz.colors         dBZ        -5 80 5 radial 1 0
+NPOLQC2_VEL30     NPOL_QC2_VEL30     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_30.colors      m/s        -5 80 5 radial 1 0
+NPOLQC2_VEL45     NPOL_QC2_VEL45     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_45.colors      m/s        -5 80 5 radial 1 0
+NPOLQC2_VELNEX    NPOL_QC2_VELNEX    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&VEL       vel_nexrad.colors  m/s        -5 80 5 radial 1 0
+NPOLQC2_WIDTH     NPOL_QC2_WIDTH     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&WIDTH     width.colors       m/s        -5 80 5 radial 1 0
+NPOLQC2_ZDR       NPOL_QC2_ZDR       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&ZDR       zdr.colors         dB         -5 80 5 radial 1 0
+NPOLQC2_RHOHV     NPOL_QC2_RHOHV     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RHOHV     rhohv.colors       _          -5 80 5 radial 1 0
+NPOLQC2_PHIDP     NPOL_QC2_PHIDP     mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&PHIDP     phidp.colors       deg        -5 80 5 radial 1 0
+NPOLQC2_KDP       NPOL_QC2_KDP       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&KDP       kdp.colors         deg/km     -5 80 5 radial 1 0
+NPOLQC2_RR_DROPS  NPOL_QC2_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_DROPS2 precip_rate.colors deg/km     -5 80 5 radial 1 0
+NPOLQC2_RR_POL_ZR NPOL_QC2_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_POL_ZR precip_rate.colors deg/km     -5 80 5 radial 1 0
+NPOLQC2_RR_CIF    NPOL_QC2_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&RR_CIF    precip_rate.colors deg/km     -5 80 5 radial 1 0
+NPOLQC2_HID       NPOL_QC2_HID       mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&HID       hid.colors         -          -5 80 5 radial 1 0
+NPOLQC2_SQ        NPOL_QC2_SQ        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&SQ        snr.colors         -          -5 80 5 radial 1 0
+NPOLQC2_D0        NPOL_QC2_D0        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&D0        trip.colors        mm         -5 80 5 radial 1 0
+NPOLQC2_NW        NPOL_QC2_NW        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&NW        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
+NPOLQC2_DM        NPOL_QC2_DM        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&DM        trip.colors        mm         -5 80 5 radial 1 0
+NPOLQC2_N2        NPOL_QC2_N2        mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/npol_qc2/sur&N2        number25.colors    1/(m^3*mm) -5 80 5 radial 1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+NPOLQC2_PID        NPOL_QC2_PID mdvp:://$(DATA_HOST):0:olympex/qc/cfradial/partrain/npol/sur&PID               pid.colors    none   -5 80 5 radial 1 0
+NPOLQC2_PID_TEMP   NPOL_QC2_PID_TEMP mdvp:://$(DATA_HOST):0:olympex/qc/cfradial/partrain/npol/sur&TEMP_FOR_PID temp.colors   dBZ    -5 80 5 radial 1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLQC2_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+# NPOL PARTRAIN
+
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+NPOL_PID          NPOL_PID           mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&PID           pid.colors  none -5 80 5 radial 1 0
+NPOL_PID_TEMP     NPOL_PID_TEMP      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&TEMP_FOR_PID  temp.colors    C -5 80 5 redial 1 0
+NPOL_DBZ_FOR_RATE NPOL_DBZ_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&DBZ_FOR_RATE  dbz.colors   dBZ -5 80 5 radial 1 0
+NPOL_ZDR_FOR_RATE NPOL_ZDR_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&ZDR_FOR_RATE  zdr.colors   dB -5 80 5 radial 1 0
+NPOL_KDP_FOR_RATE NPOL_KDP_FOR_RATE  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&KDP_FOR_RATE  kdp_sband.colors   deg/km -5 80 5 radial 1 0
+NPOL_KDP2         NPOL_KDP2          mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&KDP           kdp_sband.colors   deg/km -5 80 5 radial 1 0     
+NPOL_RATE_ZZDR    NPOL_RATE_ZZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_Z_ZDR    precip_rate.colors none -5 80 5 radial 1 0
+======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+NPOL_RATE_ZH      NPOL_RATE_ZH       mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_ZH       precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_ZH_SNOW NPOL_RATE_ZH_SNOW  mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_ZH_SNOW  precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_KDP     NPOL_RATE_KDP      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_KDP      precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_KZDR    NPOL_RATE_KZDR     mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_KDP_ZDR  precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_HYBRID  NPOL_RATE_HYBRID   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_HYBRID   precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_PID     NPOL_RATE_PID      mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_PID      precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_HIDRO   NPOL_RATE_HIDRO    mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_HIDRO    precip_rate.colors none -5 80 5 radial 1 0
+NPOL_RATE_BRINGI  NPOL_RATE_BRINGI   mdvp:://$(DATA_HOST):0:olympex/cfradial/partrain/npol/sur&RATE_BRINGI   precip_rate.colors none -5 80 5 radial 1 0
+
+NPOL_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+# XBAND
+
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+XBAND_DBZ    XBAND_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_UDBZ   XBAND_UDBZ   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&VEL   vel_k.colors      m/s    -5 80 5 radial 1 0
+XBAND_WIDTH  XBAND_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
+
+XBAND_ZDR    XBAND_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
+XBAND_PHIDP  XBAND_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_UPHIDP XBAND_UPHIDP mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_RHOHV  XBAND_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
+
+XBAND_SQI    XBAND_SQI    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&SQI    ncp.colors        -      -5 80 5 radial 1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+       
+## KING MOMENTS
+
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+#KING_KA_DBZ    KING_KA_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/king/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
+#KING_KA_VEL    KING_KA_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/king/sur&VEL        vel.colors     m/s    -5 80 5 radial 1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # WRF output
 
@@ -447,6 +444,22 @@ WRF_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  no
 
 #WRF_U         WRF_U         mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&U      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
 #WRF_V         WRF_V         mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&V      uv_wspd.colors   m/s   -5 80 5 dcont 1 0
+
+# Sat data
+
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+SAT_VIS  SAT_VIS   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/vis&vis sat_counts.colors      albedo  -5   80  5  cart   1 0
+SAT_IR   SAT_IR    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/ir&Tb   sat_tempK_oly.colors   K       -5   80  5  cart   1 0
+SAT_WV   SAT_WV    mdvp:://$(DATA_HOST):0:olympex/mdv/sat/wv&Tb   wv_uw.colors           K       -5   80  5  cart   1 0
+SAT_GPMKU  SAT_GPM_KU   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm&refl dbz_carbone17.colors  dBZ     -5   80  5  dcont   1 0
+SAT_GPMKA  SAT_GPM_KA   mdvp:://$(DATA_HOST):0:olympex/mdv/sat/gpm_ka_hs&refl dbz_carbone17.colors  dBZ     -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+SAT_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # D3R MOMENTS
 
@@ -498,18 +511,6 @@ D3RQC_KU_PHIDP  D3R_QC_KU_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments
 D3RQC_KU_NCP    D3R_QC_KU_NCP    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&NCP        ncp.colors        _      -5 80 5 radial 1 0
 D3RQC_KU_SNR    D3R_QC_KU_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/d3r_ku_qc/sur&SNR        snr.colors        dB     -5 80 5 radial 1 0
 
-## KING MOMENTS
-
-#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-#KING_KA_DBZ    KING_KA_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/king/sur&DBZ        dbz.colors        dBZ    -5 80 5 radial 1 0
-#KING_KA_VEL    KING_KA_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/king/sur&VEL        vel.colors     m/s    -5 80 5 radial 1 0
-#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#KING_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/terrain&Elevation none.colors        m -5   80  5  dcont  1 0
 # RAIN RATE
 
@@ -519,130 +520,151 @@ D3RQC_KU_SNR    D3R_QC_KU_SNR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 #======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-# CART NPOL RHI MOMENTS
+# CART NPOL RHI MOMENTS - NETCDF
 
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNCNPOLRHI_DBZ     CARTNC_NPOL_RHI_DBZ     mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/npol/rhi&DBZ     dbz.colors         dBZ        -5 80 5 dcont 1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLNC_DBZ     CARTNC_NPOL_RHI_DBZ     mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/npol/rhi&DBZ     dbz.colors         dBZ        -5 80 5 dcont 1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLNC_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLRHI_DBZ_TOT   CART_NPOL_RHI_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_DBZ       CART_NPOL_RHI_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_VEL30     CART_NPOL_RHI_VEL30     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VEL45     CART_NPOL_RHI_VEL45     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VELNEX    CART_NPOL_RHI_VELNEX    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_WIDTH     CART_NPOL_RHI_WIDTH     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_ZDR       CART_NPOL_RHI_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLRHI_RHOHV     CART_NPOL_RHI_RHOHV     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLRHI_PHIDP     CART_NPOL_RHI_PHIDP     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLRHI_KDP       CART_NPOL_RHI_KDP       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR_DROPS  CART_NPOL_RHI_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR_POL_ZR CART_NPOL_RHI_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR_CIF    CART_NPOL_RHI_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_HID       CART_NPOL_RHI_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_SQ        CART_NPOL_RHI_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_D0        CART_NPOL_RHI_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_NW        CART_NPOL_RHI_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLRHI_DM        CART_NPOL_RHI_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_N2        CART_NPOL_RHI_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+# CART NPOL RHI MOMENTS - MDV
 
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLRHI_ZZ        CART_NPOL_RHI_ZZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_CZ        CART_NPOL_RHI_CZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLRHI_VR30      CART_NPOL_RHI_VR30      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VR45      CART_NPOL_RHI_VR45      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_VRNEX     CART_NPOL_RHI_VRNEX     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_SW        CART_NPOL_RHI_SW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLRHI_DR        CART_NPOL_RHI_DR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLRHI_RH        CART_NPOL_RHI_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLRHI_PH        CART_NPOL_RHI_PH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLRHI_KD        CART_NPOL_RHI_KD        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RR        CART_NPOL_RHI_RR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RP        CART_NPOL_RHI_RP        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLRHI_RC        CART_NPOL_RHI_RC        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-#CARTNPOLRHI_HID       CART_NPOL_RHI_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_SQ        CART_NPOL_RHI_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLRHI_D0        CART_NPOL_RHI_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_NW        CART_NPOL_RHI_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLRHI_DM        CART_NPOL_RHI_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLRHI_N2        CART_NPOL_RHI_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLRHI_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_DBZ_TOT   CART_NPOL_RHI_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMR_DBZ       CART_NPOL_RHI_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMR_VEL30     CART_NPOL_RHI_VEL30     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
+NPOLMR_VEL45     CART_NPOL_RHI_VEL45     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
+NPOLMR_VELNEX    CART_NPOL_RHI_VELNEX    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+NPOLMR_WIDTH     CART_NPOL_RHI_WIDTH     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
+NPOLMR_ZDR       CART_NPOL_RHI_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
+NPOLMR_RHOHV     CART_NPOL_RHI_RHOHV     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
+NPOLMR_PHIDP     CART_NPOL_RHI_PHIDP     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
+NPOLMR_KDP       CART_NPOL_RHI_KDP       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
+NPOLMR_RR_DROPS  CART_NPOL_RHI_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMR_RR_POL_ZR CART_NPOL_RHI_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMR_RR_CIF    CART_NPOL_RHI_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMR_HID       CART_NPOL_RHI_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&HID       hid.colors             -          -5 80 5 cart 1 0
+NPOLMR_SQ        CART_NPOL_RHI_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&SQ        snr.colors             -          -5 80 5 cart 1 0
+NPOLMR_D0        CART_NPOL_RHI_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&D0        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMR_NW        CART_NPOL_RHI_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMR_DM        CART_NPOL_RHI_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&DM        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMR_N2        CART_NPOL_RHI_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_======= ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+
+NPOLMR_ZZ        CART_NPOL_RHI_ZZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMR_CZ        CART_NPOL_RHI_CZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMR_VR30      CART_NPOL_RHI_VR30      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
+NPOLMR_VR45      CART_NPOL_RHI_VR45      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
+NPOLMR_VRNEX     CART_NPOL_RHI_VRNEX     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+NPOLMR_SW        CART_NPOL_RHI_SW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
+NPOLMR_DR        CART_NPOL_RHI_DR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
+NPOLMR_RH        CART_NPOL_RHI_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
+NPOLMR_PH        CART_NPOL_RHI_PH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
+NPOLMR_KD        CART_NPOL_RHI_KD        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
+NPOLMR_RR        CART_NPOL_RHI_RR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMR_RP        CART_NPOL_RHI_RP        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMR_RC        CART_NPOL_RHI_RC        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+#NPOLMR_HID       CART_NPOL_RHI_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
+NPOLMR_SQ        CART_NPOL_RHI_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
+NPOLMR_D0        CART_NPOL_RHI_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMR_NW        CART_NPOL_RHI_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMR_DM        CART_NPOL_RHI_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMR_N2        CART_NPOL_RHI_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/rhi_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 # CART NPOL SUR MOMENTS
 
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLSUR_DBZ_TOT   CART_NPOL_SUR_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_DBZ       CART_NPOL_SUR_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_VEL30     CART_NPOL_SUR_VEL30     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VEL45     CART_NPOL_SUR_VEL45     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VELNEX    CART_NPOL_SUR_VELNEX    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_WIDTH     CART_NPOL_SUR_WIDTH     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_ZDR       CART_NPOL_SUR_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLSUR_RHOHV     CART_NPOL_SUR_RHOHV     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLSUR_PHIDP     CART_NPOL_SUR_PHIDP     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLSUR_KDP       CART_NPOL_SUR_KDP       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR_DROPS  CART_NPOL_SUR_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR_POL_ZR CART_NPOL_SUR_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR_CIF    CART_NPOL_SUR_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_HID       CART_NPOL_SUR_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_SQ        CART_NPOL_SUR_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_D0        CART_NPOL_SUR_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_DBZ_TOT   CART_NPOL_SUR_DBZ_TOT   mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DBZ_TOT   dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMS_DBZ       CART_NPOL_SUR_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DBZ       dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMS_VEL30     CART_NPOL_SUR_VEL30     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_30.colors          m/s        -5 80 5 cart 1 0
+NPOLMS_VEL45     CART_NPOL_SUR_VEL45     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_45.colors          m/s        -5 80 5 cart 1 0
+NPOLMS_VELNEX    CART_NPOL_SUR_VELNEX    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&VEL       vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+NPOLMS_WIDTH     CART_NPOL_SUR_WIDTH     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&WIDTH     width.colors           m/s        -5 80 5 cart 1 0
+NPOLMS_ZDR       CART_NPOL_SUR_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&ZDR       zdr.colors             dB         -5 80 5 cart 1 0
+NPOLMS_RHOHV     CART_NPOL_SUR_RHOHV     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RHOHV     rhohv.colors           _          -5 80 5 cart 1 0
+NPOLMS_PHIDP     CART_NPOL_SUR_PHIDP     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&PHIDP     phidp.colors           deg        -5 80 5 cart 1 0
+NPOLMS_KDP       CART_NPOL_SUR_KDP       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&KDP       kdp.colors             deg/km     -5 80 5 cart 1 0
+NPOLMS_RR_DROPS  CART_NPOL_SUR_RR_DROPS  mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_DROPS2 precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMS_RR_POL_ZR CART_NPOL_SUR_RR_POL_ZR mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_POL_ZR precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMS_RR_CIF    CART_NPOL_SUR_RR_CIF    mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&RR_CIF    precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMS_HID       CART_NPOL_SUR_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&HID       hid.colors             -          -5 80 5 cart 1 0
+NPOLMS_SQ        CART_NPOL_SUR_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&SQ        snr.colors             -          -5 80 5 cart 1 0
+NPOLMS_D0        CART_NPOL_SUR_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&D0        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMS_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMS_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&DM        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMS_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-CARTNPOLSUR_ZZ        CART_NPOL_SUR_ZZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_CZ        CART_NPOL_SUR_CZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
-CARTNPOLSUR_VR30      CART_NPOL_SUR_VR30      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VR45      CART_NPOL_SUR_VR45      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_VRNEX     CART_NPOL_SUR_VRNEX     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_SW        CART_NPOL_SUR_SW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
-CARTNPOLSUR_DR        CART_NPOL_SUR_DR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
-CARTNPOLSUR_RH        CART_NPOL_SUR_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
-CARTNPOLSUR_PH        CART_NPOL_SUR_PH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
-CARTNPOLSUR_KD        CART_NPOL_SUR_KD        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RR        CART_NPOL_SUR_RR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RP        CART_NPOL_SUR_RP        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-CARTNPOLSUR_RC        CART_NPOL_SUR_RC        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
-#CARTNPOLSUR_HID       CART_NPOL_SUR_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_SQ        CART_NPOL_SUR_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
-CARTNPOLSUR_D0        CART_NPOL_SUR_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
-CARTNPOLSUR_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-CARTNPOLSUR_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_ZZ        CART_NPOL_SUR_ZZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&ZZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMS_CZ        CART_NPOL_SUR_CZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&CZ        dbz_carbone17.colors   dBZ        -5 80 5 cart 1 0
+NPOLMS_VR30      CART_NPOL_SUR_VR30      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_30.colors          m/s        -5 80 5 cart 1 0
+NPOLMS_VR45      CART_NPOL_SUR_VR45      mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_45.colors          m/s        -5 80 5 cart 1 0
+NPOLMS_VRNEX     CART_NPOL_SUR_VRNEX     mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&VR        vel_nexrad.colors      m/s        -5 80 5 cart 1 0
+NPOLMS_SW        CART_NPOL_SUR_SW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&SW        width.colors           m/s        -5 80 5 cart 1 0
+NPOLMS_DR        CART_NPOL_SUR_DR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DR        zdr.colors             dB         -5 80 5 cart 1 0
+NPOLMS_RH        CART_NPOL_SUR_RH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RH        rhohv.colors           _          -5 80 5 cart 1 0
+NPOLMS_PH        CART_NPOL_SUR_PH        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&PH        phidp.colors           deg        -5 80 5 cart 1 0
+NPOLMS_KD        CART_NPOL_SUR_KD        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&KD        kdp.colors             deg/km     -5 80 5 cart 1 0
+NPOLMS_RR        CART_NPOL_SUR_RR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RR        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMS_RP        CART_NPOL_SUR_RP        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RP        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+NPOLMS_RC        CART_NPOL_SUR_RC        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&RC        precip_rate.colors     deg/km     -5 80 5 cart 1 0
+#NPOLMS_HID       CART_NPOL_SUR_HID       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&HID       hid.colors             -          -5 80 5 cart 1 0
+NPOLMS_SQ        CART_NPOL_SUR_SQ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&SQ        snr.colors             -          -5 80 5 cart 1 0
+NPOLMS_D0        CART_NPOL_SUR_D0        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&D0        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMS_NW        CART_NPOL_SUR_NW        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&NW        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMS_DM        CART_NPOL_SUR_DM        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&DM        trip.colors            mm         -5 80 5 cart 1 0
+NPOLMS_N2        CART_NPOL_SUR_N2        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol/sur_fromUF&N2        number25.colors        1/(m^3*mm) -5 80 5 cart 1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLMS_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-NPOLCOMP_DBZ          NPOLCOMP_DBZ            mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&DBZ          dbz.colors      dBZ        -5 80 5 cart 1 0
-NPOLCOMP_ZDR          NPOLCOMP_ZDR            mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&ZDR          zdr.colors      dB         -5 80 5 cart 1 0
-NPOLCOMP_KLGX_DBZ     NPOLCOMP_KLGX_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/klgx_compare&DBZ          dbz.colors      dBZ        -5 80 5 cart 1 0
-NPOLCOMP_KLGX_ZDR     NPOLCOMP_KLGX_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/klgx_compare&ZDR          zdr.colors      dB         -5 80 5 cart 1 0
+NPOLCMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-NPOLCOMP_DOW_DBZ      NPOLCOMP_DOW_DBZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/dow6_compare&DBZ          dbz.colors      dBZ        -5 80 5 cart 1 0
-NPOLCOMP_DOW_ZDR      NPOLCOMP_DOW_ZDR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/dow6_compare&ZDR          zdr.colors      dB         -5 80 5 cart 1 0
-NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NPOLCOMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCMP_DBZ          NPOLCOMP_DBZ            mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&DBZ          dbz.colors      dBZ        -5 80 5 cart 1 0
+NPOLCMP_ZDR          NPOLCOMP_ZDR            mdvp:://$(DATA_HOST):0:olympex/mdv/cart/npol_compare&ZDR          zdr.colors      dB         -5 80 5 cart 1 0
+NPOLCMP_KLGX_DBZ     NPOLCOMP_KLGX_DBZ       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/klgx_compare&DBZ          dbz.colors      dBZ        -5 80 5 cart 1 0
+NPOLCMP_KLGX_ZDR     NPOLCOMP_KLGX_ZDR       mdvp:://$(DATA_HOST):0:olympex/mdv/cart/klgx_compare&ZDR          zdr.colors      dB         -5 80 5 cart 1 0
+
+NPOLCMP_DOW_DBZ      NPOLCOMP_DOW_DBZ        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/dow6_compare&DBZ          dbz.colors      dBZ        -5 80 5 cart 1 0
+NPOLCMP_DOW_ZDR      NPOLCOMP_DOW_ZDR        mdvp:://$(DATA_HOST):0:olympex/mdv/cart/dow6_compare&ZDR          zdr.colors      dB         -5 80 5 cart 1 0
+NPOLCMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+NPOLCMP_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 #CZ_CART               CZ_CART                mdvp:://$(DATA_HOST):0:olympex/mdv/sur&CZ                          dbz.colors       dBZ       -5 80 5 radial 1 0
 #VR_CART               VR_CART                mdvp:://$(DATA_HOST):0:olympex/mdv/sur&VR                          vel_spol.colors  m/s       -5 80 5 radial 1 0
 #CZ_CART_RHI           CZ_CART_RHI            mdvp:://$(DATA_HOST):0:olympex/mdv/rhi&CZ                          dbz.colors       dBZ       -5 80 5 radial 1 0
 #VR_CART_RHI           VR_CART_RHI            mdvp:://$(DATA_HOST):0:olympex/mdv/rhi&VR                          vel_spol.colors  m/s       -5 80 5 radial 1 0
 
-#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-#======== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+# GPM INTERPOLATED DATA
+       
+GPM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+GPM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+GPM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
+GPM_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
 GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&refl             dbz_carbone17.colors         dBZ        -5 80 5 dcont 1 0
 GPM_NEARSURFRAIN      GPM_NEARSURFRAIN        mdvp:://$(DATA_HOST):0:olympex/cfcart/moments/gpm&near_surf_rain   rain_accum.colors            mm         -5 80 5 dcont 1 0

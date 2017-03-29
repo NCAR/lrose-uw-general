@@ -459,7 +459,7 @@
        menuGroup="XBAND" menuName="XBAND-UDBZ" />
 
 <Layer vis="off" type="MDV" name="XBAND VEL" location="mdvp:://bob.atmos.washington.edu:5440:olympex/cfradial/moments/xband_all/sur"
-       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_k.colors"
+       field="VEL" render="grid" colorscale="http://www.atmos.washington.edu/~brodzik/olympex/jazz/color_scales/vel_30.colors"
        menuGroup="XBAND" menuName="XBAND-VEL" />
 
 <Layer vis="off" type="MDV" name="XBAND WIDTH" location="mdvp:://bob.atmos.washington.edu:5440:olympex/cfradial/moments/xband_all/sur"

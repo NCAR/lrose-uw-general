@@ -1416,13 +1416,21 @@ stereographic_tangent_lon = 0;
 //
 //
 
+//output_grid = {
+//    nx = 180,
+//    ny = 80,
+//    minx = -115,
+//    miny = 27,
+//    dx = 0.25,
+//    dy = 0.25
+//};
 output_grid = {
-    nx = 300,
-    ny = 250,
-    minx = -110,
-    miny = 25,
-    dx = 0.01,
-    dy = 0.01
+    nx = 360,
+    ny = 160,
+    minx = -115,
+    miny = 27,
+    dx = 0.125,
+    dy = 0.125
 };
 
 ///////////// output_levels ///////////////////////////

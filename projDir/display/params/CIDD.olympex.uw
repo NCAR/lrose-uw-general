@@ -401,7 +401,7 @@ XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  
 
 XBAND_DBZ    XBAND_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
 XBAND_UDBZ   XBAND_UDBZ   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&VEL   vel_k.colors      m/s    -5 80 5 radial 1 0
+XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&VEL   vel_30.colors      m/s    -5 80 5 radial 1 0
 XBAND_WIDTH  XBAND_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
 
 XBAND_ZDR    XBAND_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
@@ -1028,7 +1028,7 @@ cidd.xsect_start_page:      1
 
 #
 # The Outer most domain:
-cidd.num_zoom_levels:       6
+cidd.num_zoom_levels:       11
 cidd.start_zoom_level:      4
 cidd.min_zoom_threshold:    0
 cidd.zoom_limits_in_latlon: 1
@@ -1094,11 +1094,17 @@ cidd.level9_max_xkm:                -115
 cidd.level9_min_ykm:                35
 cidd.level9_max_ykm:                65
 #
-cidd.level0_label:                  WORLD
-cidd.level0_min_xkm:                -180
-cidd.level0_max_xkm:                180
-cidd.level0_min_ykm:                -90
-cidd.level0_max_ykm:                90
+cidd.level10_label:                  WORLD
+cidd.level10_min_xkm:                -180
+cidd.level10_max_xkm:                180
+cidd.level10_min_ykm:                -90
+cidd.level10_max_ykm:                90
+#
+cidd.level11_label:                  XBAND_GIFS
+cidd.level11_min_xkm:                -124.2721
+cidd.level11_max_xkm:                -122.4208
+cidd.level11_min_ykm:                47.7517
+cidd.level11_max_ykm:                48.9836
 
 # Vertical Range and Resolution - Establishes a vertical coordinate system
 # for the cross sectional imagery.

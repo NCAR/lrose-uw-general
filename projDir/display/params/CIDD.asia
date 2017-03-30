@@ -106,10 +106,14 @@ GPM_==== ========  mdvp::static//$(DATA_HOST):0:asia/mdv/spacer&Elevation  none.
 GPM_==== ========  mdvp::static//$(DATA_HOST):0:asia/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 GPM_==== ========  mdvp::static//$(DATA_HOST):0:asia/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:asia/mdv/gpm&refl             dbz_carbone17.colors         dBZ        -5 80 5 dcont 1 0
-GPM_NEARSURFRAIN      GPM_NEARSURFRAIN        mdvp:://$(DATA_HOST):0:asia/mdv/gpm&near_surf_rain   rain_accum.colors            mm         -5 80 5 dcont 1 0
-GPM_RAINTYPE          GPM_RAINTYPE            mdvp:://$(DATA_HOST):0:asia/mdv/gpm&rain_type        convsf_gpm.colors            -          -5 80 5 cart  1 0
-GPM_PHASETYPE         GPM_PHASETYPE           mdvp:://$(DATA_HOST):0:asia/mdv/gpm&phase_type       phase_gpm.colors             -          -5 80 5 cart  1 0
+GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:asia/mdv/gpm&refl              dbz_carbone17.colors         dBZ        -5 80 5 dcont 1 0
+GPM_NEARSURFRAIN      GPM_NEAR_SURF_RAIN      mdvp:://$(DATA_HOST):0:asia/mdv/gpm&near_surf_rain    rain_accum.colors            mm         -5 80 5 dcont 1 0
+GPM_RAINTYPE          GPM_RAIN_TYPE           mdvp:://$(DATA_HOST):0:asia/mdv/gpm&rain_type         convsf_gpm.colors            -          -5 80 5 cart  1 0
+GPM_PHASETYPE         GPM_PHASE_TYPE          mdvp:://$(DATA_HOST):0:asia/mdv/gpm&phase_type        phase_gpm.colors             -          -5 80 5 cart  1 0
+GPM_SRTYPE            GPM_SHAL_RAIN_TYPE      mdvp:://$(DATA_HOST):0:asia/mdv/gpm&shallow_rain_type srt_gpm.colors               -          -5 80 5 cart  1 0
+GPM_BBHGT             GPM_BB_HGT              mdvp:://$(DATA_HOST):0:asia/mdv/gpm&height_bb         bb_hgt_gpm.colors            -          -5 80 5 cart  1 0
+GPM_BBWID             GPM_BB_WID              mdvp:://$(DATA_HOST):0:asia/mdv/gpm&width_bb          bb_wid_gpm.colors            -          -5 80 5 cart  1 0
+GPM_SWATH             GPM_SWATH               mdvp:://$(DATA_HOST):0:asia/mdv/gpm&swath             swath_gpm.colors             -          0 1 0.5 cont  1 0
 
 </GRIDS>
 

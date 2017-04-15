@@ -18,7 +18,7 @@ alias xanim xanim +V0
 setenv LPDEST lj611
 
 #set JAVA_HOME
-setenv JAVA_HOME /usr/java/latest
+#setenv JAVA_HOME /usr/java/latest
 
 #set environment variable for tsdis toolkit config and ancillary data files
 setenv TSDISTK /home/disk/blitz/src/toolkit

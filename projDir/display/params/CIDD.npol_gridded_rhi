@@ -24,12 +24,6 @@
 #####################################################################################
 
 <GUI_CONFIG>
-field_list = {
-  { "NEXRAD", "NEXR_" },
-  { "WRF", "WRF_" },
-  { "GPM", "GPM_" }
-};
-
 </GUI_CONFIG>
   
 <GRIDS>
@@ -79,49 +73,7 @@ field_list = {
 #Label    Label       URL           Colorscale Units Cont-lo-hi-interv Format Display_in_menu Bkgnd_Render
 #----------------------------------------------------------------------------------------------------------
 
-# NEXRAD
-
-NEXR_NMQ_REFL_MEAN    NEX_DBZ     mdvp:://$(DATA_HOST):0:nmq/mdv/cart/nex_mosaic&mrefl_mean       dbz.colors   dBZ -5 80 5 dcont 1 0
-
-NEXR_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NEXR_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-NEXR_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-# WRF output
-
-WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-WRF_====  ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-WRF_U         WRF_U         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&U         uv_wspd.colors       m/s   -5 80 5 dcont 1 0
-WRF_V         WRF_V         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&V         uv_wspd.colors       m/s   -5 80 5 dcont 1 0
-WRF_W         WRF_W         mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&W         vert_wspd.colors     m/s   -5 80 5 dcont 1 0
-WRF_WSPEED    WRF_WSPEED    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Wspeed    wspd.colors          m/s   -5 80 5 dcont 1 0
-WRF_TEMP_C    WRF_TEMP_C    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&Temp      temp.colors          C     -5 80 5 dcont 1 0
-WRF_RH        WRF_RH        mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&RH        rh.colors            %     -5 80 5 dcont 1 0
-WRF_QCLOUD    WRF_QCLOUD    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&QCLOUD    mixr_kgpkg_nmq.colors    kg/kg -5 80 5 dcont 1 0
-WRF_QRAIN     WRF_QRAIN     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&QRAIN     mixr_kgpkg_nmq.colors    kg/kg -5 80 5 dcont 1 0
-WRF_QICE      WRF_QICE      mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&QICE      mixr_kgpkg_nmq.colors    kg/kg -5 80 5 dcont 1 0
-WRF_QSNOW     WRF_QSNOW     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&QSNOW     mixr_kgpkg_nmq.colors    kg/kg -5 80 5 dcont 1 0
-WRF_QGRAUP    WRF_QGRAUP    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&QGRAUP    mixr_kgpkg_nmq.colors    kg/kg -5 80 5 dcont 1 0
-WRF_RAINC     WRF_RAINC     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&RAINC     precip_accum.colors  mm    -5 80 5 dcont 1 0
-WRF_RAINNC    WRF_RAINNC    mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&RAINNC    precip_accum.colors  mm    -5 80 5 dcont 1 0
-WRF_THETA     WRF_THETA     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&THETA     tempK.colors         K     -5 80 5 dcont 1 0
-WRF_PRESSURE  WRF_PRESSURE  mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&pressure  pressure_mb.colors   hPa   -5 80 5 dcont 1 0
-WRF_GEOHT     WRF_GEOHT     mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&geo_hgt   cloud_height.colors  m     -5 80 5 dcont 1 0
-
-# GPM
-       
-GPM_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-GPM_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-GPM_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-GPM_==== ========  mdvp::static//$(DATA_HOST):0:nmq/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
-
-GPM_REFL              GPM_REFL                mdvp:://$(DATA_HOST):0:nmq/mdv/cart/gpm&refl             dbz_carbone17.colors         dBZ        -5 80 5 dcont 1 0
-GPM_NEARSURFRAIN      GPM_NEARSURFRAIN        mdvp:://$(DATA_HOST):0:nmq/mdv/cart/gpm&near_surf_rain   rain_accum.colors            mm         -5 80 5 dcont 1 0
-GPM_RAINTYPE          GPM_RAINTYPE            mdvp:://$(DATA_HOST):0:nmq/mdv/cart/gpm&rain_type        convsf_gpm.colors            -          -5 80 5 cart  1 0
-GPM_PHASETYPE         GPM_PHASETYPE           mdvp:://$(DATA_HOST):0:nmq/mdv/cart/gpm&phase_type       phase_gpm.colors             -          -5 80 5 cart  1 0
+NPOL_RHI_DBZ NPOL_RHI_DBZ  mdvp:://localhost:0:/home/disk/bob/olympex/cfcart/moments/npol/rhi&DBZ       dbz.colors   dBZ -5 80 5 radial 1 0
 
 </GRIDS>
 
@@ -137,9 +89,11 @@ GPM_PHASETYPE         GPM_PHASETYPE           mdvp:://$(DATA_HOST):0:nmq/mdv/car
 #------------------------------------------------------------------------------------------
 
 World         World          world_states.map        1  0.0 1000000.0  white
-#grnd_radars   grnd_radars    oly_radars.map          0  0.0 1000000.0  white
+grnd_sites    grnd_sites     oly_sites.map           0  0.0 1000000.0  white
+grnd_radars   grnd_radars    oly_radars.map          0  0.0 1000000.0  white
 counties      counties       us_counties.map         0  0.0 1000000.0  blue
 #states        states         usa.map                 0  0.0 1000000.0  white
+#counties      counties       us_counties.map         0  0.0 1000000.0  blue
 
 </MAPS>
 
@@ -189,8 +143,8 @@ counties      counties       us_counties.map         0  0.0 1000000.0  blue
 # Legend_label  URL U V W_fieldnames units  Style [Color]
 #----------------------------------------------------------------------------
 
-##WRF mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&  U V None  m/s  -1,arrow  yellow
-#WRF mdvp:://$(DATA_HOST):0:nmq/mdv/wrf&  U V None  m/s  0  yellow
+#WRF mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&  U V None  m/s  -1,arrow  yellow
+WRF mdvp:://$(DATA_HOST):0:olympex/mdv/wrf&  U V None  m/s  0  yellow
 
 </WINDS>
 
@@ -223,7 +177,7 @@ cidd.debug2_flag:           0
 # temporal rounding. 
 
 #srb comment out for real-time use
-cidd.demo_time:  12:00 05/20/11
+cidd.demo_time:  14:52 12/05/15
 
 # Set times to the nearest value divisible by the number of seconds
 cidd.temporal_rounding:    1
@@ -234,7 +188,7 @@ cidd.movie_frame_dir: /tmp
 
 #  This determines how many movie frames are in the loop to start with
 #  Setting this high will cause the X server to hog memory.
-cidd.starting_movie_frames:  24
+cidd.starting_movie_frames:  12
 
 # minutes per movie frame on startup
 # The display will atomatically update every this interval, throwing away its
@@ -297,16 +251,16 @@ cidd.update_interval:      30
 
 #  Number of seconds to wait for data to come in before giving up
 #  On very slow networks this may need to go as high as 180 seconds!
-cidd.data_timeout_secs: 15
+cidd.data_timeout_secs: 40
 
 # Length of time to wait before killing simple external commands
 # Used When running single image convert scripts and driving
 # Browsers to web pages.
-cidd.simple_command_timeout_secs: 15
+cidd.simple_command_timeout_secs: 30
 
 # Length of time to wait before killing complex external commands
 # Used when spawining animation building script
-cidd.complex_command_timeout_secs: 30
+cidd.complex_command_timeout_secs: 180
 
 # Set to 1 to start up cidd in movie-on mode, 0 = off
 cidd.movie_on: 0
@@ -381,7 +335,7 @@ cidd.series_convert_script: make_anim.csh
 cidd.request_compressed_data: 1
  
 # NEW for properly rendering moving ship radar data
-#cidd.range_ring_follows_data: 1
+cidd.range_ring_follows_data: 1
 #cidd.domain_follows_data: 1
 
 #                  DOMAIN RELATED RESOURCES 
@@ -417,6 +371,7 @@ cidd.always_get_full_domain:  0
 # If set <= 0.0, CIDD will compute the aspect ratio based on the extent of the
 # first domain.
 cidd.aspect_ratio:   1.0
+#cidd.aspect_ratio:   1.3
 
 # Switch to enable the status window. 0 = off
 cidd.enable_status_window: 0
@@ -427,8 +382,8 @@ cidd.enable_save_image_panel: 1
  
 # On startup and each time the reset button is pressed, the display
 # will indicate a click at this point, as if the user had clicked..
-cidd.reset_click_longitude:  -95.0
-cidd.reset_click_latitude:   38.0
+cidd.reset_click_longitude:  -124.209056
+cidd.reset_click_latitude:   47.275528
 
 #
 # The Outer most domain: Overlays are clipped to this domain and 
@@ -440,8 +395,8 @@ cidd.domain_limit_max_y:         5000
  
 # The Lat, Long of the center of the display. Internal range rings
 # are relative to this point.
-cidd.origin_longitude:       -95.0
-cidd.origin_latitude:        38.0
+cidd.origin_longitude:       -124.209056
+cidd.origin_latitude:        47.275528
 #
 #
 # Select the data fields/page to start on.
@@ -451,7 +406,7 @@ cidd.xsect_start_page:      1
 
 #
 # The Outer most domain:
-cidd.num_zoom_levels:       4
+cidd.num_zoom_levels:       6
 cidd.start_zoom_level:      1
 cidd.min_zoom_threshold:    0
 cidd.zoom_limits_in_latlon: 1
@@ -463,29 +418,74 @@ cidd.num_cache_zooms:       0
 # It's suggested that names without spaces be used when running
 # in.
 #
-cidd.level1_label:                  WIDE_WRF
-cidd.level1_min_xkm:                -105.0
-cidd.level1_max_xkm:                -75.0
-cidd.level1_min_ykm:                25.0
-cidd.level1_max_ykm:                55.0
+cidd.level1_label:                  DOW
+cidd.level1_min_xkm:                -124.4
+cidd.level1_max_xkm:                -123.1
+cidd.level1_min_ykm:                47.1
+cidd.level1_max_ykm:                48.1
 #
-cidd.level2_label:                  WIDE_SAT
-cidd.level2_min_xkm:                -110
-cidd.level2_max_xkm:                -75
-cidd.level2_min_ykm:                25
-cidd.level2_max_ykm:                55
+#cidd.level1_min_xkm:                20.0
+#cidd.level1_min_ykm:                20.0
+#cidd.level1_max_xkm:                100.0
+#cidd.level1_max_ykm:                100.0
 #
-cidd.level3_label:                  CONUS
-cidd.level3_min_xkm:                -130
-cidd.level3_max_xkm:                -70
-cidd.level3_min_ykm:                20
-cidd.level3_max_ykm:                55
 #
-cidd.level4_label:                  WORLD
-cidd.level4_min_xkm:                -180
-cidd.level4_max_xkm:                180
-cidd.level4_min_ykm:                -90
-cidd.level4_max_ykm:                90
+cidd.level2_label:                  NPOL_150km
+cidd.level2_min_xkm:                -126.19
+cidd.level2_max_xkm:                -122.24
+cidd.level2_min_ykm:                45.94
+cidd.level2_max_ykm:                48.62
+#
+#cidd.level2_min_xkm:                -150.0
+#cidd.level2_min_ykm:                -150.0
+#cidd.level2_max_xkm:                150.0
+#cidd.level2_max_ykm:                150.0
+#
+#
+cidd.level3_label:                  NPOL_250km
+cidd.level3_min_xkm:                -127.5
+cidd.level3_max_xkm:                -120.91
+cidd.level3_min_ykm:                45.04
+cidd.level3_max_ykm:                49.50
+#
+#cidd.level3_min_xkm:                -250.0
+#cidd.level3_min_ykm:                -250.0
+#cidd.level3_max_xkm:                250.0
+#cidd.level3_max_ykm:                250.0
+#
+#
+cidd.level4_label:                  WIDE_500km
+cidd.level4_min_xkm:                -130.75
+cidd.level4_max_xkm:                -117.65
+cidd.level4_min_ykm:                42.83
+cidd.level4_max_ykm:                51.73
+#
+#cidd.level4_min_xkm:                -500.0
+#cidd.level4_min_ykm:                -500.0
+#cidd.level4_max_xkm:                500.0
+#cidd.level4_max_ykm:                500.0
+#
+cidd.level5_label:                  WIDE_750km
+cidd.level5_min_xkm:                -133.2
+cidd.level5_max_xkm:                -115.2
+cidd.level5_min_ykm:                41.25
+cidd.level5_max_ykm:                53.25
+#cidd.level5_min_xkm:                -750.0
+#cidd.level5_min_ykm:                -750.0
+#cidd.level5_max_xkm:                750.0
+#cidd.level5_max_ykm:                750.0
+#
+cidd.level6_label:                  WIDE_SAT
+cidd.level6_min_xkm:                -160
+cidd.level6_max_xkm:                -115
+cidd.level6_min_ykm:                35
+cidd.level6_max_ykm:                65
+#
+cidd.level7_label:                  WORLD
+cidd.level7_min_xkm:                -180
+cidd.level7_max_xkm:                180
+cidd.level7_min_ykm:                -90
+cidd.level7_max_ykm:                90
 
 # Vertical Range and Resolution - Establishes a vertical coordinate system
 # for the cross sectional imagery.
@@ -501,7 +501,7 @@ cidd.level4_max_ykm:                90
 # Radial Radar:  min_ht = 0.0 max_ht = 25.0
 #  
 cidd.min_ht:               0.0
-cidd.max_ht:               20.0
+cidd.max_ht:               12.0
 cidd.start_ht:             0.5
 
 # Radial data Limits
@@ -515,9 +515,16 @@ cidd.max_adeg:               360.0
 
 # get these from local disk, then NCAR
 
-cidd.color_file_subdir: $(PROJ_DIR)/display/color_scales,http://front.eol.ucar.edu/git/lrose-displays/color_scales
+cidd.color_file_subdir: $(HOME)/projDir/display/color_scales,http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/color_scales
 
-cidd.map_file_subdir: $(PROJ_DIR)/display/maps,http://front.eol.ucar.edu/git/lrose-displays/maps
+cidd.map_file_subdir: $(HOME)/projDir/display/maps,http://front.eol.ucar.edu/content/projects/olympex/uw/projDir/display/maps
+
+# get these from local disk, then UW
+
+#cidd.map_file_subdir: $(HOME)/projDir/display/maps,http://www.atmos.washington.edu/~brodzik/public/CIDD/maps
+
+#cidd.color_file_subdir: $(HOME)/projDir/display/color_scales,http://www.atmos.washington.edu/~brodzik/public/CIDD/color_scales
+
 
 #
 # Station locator features
@@ -731,7 +738,7 @@ cidd.azmith_interval:       30.0
 cidd.azmith_radius:         250.0
 
 # Toggles to turn on/off  Extras features on startup
-cidd.range_rings:             0
+cidd.range_rings:             1
 cidd.azmith_lines:            1
 
 # Starting state of the All Winds ON/OFF feature
@@ -1042,7 +1049,7 @@ cidd.menu_bar_funct17: EXIT_BUTTON
 
 ##########################################
 
-cidd.horiz_frame_label: NMQ
+cidd.horiz_frame_label: OLYMPEX
 
 # Set the message to display when no data is availible
 cidd.no_data_message:     NO DATA FOUND (in this area at the selected time)
@@ -1227,36 +1234,49 @@ short_requests = TRUE;
 //         Use 0 to disable the off feature. (always displayed)
 //         Note: scale_constant set in MAIN_PARAM section.      
 
-//prod_info = {
-//   {
-//    menu_label = "RHI-NPOL",
-//    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::nmq/spdb/rhi/npol",
-//    data_type = 0,
-//    render_type = RENDER_ALL_VALID,
-//    on_by_default = FALSE,
-//    minutes_allow_before = 20,
-//    minutes_allow_after = 10,
-//    text_off_threshold = 0.4,
-//    request_data_on_zoom = FALSE,
-//    request_data_on_vert_change = FALSE
-//   }
-//  , 
-//   {
-//    menu_label = "RHI-D3R-QC",
-//    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::nmq/spdb/rhi/d3r_qc",
-//    data_type = 0,
-//    render_type = RENDER_ALL_VALID,
-//    on_by_default = TRUE,
-//    minutes_allow_before = 20,
-//    minutes_allow_after = 10,
-//    text_off_threshold = 0.4,
-//    request_data_on_zoom = FALSE,
-//    request_data_on_vert_change = FALSE
-//  }
+prod_info = {
+   {
+    menu_label = "RHI-NPOL",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/npol",
+    data_type = 0,
+    render_type = RENDER_ALL_VALID,
+    on_by_default = TRUE,
+    minutes_allow_before = 20,
+    minutes_allow_after = 10,
+    text_off_threshold = 0.4,
+    request_data_on_zoom = FALSE,
+    request_data_on_vert_change = FALSE
+  }
+  , 
+   {
+    menu_label = "RHI-DOW",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/dow",
+    data_type = 0,
+    render_type = RENDER_ALL_VALID,
+    on_by_default = TRUE,
+    minutes_allow_before = 20,
+    minutes_allow_after = 10,
+    text_off_threshold = 0.4,
+    request_data_on_zoom = FALSE,
+    request_data_on_vert_change = FALSE
+  }
+  , 
+   {
+    menu_label = "RHI-KING",
+    url = "spdbp:Rhi2Symprod:ticks//$(DATA_HOST)::olympex/spdb/rhi/king",
+    data_type = 0,
+    render_type = RENDER_ALL_VALID,
+    on_by_default = TRUE,
+    minutes_allow_before = 20,
+    minutes_allow_after = 10,
+    text_off_threshold = 0.4,
+    request_data_on_zoom = FALSE,
+    request_data_on_vert_change = FALSE
+  }
   // , 
   // {
   //   menu_label = "RHI-label",
-  //   url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::nmq/spdb/rhi/npol",
+  //   url = "spdbp:Rhi2Symprod:label//$(DATA_HOST)::olympex/spdb/rhi/npol",
   //   data_type = 0,
   //   render_type = RENDER_ALL_VALID,
   //   on_by_default = FALSE,
@@ -1266,39 +1286,169 @@ short_requests = TRUE;
   //   request_data_on_zoom = FALSE,
   //   request_data_on_vert_change = FALSE
   // }
-  //,                        
-  //{
-  //   menu_label = "DC8 15_min",
-  //   url = "spdbp:AcTrack2Symprod:N817NA.15_min//$(DATA_HOST)::nmq/spdb/ac_posn",
-  //   data_type = 0,
-  //   render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-  //   on_by_default = FALSE,
-  //   minutes_allow_before = 15.0,
-  //   minutes_allow_after = 15.0,
-  //   text_off_threshold = 0.4,
-  //   FALSE,
-  //   FALSE
-  //}
-  //,                        
-  //{
-  //  menu_label = "ER2 10_hr",
-  //  url = "spdbp:AcTrack2Symprod:N809NA.10_hr//$(DATA_HOST)::nmq/spdb/ac_posn",
-  //  data_type = 0,
-  //  render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
-	     //   on_by_default = FALSE,
-	     //   minutes_allow_before = 15.0,
-	     //   minutes_allow_after = 15.0,
-	     //   text_off_threshold = 0.4,
-	     //   FALSE,
-	     //   FALSE
-	     //}
+  ,                        
+  {
+    menu_label = "DC8 15_min",
+    url = "spdbp:AcTrack2Symprod:N817NA.15_min//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "DC8 30_min",
+    url = "spdbp:AcTrack2Symprod:N817NA.30_min//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "DC8 5_hr",
+    url = "spdbp:AcTrack2Symprod:N817NA.5_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "DC8 10_hr",
+    url = "spdbp:AcTrack2Symprod:N817NA.10_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "CITATION 15_min",
+    url = "spdbp:AcTrack2Symprod:N555DS.15_min//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "CITATION 30_min",
+    url = "spdbp:AcTrack2Symprod:N555DS.30_min//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "CITATION 5_hr",
+    url = "spdbp:AcTrack2Symprod:N555DS.5_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "CITATION 10_hr",
+    url = "spdbp:AcTrack2Symprod:N555DS.10_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "ER2 15_min",
+    url = "spdbp:AcTrack2Symprod:N809NA.15_min//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "ER2 30_min",
+    url = "spdbp:AcTrack2Symprod:N809NA.30_min//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "ER2 5_hr",
+    url = "spdbp:AcTrack2Symprod:N809NA.5_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
+  ,                        
+  {
+    menu_label = "ER2 10_hr",
+    url = "spdbp:AcTrack2Symprod:N809NA.10_hr//$(DATA_HOST)::olympex/spdb/ac_posn",
+    data_type = 0,
+    render_type = RENDER_FIRST_BEFORE_FRAME_TIME,
+    on_by_default = FALSE,
+    minutes_allow_before = 15.0,
+    minutes_allow_after = 15.0,
+    text_off_threshold = 0.4,
+    FALSE,
+    FALSE
+  }
    //,
    //  {
    //    menu_label = "METARS-simple",
-   //    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::nmq/spdb/metar",
+   //    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::olympex/spdb/metar",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
-   //    on_by_default = FALSE,
+   //    on_by_default = TRUE,
    //    minutes_allow_before = 90.0,
    //    minutes_allow_after = 0.0,
    //    text_off_threshold = 0.0,
@@ -1308,7 +1458,7 @@ short_requests = TRUE;
    //  ,
    //  {
    //    menu_label = "METARS-full",
-   //    url = "spdbp:Metar2Symprod:labels//$(DATA_HOST)::nmq/spdb/metar",
+   //    url = "spdbp:Metar2Symprod:labels//$(DATA_HOST)::olympex/spdb/metar",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
    //    on_by_default = FALSE,
@@ -1321,10 +1471,10 @@ short_requests = TRUE;
    //  ,
    //  {
    //    menu_label = "SHIP-OBS",
-   //    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::nmq/spdb/ship_obs",
+   //    url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::olympex/spdb/ship_obs",
    //    data_type = 0,
    //    render_type = RENDER_LATEST_IN_FRAME,
-   //    on_by_default = FALSE,
+   //    on_by_default = TRUE,
    //    minutes_allow_before = 120.0,
    //    minutes_allow_after = 30.0,
    //    text_off_threshold = 0.0001,
@@ -1334,7 +1484,7 @@ short_requests = TRUE;
    //  ,
    //{
    //menu_label = "SYN-OBS",
-   //url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::nmq/spdb/synop_obs",
+   //url = "spdbp:Metar2Symprod:simple//$(DATA_HOST)::olympex/spdb/synop_obs",
    //data_type = 0,
    //render_type = RENDER_LATEST_IN_FRAME,
    //on_by_default = TRUE,
@@ -1344,7 +1494,7 @@ short_requests = TRUE;
    //request_data_on_zoom = FALSE,
    //request_data_on_vert_change = FALSE
    //}
-//};
+};
 
 </SYMPRODS> 
 

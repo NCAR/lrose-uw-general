@@ -399,17 +399,17 @@ XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  
 XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 
-XBAND_DBZ    XBAND_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_UDBZ   XBAND_UDBZ   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
-XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&VEL   vel_30.colors      m/s    -5 80 5 radial 1 0
-XBAND_WIDTH  XBAND_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&WID   width.colors      m/s    -5 80 5 radial 1 0
+XBAND_DBZ    XBAND_DBZ    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&DBZ   dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_UDBZ   XBAND_UDBZ   mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&UDBZ  dbz.colors        dBZ    -5 80 5 radial 1 0
+XBAND_VEL    XBAND_VEL    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&VEL   vel_30.colors      m/s    -5 80 5 radial 1 0
+XBAND_WIDTH  XBAND_WIDTH  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&WID   width.colors      m/s    -5 80 5 radial 1 0
 
-XBAND_ZDR    XBAND_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
-XBAND_PHIDP  XBAND_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
-XBAND_UPHIDP XBAND_UPHIDP mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
-XBAND_RHOHV  XBAND_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
+XBAND_ZDR    XBAND_ZDR    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&ZDR    zdr.colors        dB     -5 80 5 radial 1 0
+XBAND_PHIDP  XBAND_PHIDP  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&PHIDP  phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_UPHIDP XBAND_UPHIDP mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&UPHIDP phidp.colors      deg    -5 80 5 radial 1 0
+XBAND_RHOHV  XBAND_RHOHV  mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&RHOHV  rhohv.colors      -      -5 80 5 radial 1 0
 
-XBAND_SQI    XBAND_SQI    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur&SQI    ncp.colors        -      -5 80 5 radial 1 0
+XBAND_SQI    XBAND_SQI    mdvp:://$(DATA_HOST):0:olympex/cfradial/moments/xband_all/sur_v0&SQI    ncp.colors        -      -5 80 5 radial 1 0
 XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
 XBAND_==== ========  mdvp::static//$(DATA_HOST):0:olympex/mdv/spacer&Elevation  none.colors   m   -5   80  5  dcont   1 0
